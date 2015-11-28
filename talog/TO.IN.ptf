@@ -1,0 +1,16 @@
+ptf %
+params
+1000          
+%KSAT%
+%THETAS%       
+%THETAR%
+1  
+%ALPHA%
+%N% 
+5.5   
+0.37
+0.0  
+1.50
+%IHEAD%
+%PULSE%
+%L%
