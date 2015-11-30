@@ -1,28 +1,22 @@
 pcf
 * control data
 restart estimation
-11 96 2 0 1
-2 1 double point 1 0 0
-5 2 0.3 0.01 8
-5 5 0.001
-0.1
-20 0.005 4 4 0.01 4
-1 1 1 
+      2     96      1      0      1  
+    1    1 double point  1    0  0
+   5.0000        2.0000      0.3  0.03  10
+      0.100  10.0  0.001
+ 0.1
+    50  0.005  4  4  0.005  4
+1  1  1  1 jcosaveitn noreisaveitn
+* svd assist
+tocal.pst
+tocal.jco
+    0    3    0    1    0
 * parameter groups
-soil relative 0.001 0.0001 always_2 1 parabolic
-water relative 0.001 0.0001 always_2 1 parabolic
+ pargp absolute    0.015  0.0  switch    2.0 parabolic
 * parameter data
-THETAR fixed relative 0.05 0.04 0.06 soil 1 0 1
-THETAS fixed relative 0.43 0.4 0.5 soil 1 0 1
-ALPHA none relative 3.5 1 5 soil 1 0 1
-N none relative 1.4 1.1 4 soil 1 0 1
-KSAT log factor 1e-5 1e-7 1e-1 soil 1 0 1
-L fixed relative 0.5 0.45 0.55 soil 1 0 1
-IHEAD log factor 145 130 160  water 1 0 1
-START fixed relative 300 120 360 water 1 0 1
-INTEN fixed relative 4 1 15 water 1 0 1
-DURAT fixed relative 60 30 240 water 1 0 1
-PULSE fixed relative 31 10 20 water 1 0 1
+par1         none  relative   10.000     1.0e-20  1.0e20  pargp  1.0  -10.000      1
+par2         none  relative   10.000     1.0e-20  1.0e20  pargp  1.0  -10.000      1
 * observation groups
 tensio
 * observation data
@@ -123,8 +117,7 @@ ten94 -1.15040183697 1 tensio
 ten95 -1.15729047072 1 tensio
 ten96 -1.15384615385 1 tensio
 * model command line
-./run_model.sh
+./svdabatch.bat
 * model input/output
-TO.IN.ptf TO.IN
-pre_TO.IN.ptf pre_TO.IN
+parcalc.tpl   parcalc.in
 obsnode.pif alf_obsnode_60.txt

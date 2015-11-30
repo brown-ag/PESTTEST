@@ -9,6 +9,6 @@ parcalc
 #
 # The following is copied directly from file ./run_model.sh
 #
-python tprecal.py tocal pest
+python tprecal.py tocals pest
 ./test_alf
-#Rscript viewcsv.R tocalr 2
+#Rscript viewcsv.R tocals 2

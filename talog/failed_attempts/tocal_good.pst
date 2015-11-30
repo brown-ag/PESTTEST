@@ -6,23 +6,23 @@ restart estimation
 5 2 0.3 0.01 8
 5 5 0.001
 0.1
-20 0.005 4 4 0.01 4
-1 1 1 
+-1 0.005 4 4 0.01 4
+1 1 1
 * parameter groups
 soil relative 0.001 0.0001 always_2 1 parabolic
 water relative 0.001 0.0001 always_2 1 parabolic
 * parameter data
-THETAR fixed relative 0.05 0.04 0.06 soil 1 0 1
-THETAS fixed relative 0.43 0.4 0.5 soil 1 0 1
-ALPHA none relative 3.5 1 5 soil 1 0 1
-N none relative 1.4 1.1 4 soil 1 0 1
-KSAT log factor 1e-5 1e-7 1e-1 soil 1 0 1
-L fixed relative 0.5 0.45 0.55 soil 1 0 1
-IHEAD log factor 145 130 160  water 1 0 1
-START fixed relative 300 120 360 water 1 0 1
-INTEN fixed relative 4 1 15 water 1 0 1
-DURAT fixed relative 60 30 240 water 1 0 1
-PULSE fixed relative 31 10 20 water 1 0 1
+thetar fixed relative   9.9999998E-03  0.01 0.02 soil 1 0 1
+thetas log factor   0.5000000      0.4 0.5 soil 1 0 1
+alpha log factor    5.000000      1 5 soil 1 0 1
+n log factor    1.199605      1.1 10 soil 1 0 1
+ksat log factor   1.0000000E-03  1e-7 1e-3 soil 1 0 1
+l fixed relative   0.5000000      0.45 0.55 soil 1 0 1
+ihead none relative    147.2923      50 250 water 1 0 1
+start fixed relative    300.0000      120 360 water 1 0 1
+inten fixed relative    4.000000      1 15 water 1 0 1
+durat fixed relative    60.00000      30 240 water 1 0 1
+pulse none relative    31.06848      10 40 water 1 0 1
 * observation groups
 tensio
 * observation data
@@ -123,7 +123,7 @@ ten94 -1.15040183697 1 tensio
 ten95 -1.15729047072 1 tensio
 ten96 -1.15384615385 1 tensio
 * model command line
-./run_model.sh
+./test_alf
 * model input/output
 TO.IN.ptf TO.IN
 pre_TO.IN.ptf pre_TO.IN

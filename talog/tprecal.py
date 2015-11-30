@@ -1,5 +1,11 @@
 import sys
 ######
+# User-defined Constants
+######
+
+tensio_name='../tensio_data/tensio_4_5_14.csv'
+
+######
 # FUNCTION DEFINITIONS
 ######
 
@@ -63,10 +69,13 @@ if mode == "help" or mode == "h" or mode == "-h":
 	print("This is helpful?")
 elif mode == "in":
 	# Prepare raw data for PEST input
-	lines = readFile('../tensio_data/tensio_4_5_14.csv')
+	
+	#read tensiodata from raw file
+	lines = readFile(tensio_name)
 	n=0
 	ctrl_obs=[]
 	ins_obs=[]
+	ins_obs.append("pif %\n") #1\nl1") #add header for instruction file
 	timestamp=[]
 	minutes=[]
 	matric=[]
@@ -74,21 +83,48 @@ elif mode == "in":
 	for l in lines:
 		if n != 0:
 			ff=l.split(",")
-			ctrl_obs.append("[ten"+str(n)+"] "+str(float(ff[3])/-100)+" 1 soil")
-				#for printing obs for control file
-			ins_obs.append("l1 w w w !ten"+str(n)+"!") 
-				# for reading fitted values in instruction file
-			timestamp.append(str(ff[1]))
-			minutes.append(int(ff[2]))
-			matric.append(float(ff[3]))
+			ctrl_obs.append("ten"+str(n)+" "+str(float(ff[3])/-100)+" 1 tensio")
+				#for printing field observations for control file
+			ins_obs.append("l1 w w w !ten"+str(n)+"!\n") 
+				# for reading model output values in instruction file
+				
+			#raw values currently not used from file:
+			#timestamp.append(str(ff[1]))
+			#minutes.append(int(ff[2]))
+			#matric.append(float(ff[3]))
 			#irrig.append(ff[4])
 		n+=1
-		
+	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
+	mrun="python tprecal.py "+case+" pest\n./test_alf\n#Rscript viewcsv.R "+case+" 2"
+	mrunn=[]
+	mrunn.append(mrun)c
+	writeFile(mrunn,"run_model.sh")
+	
+	
+	#write instruction file. this tells PEST where to find model predictions.
+	writeFile(ins_obs,"obsnode.pif")
+	
+	#this overwrites the observation data section of PEST control file
+	foo=readFile(case+".pst")
+	pstout=[]
+	flag=False
+	for f in foo:
+		if not flag:
+			pstout.append(f)
+			if "observation data" in f:
+				flag=True
+				for p in ctrl_obs:
+					pstout.append(p+"\n")
+		if "model command line" in f:
+			flag=False
+			pstout.append(f)
+	print(pstout)
+	writeFile(pstout,case+".pst")
 
 elif mode == "pest": 
 	#executes after instantiating pest but before running the TO model
 	irrig=[]
-	lines1 = readFile('../tensio_data/tensio_4_5_14.csv')
+	lines1 = readFile(tensio_name)
 	for l in lines1[1:len(lines1)]:
 		irrig.append(l.split(",")[4])
 	lines=readFile("pre_TO.IN")
@@ -127,7 +163,7 @@ elif mode == "pest":
 			add=depthinc
 		take=0 #Zero evapotranspiration
 		surfbc.append(str((j)*15)+"\t"+str(add)+"\t"+str(take)+"\n")
-	print(surfbc)
+	#print(surfbc)
 	writeFile(surfbc,"SURFACE_BC.IN")
 				  
 	print("SURFACE B.C. [start: "+str(start*15)+ "min; end: "+str(end*15)+"min; duration: "+str(duration*15)+"min]\n")

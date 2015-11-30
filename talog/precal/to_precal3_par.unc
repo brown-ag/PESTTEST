@@ -1,0 +1,15 @@
+START STANDARD_DEVIATION
+	thetar 1.0
+	thetas 1.0
+	alpha 1.0
+	n 1.0
+	ksat 1.0
+	l 1.0
+	ihead 1.0
+	start 1.0
+	inten 1.0
+	durat 1.0
+	pulse 1.0
+	par1 1.0
+	par2 1.0
+END STANDARD_DEVIATION

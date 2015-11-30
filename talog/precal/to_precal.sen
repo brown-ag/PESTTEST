@@ -1,0 +1,134 @@
+                      PARAMETER SENSITIVITIES: CASE to_precal
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.50000         2.751785E-02
+   n               soil             1.40000         0.307277    
+   ksat            soil            1.000000E-05     1.104126E-02
+   ihead           water            145.000          0.00000    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.44142         0.126141    
+   n               soil             1.38173         0.290142    
+   ksat            soil            5.000000E-05     2.863925E-02
+   ihead           water            145.000          1.20335    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.13655         4.275852E-02
+   n               soil             1.61889         0.134345    
+   ksat            soil            1.913010E-04     6.535194E-02
+   ihead           water            130.812          0.00000    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.38301         0.111459    
+   n               soil             1.58810         9.881247E-02
+   ksat            soil            1.925330E-04     6.212056E-02
+   ihead           water            130.812          1.03005    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.37179         8.355006E-02
+   n               soil             1.58410         0.135369    
+   ksat            soil            2.048500E-04     6.394745E-02
+   ihead           water            130.000          0.00000    
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.47711         0.117003    
+   n               soil             1.50306         6.934170E-02
+   ksat            soil            2.513960E-04     7.667918E-02
+   ihead           water            130.000          1.15882    
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.37833         0.117674    
+   n               soil             1.52053         0.128033    
+   ksat            soil            2.496570E-04     7.809092E-02
+   ihead           water            130.000          1.04075    
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.26595         0.115206    
+   n               soil             1.54333         7.229658E-02
+   ksat            soil            2.238530E-04     7.504787E-02
+   ihead           water            130.000          1.00241    
+
+
+ OPTIMISATION ITERATION NO.  9 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.16130         0.110106    
+   n               soil             1.54654         0.267277    
+   ksat            soil            2.034630E-04     7.454960E-02
+   ihead           water            130.000         0.960129    
+
+
+ OPTIMISATION ITERATION NO. 10 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.15408         0.114874    
+   n               soil             1.50661         0.268874    
+   ksat            soil            1.984760E-04     7.720953E-02
+   ihead           water            130.000         0.973214    
+
+
+ OPTIMISATION ITERATION NO. 11 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.16316         0.115349    
+   n               soil             1.46805         6.046204E-02
+   ksat            soil            1.855440E-04     7.869276E-02
+   ihead           water            130.000         0.987259    
+
+
+ OPTIMISATION ITERATION NO. 12 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.09600         3.862568E-02
+   n               soil             1.47143         6.518496E-02
+   ksat            soil            1.750860E-04     8.001464E-02
+   ihead           water            130.000          0.00000    
+
+
+ OPTIMISATION ITERATION NO. 13 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.12887         4.379241E-02
+   n               soil             1.47040         4.211045E-02
+   ksat            soil            1.797350E-04     7.861402E-02
+   ihead           water            130.000          0.00000    
+
+
+ OPTIMISATION ITERATION NO. 14 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.34833         3.609132E-02
+   n               soil             1.48267         4.056117E-02
+   ksat            soil            2.142240E-04     7.640099E-02
+   ihead           water            130.000          0.00000    
+
+
+ OPTIMISATION ITERATION NO. 15 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.85794         3.213001E-02
+   n               soil             1.44827         4.941145E-02
+   ksat            soil            3.312770E-04     8.092170E-02
+   ihead           water            130.000          0.00000    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.09600         0.115349    
+   n               soil             1.47143         6.046204E-02
+   ksat            soil            1.750860E-04     7.869276E-02
+   ihead           water            130.000         0.987259    
