@@ -1,0 +1,6 @@
+ PARAMETER STATISTICAL MATRICES: CASE to_precal
+
+ OPTIMISATION ITERATION NUMBER  9
+
+ Cannot evaluate parameter covariance matrix as the "normal matrix"
+ for the current parameter estimation problem is singular.

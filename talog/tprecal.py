@@ -97,7 +97,7 @@ elif mode == "in":
 	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
 	mrun="python tprecal.py "+case+" pest\n./test_alf\n#Rscript viewcsv.R "+case+" 2"
 	mrunn=[]
-	mrunn.append(mrun)c
+	mrunn.append(mrun)
 	writeFile(mrunn,"run_model.sh")
 	
 	

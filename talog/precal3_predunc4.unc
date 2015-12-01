@@ -1,0 +1,5 @@
+ Name of prediction = "ten25"
+
+ Fixed_params      Precal_variance     Postcal_variance    Precal_uncertainty  Postcal_uncertainty
+ soil                0.000000            0.000000            0.000000            0.000000    
+ water              0.2472778           1.2355846E-02       0.4972703           0.1111569    

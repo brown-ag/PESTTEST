@@ -1,0 +1,624 @@
+                       PEST RUN RECORD: CASE tocals
+
+
+ PEST Version: 13.4
+
+
+ PEST run mode:-
+
+    Parameter estimation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     2
+    Number of adjustable parameters                :     2
+    Number of parameter groups                     :     1
+    Number of observations                         :    96
+    Number of prior estimates                      :     0
+
+
+ Model command line(s):-
+
+    ./svdabatch.bat
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       parcalc.tpl
+    for model input files:
+       parcalc.in
+
+    (Parameter values written using double precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       obsnode.pif
+    for reading model output files:
+       alf_obsnode_60.txt
+
+
+ PEST-to-model message file:-
+
+    na
+
+
+ SVD Assist data:-
+
+    PEST control file holding base parameters              : tocal.pst
+    Use external super parameter definition                : no
+    Jacobian matrix file                                   : tocal.jco
+    Base parameter definition method                       : SVD on Q^(1/2)X
+    Calculate initial Jacobian from base sensitivities     : yes
+    Record multiple bpa files                              : no
+    Perform base parameter scale adjustment                : yes
+    SVDA_SCALADJ adjustment control variable               : 3
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ pargp        absolute    1.5000E-02    na          switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ par1         none              relative    10.0000        0.00000       1.000000E+20
+ par2         none              relative    10.0000        0.00000       1.000000E+20
+
+ Name         Group          Scale         Offset        Model command number
+ par1         pargp         1.00000       -10.0000            1
+ par2         pargp         1.00000       -10.0000            1
+
+
+ Prior information:-
+
+    No prior information supplied
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  ten1                   -1.46441          1.000       tensio      
+  ten2                   -1.46096          1.000       tensio      
+  ten3                   -1.45867          1.000       tensio      
+  ten4                   -1.45982          1.000       tensio      
+  ten5                   -1.45695          1.000       tensio      
+  ten6                   -1.46154          1.000       tensio      
+  ten7                   -1.46039          1.000       tensio      
+  ten8                   -1.45867          1.000       tensio      
+  ten9                   -1.46211          1.000       tensio      
+  ten10                  -1.45350          1.000       tensio      
+  ten11                  -1.45408          1.000       tensio      
+  ten12                  -1.45178          1.000       tensio      
+  ten13                  -1.45235          1.000       tensio      
+  ten14                  -1.45867          1.000       tensio      
+  ten15                  -1.45235          1.000       tensio      
+  ten16                  -1.44891          1.000       tensio      
+  ten17                  -1.44948          1.000       tensio      
+  ten18                  -1.43054          1.000       tensio      
+  ten19                  -1.40413          1.000       tensio      
+  ten20                  -1.32032          1.000       tensio      
+  ten21                  -1.06028          1.000       tensio      
+  ten22                 -0.782434          1.000       tensio      
+  ten23                 -0.716992          1.000       tensio      
+  ten24                 -0.711251          1.000       tensio      
+  ten25                 -0.712400          1.000       tensio      
+  ten26                 -0.715270          1.000       tensio      
+  ten27                 -0.716992          1.000       tensio      
+  ten28                 -0.730769          1.000       tensio      
+  ten29                 -0.766935          1.000       tensio      
+  ten30                 -0.788749          1.000       tensio      
+  ten31                 -0.808840          1.000       tensio      
+  ten32                 -0.828358          1.000       tensio      
+  ten33                 -0.846728          1.000       tensio      
+  ten34                 -0.863949          1.000       tensio      
+  ten35                 -0.882893          1.000       tensio      
+  ten36                 -0.896096          1.000       tensio      
+  ten37                 -0.906429          1.000       tensio      
+  ten38                 -0.917336          1.000       tensio      
+  ten39                 -0.928243          1.000       tensio      
+  ten40                 -0.938002          1.000       tensio      
+  ten41                 -0.947761          1.000       tensio      
+  ten42                 -0.955224          1.000       tensio      
+  ten43                 -0.963261          1.000       tensio      
+  ten44                 -0.971297          1.000       tensio      
+  ten45                 -0.979908          1.000       tensio      
+  ten46                 -0.986223          1.000       tensio      
+  ten47                 -0.993685          1.000       tensio      
+  ten48                  -1.00057          1.000       tensio      
+  ten49                  -1.00689          1.000       tensio      
+  ten50                  -1.01320          1.000       tensio      
+  ten51                  -1.02009          1.000       tensio      
+  ten52                  -1.02583          1.000       tensio      
+  ten53                  -1.03100          1.000       tensio      
+  ten54                  -1.03559          1.000       tensio      
+  ten55                  -1.03961          1.000       tensio      
+  ten56                  -1.04420          1.000       tensio      
+  ten57                  -1.04994          1.000       tensio      
+  ten58                  -1.05281          1.000       tensio      
+  ten59                  -1.05626          1.000       tensio      
+  ten60                  -1.06085          1.000       tensio      
+  ten61                  -1.06372          1.000       tensio      
+  ten62                  -1.06831          1.000       tensio      
+  ten63                  -1.07233          1.000       tensio      
+  ten64                  -1.07577          1.000       tensio      
+  ten65                  -1.07807          1.000       tensio      
+  ten66                  -1.08209          1.000       tensio      
+  ten67                  -1.08553          1.000       tensio      
+  ten68                  -1.08840          1.000       tensio      
+  ten69                  -1.09127          1.000       tensio      
+  ten70                  -1.09242          1.000       tensio      
+  ten71                  -1.09701          1.000       tensio      
+  ten72                  -1.10046          1.000       tensio      
+  ten73                  -1.10218          1.000       tensio      
+  ten74                  -1.10505          1.000       tensio      
+  ten75                  -1.10735          1.000       tensio      
+  ten76                  -1.10964          1.000       tensio      
+  ten77                  -1.11309          1.000       tensio      
+  ten78                  -1.11424          1.000       tensio      
+  ten79                  -1.11711          1.000       tensio      
+  ten80                  -1.12055          1.000       tensio      
+  ten81                  -1.12285          1.000       tensio      
+  ten82                  -1.12514          1.000       tensio      
+  ten83                  -1.12801          1.000       tensio      
+  ten84                  -1.13031          1.000       tensio      
+  ten85                  -1.13146          1.000       tensio      
+  ten86                  -1.13548          1.000       tensio      
+  ten87                  -1.13720          1.000       tensio      
+  ten88                  -1.13777          1.000       tensio      
+  ten89                  -1.13949          1.000       tensio      
+  ten90                  -1.14294          1.000       tensio      
+  ten91                  -1.14466          1.000       tensio      
+  ten92                  -1.14696          1.000       tensio      
+  ten93                  -1.14811          1.000       tensio      
+  ten94                  -1.15040          1.000       tensio      
+  ten95                  -1.15729          1.000       tensio      
+  ten96                  -1.15385          1.000       tensio      
+
+
+ Control settings:-
+
+    Initial lambda                                               :  5.0000    
+    Lambda adjustment factor                                     :  2.0000    
+    Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+    Limiting relative phi reduction between lambdas              : 3.00000E-02
+    Maximum trial lambdas per iteration                          :  10
+    Forgive model run failure during lamda testing               : no
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   : na
+    Maximum relative parameter change (relative-limited changes) : 0.10000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.50000E-02
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :  50
+
+    Attempt automatic user intervention                          : no
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options: -
+
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : yes
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Sum of squared weighted residuals (ie phi) =   2.7406    
+
+       Current parameter values
+       par1             10.0000    
+       par2             10.0000    
+
+
+ OPTIMISATION ITERATION NO.        : 1
+    Model calls so far             : 1
+    Starting phi for this iteration:   2.7406    
+
+        Lambda =   5.0000     ----->
+           Phi =   2.6182      (  0.955 of starting phi)
+
+        Lambda =   2.5000     ----->
+           Phi =   2.5633      (  0.935 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:   2.5633    
+    Relative phi reduction between optimisation iterations less than 0.1000
+    Switch to central derivatives calculation
+
+       Current parameter values                 Previous parameter values
+       par1             9.98784                 par1              10.0000    
+       par2             9.98607                 par2              10.0000    
+    Maximum relative change: 1.3930E-03 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 2
+    Model calls so far             : 3
+    Starting phi for this iteration:   2.5633    
+
+        Lambda =   1.2500     ----->
+           Phi =   2.4519      (  0.957 of starting phi)
+
+        Lambda =  0.62500     ----->
+           Phi =   2.3063      (  0.900 of starting phi)
+
+        Lambda =  0.31250     ----->
+           Phi =   1.9265      (  0.752 of starting phi)
+
+        Lambda =  0.15625     ----->
+           Phi =   1.5667      (  0.611 of starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =   1.2734      (  0.497 of starting phi)
+
+        Lambda =  3.90625E-02 ----->
+           Phi =   1.2642      (  0.493 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:   1.2642    
+
+       Current parameter values                 Previous parameter values
+       par1             9.73596                 par1              9.98784    
+       par2             9.74878                 par2              9.98607    
+    Maximum relative change: 2.5219E-02 ["par1"]
+
+
+ OPTIMISATION ITERATION NO.        : 3
+    Model calls so far             : 13
+    Starting phi for this iteration:   1.2642    
+
+        Lambda =  1.95312E-02 ----->
+           Phi =   9.1362      (  7.227 times starting phi)
+
+        Lambda =  9.76562E-03 ----->
+           Phi =   9.0635      (  7.169 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:   9.0635    
+
+       Current parameter values                 Previous parameter values
+       par1             9.65525                 par1              9.73596    
+       par2             9.64272                 par2              9.74878    
+    Maximum relative change: 1.0879E-02 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 4
+    Model calls so far             : 19
+    Starting phi for this iteration:   9.0635    
+
+        Lambda =  4.88281E-03 ----->
+           Phi =   3.2348      (  0.357 of starting phi)
+
+        Lambda =  2.44141E-03 ----->
+           Phi =   3.3152      (  0.366 of starting phi)
+
+        Lambda =  9.76562E-03 ----->
+           Phi =   3.0246      (  0.334 of starting phi)
+
+        Lambda =  1.95312E-02 ----->
+           Phi =   2.6217      (  0.289 of starting phi)
+
+    No more lambdas: phi is less than 0.3000 of starting phi
+    Lowest phi this iteration:   2.6217    
+
+       Current parameter values                 Previous parameter values
+       par1             9.66883                 par1              9.65525    
+       par2             9.69517                 par2              9.64272    
+    Maximum relative change: 5.4397E-03 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 5
+    Model calls so far             : 27
+    Starting phi for this iteration:   2.6217    
+
+        Lambda =  1.95312E-02 ----->
+           Phi =  0.57843      (  0.221 of starting phi)
+
+    No more lambdas: phi is less than 0.3000 of starting phi
+    Lowest phi this iteration:  0.57843    
+
+       Current parameter values                 Previous parameter values
+       par1             9.67800                 par1              9.66883    
+       par2             9.79531                 par2              9.69517    
+    Maximum relative change: 1.0329E-02 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 6
+    Model calls so far             : 32
+    Starting phi for this iteration:  0.57843    
+
+        Lambda =  9.76562E-03 ----->
+           Phi =  0.41793      (  0.723 of starting phi)
+
+        Lambda =  4.88281E-03 ----->
+           Phi =  0.41720      (  0.721 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  0.41720    
+
+       Current parameter values                 Previous parameter values
+       par1             9.68188                 par1              9.67800    
+       par2             9.74982                 par2              9.79531    
+    Maximum relative change: 4.6443E-03 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 7
+    Model calls so far             : 38
+    Starting phi for this iteration:  0.41720    
+
+        Lambda =  2.44141E-03 ----->
+           Phi =  0.38466      (  0.922 of starting phi)
+
+        Lambda =  1.22070E-03 ----->
+           Phi =  0.38465      (  0.922 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  0.38465    
+
+       Current parameter values                 Previous parameter values
+       par1             9.68471                 par1              9.68188    
+       par2             9.71883                 par2              9.74982    
+    Maximum relative change: 3.1788E-03 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 8
+    Model calls so far             : 44
+    Starting phi for this iteration:  0.38465    
+
+        Lambda =  6.10352E-04 ----->
+           Phi =  0.38583      (  1.003 times starting phi)
+
+        Lambda =  3.05176E-04 ----->
+           Phi =  0.38583      (  1.003 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0300
+    Lowest phi this iteration:  0.38583    
+
+       Current parameter values                 Previous parameter values
+       par1             9.68477                 par1              9.68471    
+       par2             9.72695                 par2              9.71883    
+    Maximum relative change: 8.3609E-04 ["par2"]
+
+
+ OPTIMISATION ITERATION NO.        : 9
+    Model calls so far             : 50
+    Starting phi for this iteration:  0.38583    
+
+        Lambda =  1.52588E-04 ----->
+           Phi =  0.38427      (  0.996 of starting phi)
+
+        Lambda =  7.62939E-05 ----->
+           Phi =  0.38427      (  0.996 of starting phi)
+
+        Lambda =  3.05176E-04 ----->
+           Phi =  0.38427      (  0.996 of starting phi)
+
+    No more lambdas: phi rising
+    Lowest phi this iteration:  0.38427    
+
+       Current parameter values                 Previous parameter values
+       par1             9.68449                 par1              9.68477    
+       par2             9.72299                 par2              9.72695    
+    Maximum relative change: 4.0780E-04 ["par2"]
+
+    Optimisation complete: relative parameter change less than 5.0000E-03
+                           over  4 successive iterations.
+    Total model calls:     57
+
+
+                             OPTIMISATION RESULTS
+
+
+ Parameters ----->
+
+ Parameter        Estimated         95% percent confidence limits
+                  value             lower limit       upper limit
+  par1            9.68449            9.68206           9.68692    
+  par2            9.72299            9.65378           9.79219    
+
+ Note: confidence limits provide only an indication of parameter uncertainty.
+       They rely on a linearity assumption which  may not extend as far in 
+       parameter space as the confidence limits themselves - see PEST manual.
+
+ See file tocals.sen for parameter sensitivities.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ ten1                  -1.46441       -1.44516      -1.924673E-02    1.000      tensio      
+ ten2                  -1.46096       -1.44516      -1.580241E-02    1.000      tensio      
+ ten3                  -1.45867       -1.44516      -1.350620E-02    1.000      tensio      
+ ten4                  -1.45982       -1.44516      -1.465430E-02    1.000      tensio      
+ ten5                  -1.45695       -1.44516      -1.178404E-02    1.000      tensio      
+ ten6                  -1.46154       -1.44516      -1.637646E-02    1.000      tensio      
+ ten7                  -1.46039       -1.44516      -1.522836E-02    1.000      tensio      
+ ten8                  -1.45867       -1.44516      -1.350620E-02    1.000      tensio      
+ ten9                  -1.46211       -1.44516      -1.695051E-02    1.000      tensio      
+ ten10                 -1.45350       -1.44516      -8.339722E-03    1.000      tensio      
+ ten11                 -1.45408       -1.44516      -8.913775E-03    1.000      tensio      
+ ten12                 -1.45178       -1.44516      -6.617564E-03    1.000      tensio      
+ ten13                 -1.45235       -1.44516      -7.191617E-03    1.000      tensio      
+ ten14                 -1.45867       -1.44516      -1.350620E-02    1.000      tensio      
+ ten15                 -1.45235       -1.44516      -7.191617E-03    1.000      tensio      
+ ten16                 -1.44891       -1.44516      -3.747300E-03    1.000      tensio      
+ ten17                 -1.44948       -1.44516      -4.321352E-03    1.000      tensio      
+ ten18                 -1.43054       -1.44516       1.462239E-02    1.000      tensio      
+ ten19                 -1.40413       -1.44516       4.102882E-02    1.000      tensio      
+ ten20                 -1.32032       -1.44516       0.124841        1.000      tensio      
+ ten21                 -1.06028      -0.977168      -8.310755E-02    1.000      tensio      
+ ten22                -0.782434      -0.865591       8.315702E-02    1.000      tensio      
+ ten23                -0.716992      -0.858623       0.141631        1.000      tensio      
+ ten24                -0.711251      -0.858623       0.147372        1.000      tensio      
+ ten25                -0.712400      -0.858623       0.146223        1.000      tensio      
+ ten26                -0.715270      -0.858623       0.143353        1.000      tensio      
+ ten27                -0.716992      -0.858623       0.141631        1.000      tensio      
+ ten28                -0.730769      -0.865591       0.134822        1.000      tensio      
+ ten29                -0.766935      -0.865591       9.865644E-02    1.000      tensio      
+ ten30                -0.788749      -0.865591       7.684244E-02    1.000      tensio      
+ ten31                -0.808840      -0.865591       5.675059E-02    1.000      tensio      
+ ten32                -0.828358      -0.872615       4.425679E-02    1.000      tensio      
+ ten33                -0.846728      -0.872615       2.588710E-02    1.000      tensio      
+ ten34                -0.863949      -0.872615       8.665517E-03    1.000      tensio      
+ ten35                -0.882893      -0.879696      -3.197226E-03    1.000      tensio      
+ ten36                -0.896096      -0.879696      -1.640044E-02    1.000      tensio      
+ ten37                -0.906429      -0.879696      -2.673339E-02    1.000      tensio      
+ ten38                -0.917336      -0.886834      -3.050239E-02    1.000      tensio      
+ ten39                -0.928243      -0.886834      -4.140940E-02    1.000      tensio      
+ ten40                -0.938002      -0.886834      -5.116830E-02    1.000      tensio      
+ ten41                -0.947761      -0.894030      -5.373119E-02    1.000      tensio      
+ ten42                -0.955224      -0.894030      -6.119388E-02    1.000      tensio      
+ ten43                -0.963261      -0.894030      -6.923062E-02    1.000      tensio      
+ ten44                -0.971297      -0.901284      -7.001336E-02    1.000      tensio      
+ ten45                -0.979908      -0.901284      -7.862415E-02    1.000      tensio      
+ ten46                -0.986223      -0.901284      -8.493873E-02    1.000      tensio      
+ ten47                -0.993685      -0.908597      -8.508842E-02    1.000      tensio      
+ ten48                 -1.00057      -0.908597      -9.197705E-02    1.000      tensio      
+ ten49                 -1.00689      -0.908597      -9.829163E-02    1.000      tensio      
+ ten50                 -1.01320      -0.915970      -9.723321E-02    1.000      tensio      
+ ten51                 -1.02009      -0.915970      -0.104122        1.000      tensio      
+ ten52                 -1.02583      -0.923403      -0.102429        1.000      tensio      
+ ten53                 -1.03100      -0.930897      -0.100102        1.000      tensio      
+ ten54                 -1.03559      -0.938452      -9.713927E-02    1.000      tensio      
+ ten55                 -1.03961      -0.953748      -8.586164E-02    1.000      tensio      
+ ten56                 -1.04420      -0.961491      -8.271107E-02    1.000      tensio      
+ ten57                 -1.04994      -0.969297      -8.064559E-02    1.000      tensio      
+ ten58                 -1.05281      -0.977168      -7.564486E-02    1.000      tensio      
+ ten59                 -1.05626      -0.993106      -6.315118E-02    1.000      tensio      
+ ten60                 -1.06085       -1.00117      -5.967560E-02    1.000      tensio      
+ ten61                 -1.06372       -1.00931      -5.441086E-02    1.000      tensio      
+ ten62                 -1.06831       -1.01751      -5.080028E-02    1.000      tensio      
+ ten63                 -1.07233       -1.02578      -4.654765E-02    1.000      tensio      
+ ten64                 -1.07577       -1.03412      -4.165197E-02    1.000      tensio      
+ ten65                 -1.07807       -1.04253      -3.553818E-02    1.000      tensio      
+ ten66                 -1.08209       -1.05101      -3.107555E-02    1.000      tensio      
+ ten67                 -1.08553       -1.05957      -2.596787E-02    1.000      tensio      
+ ten68                 -1.08840       -1.06819      -2.021513E-02    1.000      tensio      
+ ten69                 -1.09127       -1.07689      -1.438940E-02    1.000      tensio      
+ ten70                 -1.09242       -1.07689      -1.553750E-02    1.000      tensio      
+ ten71                 -1.09701       -1.08566      -1.135993E-02    1.000      tensio      
+ ten72                 -1.10046       -1.09450      -5.961242E-03    1.000      tensio      
+ ten73                 -1.10218       -1.10342       1.235599E-03    1.000      tensio      
+ ten74                 -1.10505       -1.11241       7.359335E-03    1.000      tensio      
+ ten75                 -1.10735       -1.11241       5.063124E-03    1.000      tensio      
+ ten76                 -1.10964       -1.12148       1.183691E-02    1.000      tensio      
+ ten77                 -1.11309       -1.13063       1.753960E-02    1.000      tensio      
+ ten78                 -1.11424       -1.13063       1.639149E-02    1.000      tensio      
+ ten79                 -1.11711       -1.13985       2.274723E-02    1.000      tensio      
+ ten80                 -1.12055       -1.14916       2.860691E-02    1.000      tensio      
+ ten81                 -1.12285       -1.14916       2.631070E-02    1.000      tensio      
+ ten82                 -1.12514       -1.15854       3.339849E-02    1.000      tensio      
+ ten83                 -1.12801       -1.15854       3.052822E-02    1.000      tensio      
+ ten84                 -1.13031       -1.16800       3.769501E-02    1.000      tensio      
+ ten85                 -1.13146       -1.17755       4.609191E-02    1.000      tensio      
+ ten86                 -1.13548       -1.17755       4.207354E-02    1.000      tensio      
+ ten87                 -1.13720       -1.18718       4.997938E-02    1.000      tensio      
+ ten88                 -1.13777       -1.18718       4.940532E-02    1.000      tensio      
+ ten89                 -1.13949       -1.19689       5.739217E-02    1.000      tensio      
+ ten90                 -1.14294       -1.19689       5.394785E-02    1.000      tensio      
+ ten91                 -1.14466       -1.20668       6.201969E-02    1.000      tensio      
+ ten92                 -1.14696       -1.20668       5.972348E-02    1.000      tensio      
+ ten93                 -1.14811       -1.21656       6.845337E-02    1.000      tensio      
+ ten94                 -1.15040       -1.21656       6.615716E-02    1.000      tensio      
+ ten95                 -1.15729       -1.22652       6.923153E-02    1.000      tensio      
+ ten96                 -1.15385       -1.22652       7.267585E-02    1.000      tensio      
+
+ See file tocals.res for more details of residuals in graph-ready format.
+
+ See file tocals.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =  0.3843    
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   =  0.95488    
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =    96
+      Mean value of non-zero weighted residuals                      = -8.2354E-04
+      Maximum weighted residual [observation "ten24"]                =  0.1474    
+      Minimum weighted residual [observation "ten51"]                = -0.1041    
+      Standard variance of weighted residuals                        =  4.0880E-03
+      Standard error of weighted residuals                           =  6.3938E-02
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+
+ K-L information statistics ----->
+
+
+   AIC   =  -523.9920    
+   AICC  =  -523.7312    
+   BIC   =  -516.2990    
+   KIC   =  -513.4875    
+
+ Parameter covariance matrix ----->
+
+                  par1         par2    
+ par1           1.4905E-06  -3.1269E-06
+ par2          -3.1269E-06   1.2109E-03
+
+
+ Parameter correlation coefficient matrix ----->
+
+                  par1         par2    
+ par1            1.000      -7.3601E-02
+ par2          -7.3601E-02    1.000    
+
+
+ Normalized eigenvectors of parameter covariance matrix ----->
+
+               Vector_1     Vector_2   
+ par1            1.000      -2.5854E-03
+ par2           2.5854E-03    1.000    
+
+
+ Eigenvalues ----->
+
+                1.4825E-06   1.2110E-03
