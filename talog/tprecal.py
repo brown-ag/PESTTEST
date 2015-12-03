@@ -3,7 +3,7 @@ import sys
 # User-defined Constants
 ######
 
-tensio_name='../tensio_data/tensio_4_5_14.csv'
+tensio_name='../tensio_data/tensio_4_7_14.csv'
 
 ######
 # FUNCTION DEFINITIONS
@@ -150,9 +150,9 @@ elif mode == "pest":
 		n+=1
 	if flag != 0 or start == -1 or end == -1:
 		print("Error integrating irrigation event")
-	start=startmin/15
-	duration=duratmin/15
-	end=start+duration
+	#start=startmin/15
+	#duration=duratmin/15
+	#end=start+duration
 	#depthinc=float(intenslen)
 	depthinc=float(pulselm/duration)
 	surfbc=[]
