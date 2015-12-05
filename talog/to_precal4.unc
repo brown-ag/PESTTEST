@@ -1,0 +1,4 @@
+START COVARIANCE_MATRIX
+  file to_precal4.cmf
+  Variance_multiplier  0.1542506    
+END COVARIANCE MATRIX

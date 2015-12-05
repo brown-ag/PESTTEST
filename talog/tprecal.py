@@ -170,6 +170,14 @@ elif mode == "pest":
 				  
 	print("SURFACE B.C. [start: "+str(start*15)+ "min; end: "+str(end*15)+"min; duration: "+str(duration*15)+"min]\n")
 	print("Water per timestep: "+str(depthinc)+"mm")
+	
+	#Cleans up wierd formatting for CMAES scientific notaiton; this should not affect other analyses
+	badin=readFile("TO.IN")
+	goodin=[]
+	for b in badin:
+		goodin.append(b.replace("D","e"))
+	writeFile(goodin, "TO.IN")
+	
 elif mode == "out":
 	# Prepare PEST output for viewing
 	makeCSVfromRES(case)

@@ -4,13 +4,13 @@ Total simulation time  = 24.000000 hours
 Elapsed time = 0.000000 seconds 
  
 Mass balance info: 
-Initial water in domain  = 11.611473 mm 
+Initial water in domain  = 43.001400 mm 
 Accumulated rainfall     = 148.000000 mm 
 Accumulated PET          = 0.000000 mm 
 Accumulated AET          = 0.000000 mm 
 Accumulated infiltration = 0.000000 mm 
-Groundwater recharge     = 136.309658 mm 
-Final water in domain    = 23.301815 mm 
+Groundwater recharge     = 115.200426 mm 
+Final water in domain    = 75.800974 mm 
 Final surface water      = 0.000000 mm 
 Total surface runoff     = 0.000000 mm 
-Mass error               = -9.02056e-14 mm 
+Mass error               = 1.66533e-13 mm 
