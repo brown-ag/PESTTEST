@@ -1,6 +1,50 @@
  PARAMETER STATISTICAL MATRICES: CASE to_precal3
 
- OPTIMISATION ITERATION NUMBER  7
+ OPTIMISATION ITERATION NUMBER  8
 
- Cannot evaluate parameter covariance matrix as the "normal matrix"
- for the current parameter estimation problem is singular.
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ bins              model            75.0128          6.36357    
+ alpha             soil             2.24766         7.954623E-02
+ n                 soil             3.91151         0.117016    
+ ksat              soil            9.991300E-04     1.358452E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                  bins        alpha          n           ksat    
+ bins            40.50       0.2977      -0.5486      -2.9761E-02
+ alpha          0.2977       6.3276E-03  -8.9883E-03   1.3591E-04
+ n             -0.5486      -8.9883E-03   1.3693E-02   5.8271E-05
+ ksat          -2.9761E-02   1.3591E-04   5.8271E-05   1.8454E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                  bins        alpha          n           ksat    
+ bins            1.000       0.5882      -0.7368      -0.3443    
+ alpha          0.5882        1.000      -0.9656       0.1258    
+ n             -0.7368      -0.9656        1.000       3.6658E-02
+ ksat          -0.3443       0.1258       3.6658E-02    1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ bins          -1.0261E-03  -2.9951E-03   1.5106E-02  -0.9999    
+ alpha         -0.5853      -0.5126      -0.6282      -7.3542E-03
+ n             -0.4307      -0.4599       0.7764       1.3549E-02
+ ksat           0.6870      -0.7251      -4.8472E-02   7.3467E-04
+
+
+ Eigenvalues ----->
+
+                7.6658E-05   1.9464E-04   1.0287E-02    40.50    
