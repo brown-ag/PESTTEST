@@ -1,6 +1,46 @@
  PARAMETER STATISTICAL MATRICES: CASE to_precal3
 
- OPTIMISATION ITERATION NUMBER  7
+ OPTIMISATION ITERATION NUMBER 10
 
- Cannot evaluate parameter covariance matrix as the "normal matrix"
- for the current parameter estimation problem is singular.
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ bins              model            57.0271          10.8153    
+ alpha             soil             1.41209         9.934852E-03
+ n                 soil             3.41720         6.246618E-03
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                  bins        alpha          n      
+ bins            117.0       6.2622E-02  -5.6021E-03
+ alpha          6.2622E-02   9.8701E-05  -9.9673E-06
+ n             -5.6021E-03  -9.9673E-06   3.9020E-05
+
+
+ Parameter correlation coefficient matrix ----->
+
+                  bins        alpha          n      
+ bins            1.000       0.5828      -8.2921E-02
+ alpha          0.5828        1.000      -0.1606    
+ n             -8.2921E-02  -0.1606        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3   
+ bins          -8.2154E-05   5.3118E-04   -1.000    
+ alpha          0.2403      -0.9707      -5.3536E-04
+ n              0.9707       0.2403       4.7893E-05
+
+
+ Eigenvalues ----->
+
+                3.7027E-05   6.6901E-05    117.0    
