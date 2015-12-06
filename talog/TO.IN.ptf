@@ -1,12 +1,12 @@
 ptf %
 params
-%BINS    %          
-%KSAT    %
-%THETAS  %       
-%THETAR  %
+%BINS       %          
+%KSAT       %
+%THETAS     %       
+%THETAR     %
 1  
-%ALPHA   %
-%N       % 
+%ALPHA      %
+%N          % 
 5.5   
 0.37
 0.0  

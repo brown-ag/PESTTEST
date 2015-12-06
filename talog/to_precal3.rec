@@ -1,45 +1,79 @@
-                     PEST RUN RECORD: CASE to_precal3
+
+                             CMAES_P RUN RECORD FILE
 
 
- PEST Version: 13.4
+ Name of PEST control file : to_precal3.pst
+
+ Problem dimensions ----->
+
+    Number of parameters                       : 12
+    Number of adjustable parameters            : 4
+    Number of observations                     : 96
+    Number of prior information eqns           : 0
+
+ CMA control variables ----->
+
+    Population size (lambda)                   : 9
+    Number of parents (mu)                     : 4
+    Recombination weights                      : "superlinear decrease"
+    Random number seed                         : 1111
+    Employ SVD hybridization                   : no
+
+ CMA termination criteria ----->
+
+    Relative objective fn improvement          :  1.0000E-03
+    Number of itns to which this applies       : 40
+    Maximum relative parameter change          :  1.0000E-03
+    Number of itns to which this applies       : 40
+    Relative generated obj fn difference       :  1.0000E-02
+    Number of itns to which this applies       : 10
+    Maximum number of iterations               : 27000
+
+ Parameter data ----->
+
+ Name         Transformation          Initial_value     Lower_bound       Upper_bound
+ bins            none                    45.0000           10.0000            100.000    
+ thetar          fixed                  1.000000E-06      1.000000E-02       2.000000E-02
+ thetas          fixed                  0.430000          0.400000           0.500000    
+ alpha           none                    2.12070           1.00000            10.0000    
+ n               none                    3.80000           1.10000            20.0000    
+ ksat            log                    6.100000E-04      1.000000E-07       1.000000E-03
+ l               fixed                  0.500000          0.450000           0.550000    
+ ihead           fixed                   145.000           50.0000            250.000    
+ start           fixed                   300.000           120.000            360.000    
+ inten           fixed                   4.00000           1.00000            15.0000    
+ durat           fixed                   60.0000           30.0000            240.000    
+ pulse           fixed                   150.000           10.0000            40.0000    
+
+ Name         Scale             Offset
+ bins           1.00000           0.00000    
+ thetar         1.00000           0.00000    
+ thetas         1.00000           0.00000    
+ alpha          1.00000           0.00000    
+ n              1.00000           0.00000    
+ ksat           1.00000           0.00000    
+ l              1.00000           0.00000    
+ ihead          1.00000           0.00000    
+ start          1.00000           0.00000    
+ inten          1.00000           0.00000    
+ durat          1.00000           0.00000    
+ pulse          1.00000           0.00000    
+
+ Initial parameter covariance data ----->
+
+ Initial SIGMAs computed as 0.25 of (log transformed) parameter bounds.
+
+ Name         Sigma
+ bins           22.500    
+ alpha          2.2500    
+ n              4.7250    
+ ksat           1.0000    
 
 
- PEST run mode:-
-
-    Parameter estimation mode
+                           RECORD OF OPTIMISATION PROCESS
 
 
- Case dimensions:-
-
-    Number of parameters                           :    12
-    Number of adjustable parameters                :     3
-    Number of parameter groups                     :     3
-    Number of observations                         :    96
-    Number of prior estimates                      :     0
-
-
- Model command line(s):-
-
-    ./run_model.sh
-
-
- Jacobian command line:-
-
-    na
-
-
- Model interface files:-
-
-    Templates:
-       TO.IN.ptf
-       pre_TO.IN.ptf
-    for model input files:
-       TO.IN
-       pre_TO.IN
-
-    (Parameter values written using double precision protocol.)
-    (Decimal point always included.)
-
+<<<<<<< HEAD
     Instruction files:
        obsnode.pif
     for reading model output files:
@@ -821,3 +855,1237 @@
  Eigenvalues ----->
 
                 1.1557E-05   5.6088E-05    76.40    
+=======
+
+ ITERATION NUMBER 1
+    Number of function evaluations so far        =   1
+    Lowest objective function so far             =   3.25194    
+    Iteration number of lowest phi so far        =   0
+
+    Lowest  phi this iteration                    =   4.66626    
+    Highest phi this iteration                    =   65.3767    
+
+
+ ITERATION NUMBER 2
+    Number of function evaluations so far        =   11
+    Lowest objective function so far             =   3.25194    
+    Iteration number of lowest phi so far        =   0
+
+    Lowest  phi this iteration                    =   3.16608    
+    Highest phi this iteration                    =   58.0130    
+
+
+ ITERATION NUMBER 3
+    Number of function evaluations so far        =   21
+    Lowest objective function so far             =   3.16608    
+    Iteration number of lowest phi so far        =   2
+
+    Lowest  phi this iteration                    =   2.96963    
+    Highest phi this iteration                    =   150.204    
+
+
+ ITERATION NUMBER 4
+    Number of function evaluations so far        =   31
+    Lowest objective function so far             =   2.96963    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.39467    
+    Highest phi this iteration                    =   27.0327    
+
+
+ ITERATION NUMBER 5
+    Number of function evaluations so far        =   41
+    Lowest objective function so far             =   1.39467    
+    Iteration number of lowest phi so far        =   4
+
+    Lowest  phi this iteration                    =   1.49430    
+    Highest phi this iteration                    =   58.1021    
+
+
+ ITERATION NUMBER 6
+    Number of function evaluations so far        =   51
+    Lowest objective function so far             =   1.39467    
+    Iteration number of lowest phi so far        =   4
+
+    Lowest  phi this iteration                    =  0.199048    
+    Highest phi this iteration                    =   55.7046    
+
+
+ ITERATION NUMBER 7
+    Number of function evaluations so far        =   61
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   4.80013    
+    Highest phi this iteration                    =   26.2748    
+
+
+ ITERATION NUMBER 8
+    Number of function evaluations so far        =   71
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.62411    
+    Highest phi this iteration                    =   78.1682    
+
+
+ ITERATION NUMBER 9
+    Number of function evaluations so far        =   81
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.78118    
+    Highest phi this iteration                    =   31.1027    
+
+
+ ITERATION NUMBER 10
+    Number of function evaluations so far        =   91
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.50349    
+    Highest phi this iteration                    =   33.9879    
+
+
+ ITERATION NUMBER 11
+    Number of function evaluations so far        =   101
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.74934    
+    Highest phi this iteration                    =   13.4361    
+
+
+ ITERATION NUMBER 12
+    Number of function evaluations so far        =   111
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.61102    
+    Highest phi this iteration                    =   26.0111    
+
+
+ ITERATION NUMBER 13
+    Number of function evaluations so far        =   121
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.88421    
+    Highest phi this iteration                    =   30.7459    
+
+
+ ITERATION NUMBER 14
+    Number of function evaluations so far        =   131
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.59432    
+    Highest phi this iteration                    = model_run_failure
+
+
+ ITERATION NUMBER 15
+    Number of function evaluations so far        =   141
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.55412    
+    Highest phi this iteration                    =   25.1452    
+
+
+ ITERATION NUMBER 16
+    Number of function evaluations so far        =   151
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.42427    
+    Highest phi this iteration                    =   4.72222    
+
+
+ ITERATION NUMBER 17
+    Number of function evaluations so far        =   161
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.33793    
+    Highest phi this iteration                    =   9.79895    
+
+
+ ITERATION NUMBER 18
+    Number of function evaluations so far        =   171
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.88781    
+    Highest phi this iteration                    =   11.5142    
+
+
+ ITERATION NUMBER 19
+    Number of function evaluations so far        =   181
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.77643    
+    Highest phi this iteration                    =   3.64659    
+
+
+ ITERATION NUMBER 20
+    Number of function evaluations so far        =   191
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.52097    
+    Highest phi this iteration                    =   8.86232    
+
+
+ ITERATION NUMBER 21
+    Number of function evaluations so far        =   201
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.60107    
+    Highest phi this iteration                    =   3.58899    
+
+
+ ITERATION NUMBER 22
+    Number of function evaluations so far        =   211
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.53816    
+    Highest phi this iteration                    =   4.72536    
+
+
+ ITERATION NUMBER 23
+    Number of function evaluations so far        =   221
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.23282    
+    Highest phi this iteration                    =   2.41530    
+
+
+ ITERATION NUMBER 24
+    Number of function evaluations so far        =   231
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.56603    
+    Highest phi this iteration                    =   4.43791    
+
+
+ ITERATION NUMBER 25
+    Number of function evaluations so far        =   241
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.36151    
+    Highest phi this iteration                    =   2.93831    
+
+
+ ITERATION NUMBER 26
+    Number of function evaluations so far        =   251
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.09275    
+    Highest phi this iteration                    =   1.95747    
+
+
+ ITERATION NUMBER 27
+    Number of function evaluations so far        =   261
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.697008    
+    Highest phi this iteration                    =   3.61616    
+
+
+ ITERATION NUMBER 28
+    Number of function evaluations so far        =   271
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.883686    
+    Highest phi this iteration                    =   6.27019    
+
+
+ ITERATION NUMBER 29
+    Number of function evaluations so far        =   281
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.766481    
+    Highest phi this iteration                    =   5.22146    
+
+
+ ITERATION NUMBER 30
+    Number of function evaluations so far        =   291
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.748462    
+    Highest phi this iteration                    =   9.43644    
+
+
+ ITERATION NUMBER 31
+    Number of function evaluations so far        =   301
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.934085    
+    Highest phi this iteration                    =   5.29016    
+
+
+ ITERATION NUMBER 32
+    Number of function evaluations so far        =   311
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.847995    
+    Highest phi this iteration                    =   7.96286    
+
+
+ ITERATION NUMBER 33
+    Number of function evaluations so far        =   321
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.390171    
+    Highest phi this iteration                    =   7.87314    
+
+
+ ITERATION NUMBER 34
+    Number of function evaluations so far        =   331
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =   1.73120    
+    Highest phi this iteration                    =   16.1970    
+
+
+ ITERATION NUMBER 35
+    Number of function evaluations so far        =   341
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.596939    
+    Highest phi this iteration                    =   18.0794    
+
+
+ ITERATION NUMBER 36
+    Number of function evaluations so far        =   351
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.314847    
+    Highest phi this iteration                    =   2.68322    
+
+
+ ITERATION NUMBER 37
+    Number of function evaluations so far        =   361
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.308501    
+    Highest phi this iteration                    =   8.00203    
+
+
+ ITERATION NUMBER 38
+    Number of function evaluations so far        =   371
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.384602    
+    Highest phi this iteration                    =   11.7736    
+
+
+ ITERATION NUMBER 39
+    Number of function evaluations so far        =   381
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.237828    
+    Highest phi this iteration                    =   5.92106    
+
+
+ ITERATION NUMBER 40
+    Number of function evaluations so far        =   391
+    Lowest objective function so far             =  0.199048    
+    Iteration number of lowest phi so far        =   6
+
+    Lowest  phi this iteration                    =  0.116361    
+    Highest phi this iteration                    =   4.07545    
+
+
+ ITERATION NUMBER 41
+    Number of function evaluations so far        =   401
+    Lowest objective function so far             =  0.116361    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.256382    
+    Highest phi this iteration                    =   2.25897    
+
+
+ ITERATION NUMBER 42
+    Number of function evaluations so far        =   411
+    Lowest objective function so far             =  0.116361    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.148169    
+    Highest phi this iteration                    =   7.08751    
+
+
+ ITERATION NUMBER 43
+    Number of function evaluations so far        =   421
+    Lowest objective function so far             =  0.116361    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.134954    
+    Highest phi this iteration                    =   1.41843    
+
+
+ ITERATION NUMBER 44
+    Number of function evaluations so far        =   431
+    Lowest objective function so far             =  0.116361    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.148100    
+    Highest phi this iteration                    =   1.22503    
+
+
+ ITERATION NUMBER 45
+    Number of function evaluations so far        =   441
+    Lowest objective function so far             =  0.116361    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.110748    
+    Highest phi this iteration                    =  0.691979    
+
+
+ ITERATION NUMBER 46
+    Number of function evaluations so far        =   451
+    Lowest objective function so far             =  0.110748    
+    Iteration number of lowest phi so far        =   45
+
+    Lowest  phi this iteration                    =  0.143185    
+    Highest phi this iteration                    =  0.810685    
+
+
+ ITERATION NUMBER 47
+    Number of function evaluations so far        =   461
+    Lowest objective function so far             =  0.110748    
+    Iteration number of lowest phi so far        =   45
+
+    Lowest  phi this iteration                    =  8.961401E-02
+    Highest phi this iteration                    =  0.456583    
+
+
+ ITERATION NUMBER 48
+    Number of function evaluations so far        =   471
+    Lowest objective function so far             =  8.961401E-02
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.142013    
+    Highest phi this iteration                    =  0.834029    
+
+
+ ITERATION NUMBER 49
+    Number of function evaluations so far        =   481
+    Lowest objective function so far             =  8.961401E-02
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  8.614336E-02
+    Highest phi this iteration                    =  0.466212    
+
+
+ ITERATION NUMBER 50
+    Number of function evaluations so far        =   491
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  9.687188E-02
+    Highest phi this iteration                    =  0.836341    
+
+
+ ITERATION NUMBER 51
+    Number of function evaluations so far        =   501
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  9.213386E-02
+    Highest phi this iteration                    =  0.697355    
+
+
+ ITERATION NUMBER 52
+    Number of function evaluations so far        =   511
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.153107    
+    Highest phi this iteration                    =  0.607079    
+
+
+ ITERATION NUMBER 53
+    Number of function evaluations so far        =   521
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.164397    
+    Highest phi this iteration                    =  0.495437    
+
+
+ ITERATION NUMBER 54
+    Number of function evaluations so far        =   531
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.154306    
+    Highest phi this iteration                    =  0.815964    
+
+
+ ITERATION NUMBER 55
+    Number of function evaluations so far        =   541
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.111480    
+    Highest phi this iteration                    =  0.678560    
+
+
+ ITERATION NUMBER 56
+    Number of function evaluations so far        =   551
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.141363    
+    Highest phi this iteration                    =  0.541045    
+
+
+ ITERATION NUMBER 57
+    Number of function evaluations so far        =   561
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.123036    
+    Highest phi this iteration                    =  0.553247    
+
+
+ ITERATION NUMBER 58
+    Number of function evaluations so far        =   571
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  0.131671    
+    Highest phi this iteration                    =  0.843940    
+
+
+ ITERATION NUMBER 59
+    Number of function evaluations so far        =   581
+    Lowest objective function so far             =  8.614336E-02
+    Iteration number of lowest phi so far        =   49
+
+    Lowest  phi this iteration                    =  7.177203E-02
+    Highest phi this iteration                    =  0.719877    
+
+
+ ITERATION NUMBER 60
+    Number of function evaluations so far        =   591
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.340697E-02
+    Highest phi this iteration                    =  0.561933    
+
+
+ ITERATION NUMBER 61
+    Number of function evaluations so far        =   601
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  0.125341    
+    Highest phi this iteration                    =  0.611851    
+
+
+ ITERATION NUMBER 62
+    Number of function evaluations so far        =   611
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  7.389273E-02
+    Highest phi this iteration                    =  0.782918    
+
+
+ ITERATION NUMBER 63
+    Number of function evaluations so far        =   621
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  0.114007    
+    Highest phi this iteration                    =  0.660981    
+
+
+ ITERATION NUMBER 64
+    Number of function evaluations so far        =   631
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  0.221949    
+    Highest phi this iteration                    =  0.608398    
+
+
+ ITERATION NUMBER 65
+    Number of function evaluations so far        =   641
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  0.113958    
+    Highest phi this iteration                    =  0.286309    
+
+
+ ITERATION NUMBER 66
+    Number of function evaluations so far        =   651
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.342004E-02
+    Highest phi this iteration                    =  0.288387    
+
+
+ ITERATION NUMBER 67
+    Number of function evaluations so far        =   661
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  9.718392E-02
+    Highest phi this iteration                    =  0.496002    
+
+
+ ITERATION NUMBER 68
+    Number of function evaluations so far        =   671
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.918499E-02
+    Highest phi this iteration                    =  0.524604    
+
+
+ ITERATION NUMBER 69
+    Number of function evaluations so far        =   681
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  7.241856E-02
+    Highest phi this iteration                    =  0.545063    
+
+
+ ITERATION NUMBER 70
+    Number of function evaluations so far        =   691
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.607849E-02
+    Highest phi this iteration                    =  0.558265    
+
+
+ ITERATION NUMBER 71
+    Number of function evaluations so far        =   701
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.343036E-02
+    Highest phi this iteration                    =  0.548619    
+
+
+ ITERATION NUMBER 72
+    Number of function evaluations so far        =   711
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  8.341532E-02
+    Highest phi this iteration                    =  0.563622    
+
+
+ ITERATION NUMBER 73
+    Number of function evaluations so far        =   721
+    Lowest objective function so far             =  7.177203E-02
+    Iteration number of lowest phi so far        =   59
+
+    Lowest  phi this iteration                    =  7.122079E-02
+    Highest phi this iteration                    =  0.554919    
+
+
+ ITERATION NUMBER 74
+    Number of function evaluations so far        =   731
+    Lowest objective function so far             =  7.122079E-02
+    Iteration number of lowest phi so far        =   73
+
+    Lowest  phi this iteration                    =  9.011775E-02
+    Highest phi this iteration                    =  0.580814    
+
+
+ ITERATION NUMBER 75
+    Number of function evaluations so far        =   741
+    Lowest objective function so far             =  7.122079E-02
+    Iteration number of lowest phi so far        =   73
+
+    Lowest  phi this iteration                    =  6.622064E-02
+    Highest phi this iteration                    =  0.579227    
+
+
+ ITERATION NUMBER 76
+    Number of function evaluations so far        =   751
+    Lowest objective function so far             =  6.622064E-02
+    Iteration number of lowest phi so far        =   75
+
+    Lowest  phi this iteration                    =  7.151575E-02
+    Highest phi this iteration                    =  0.546824    
+
+
+ ITERATION NUMBER 77
+    Number of function evaluations so far        =   761
+    Lowest objective function so far             =  6.622064E-02
+    Iteration number of lowest phi so far        =   75
+
+    Lowest  phi this iteration                    =  6.124314E-02
+    Highest phi this iteration                    =  0.602720    
+
+
+ ITERATION NUMBER 78
+    Number of function evaluations so far        =   771
+    Lowest objective function so far             =  6.124314E-02
+    Iteration number of lowest phi so far        =   77
+
+    Lowest  phi this iteration                    =  6.399878E-02
+    Highest phi this iteration                    =  0.637736    
+
+
+ ITERATION NUMBER 79
+    Number of function evaluations so far        =   781
+    Lowest objective function so far             =  6.124314E-02
+    Iteration number of lowest phi so far        =   77
+
+    Lowest  phi this iteration                    =  6.183668E-02
+    Highest phi this iteration                    =  0.589614    
+
+
+ ITERATION NUMBER 80
+    Number of function evaluations so far        =   791
+    Lowest objective function so far             =  6.124314E-02
+    Iteration number of lowest phi so far        =   77
+
+    Lowest  phi this iteration                    =  6.351734E-02
+    Highest phi this iteration                    =  0.595563    
+
+
+ ITERATION NUMBER 81
+    Number of function evaluations so far        =   801
+    Lowest objective function so far             =  6.124314E-02
+    Iteration number of lowest phi so far        =   77
+
+    Lowest  phi this iteration                    =  6.062354E-02
+    Highest phi this iteration                    =  7.063427E-02
+
+
+ ITERATION NUMBER 82
+    Number of function evaluations so far        =   811
+    Lowest objective function so far             =  6.062354E-02
+    Iteration number of lowest phi so far        =   81
+
+    Lowest  phi this iteration                    =  5.944013E-02
+    Highest phi this iteration                    =  0.611127    
+
+
+ ITERATION NUMBER 83
+    Number of function evaluations so far        =   821
+    Lowest objective function so far             =  5.944013E-02
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  6.327790E-02
+    Highest phi this iteration                    =  0.588069    
+
+
+ ITERATION NUMBER 84
+    Number of function evaluations so far        =   831
+    Lowest objective function so far             =  5.944013E-02
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  6.211211E-02
+    Highest phi this iteration                    =  0.535097    
+
+
+ ITERATION NUMBER 85
+    Number of function evaluations so far        =   841
+    Lowest objective function so far             =  5.944013E-02
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  6.095531E-02
+    Highest phi this iteration                    =  0.618431    
+
+
+ ITERATION NUMBER 86
+    Number of function evaluations so far        =   851
+    Lowest objective function so far             =  5.944013E-02
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  5.873283E-02
+    Highest phi this iteration                    =  6.874055E-02
+
+
+ ITERATION NUMBER 87
+    Number of function evaluations so far        =   861
+    Lowest objective function so far             =  5.873283E-02
+    Iteration number of lowest phi so far        =   86
+
+    Lowest  phi this iteration                    =  5.825610E-02
+    Highest phi this iteration                    =  0.618199    
+
+
+ ITERATION NUMBER 88
+    Number of function evaluations so far        =   871
+    Lowest objective function so far             =  5.825610E-02
+    Iteration number of lowest phi so far        =   87
+
+    Lowest  phi this iteration                    =  5.791114E-02
+    Highest phi this iteration                    =  0.581172    
+
+
+ ITERATION NUMBER 89
+    Number of function evaluations so far        =   881
+    Lowest objective function so far             =  5.791114E-02
+    Iteration number of lowest phi so far        =   88
+
+    Lowest  phi this iteration                    =  5.867837E-02
+    Highest phi this iteration                    =  0.614881    
+
+
+ ITERATION NUMBER 90
+    Number of function evaluations so far        =   891
+    Lowest objective function so far             =  5.791114E-02
+    Iteration number of lowest phi so far        =   88
+
+    Lowest  phi this iteration                    =  5.898556E-02
+    Highest phi this iteration                    =  0.624555    
+
+
+ ITERATION NUMBER 91
+    Number of function evaluations so far        =   901
+    Lowest objective function so far             =  5.791114E-02
+    Iteration number of lowest phi so far        =   88
+
+    Lowest  phi this iteration                    =  5.856400E-02
+    Highest phi this iteration                    =  0.623503    
+
+
+ ITERATION NUMBER 92
+    Number of function evaluations so far        =   911
+    Lowest objective function so far             =  5.791114E-02
+    Iteration number of lowest phi so far        =   88
+
+    Lowest  phi this iteration                    =  5.741961E-02
+    Highest phi this iteration                    =  0.628156    
+
+
+ ITERATION NUMBER 93
+    Number of function evaluations so far        =   921
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.759432E-02
+    Highest phi this iteration                    =  0.621528    
+
+
+ ITERATION NUMBER 94
+    Number of function evaluations so far        =   931
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.799453E-02
+    Highest phi this iteration                    =  6.300353E-02
+
+
+ ITERATION NUMBER 95
+    Number of function evaluations so far        =   941
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.762209E-02
+    Highest phi this iteration                    =  0.626381    
+
+
+ ITERATION NUMBER 96
+    Number of function evaluations so far        =   951
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.758903E-02
+    Highest phi this iteration                    =  6.172636E-02
+
+
+ ITERATION NUMBER 97
+    Number of function evaluations so far        =   961
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.756386E-02
+    Highest phi this iteration                    =  6.059077E-02
+
+
+ ITERATION NUMBER 98
+    Number of function evaluations so far        =   971
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.750518E-02
+    Highest phi this iteration                    =  6.073567E-02
+
+
+ ITERATION NUMBER 99
+    Number of function evaluations so far        =   981
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.747896E-02
+    Highest phi this iteration                    =  0.616445    
+
+
+ ITERATION NUMBER 100
+    Number of function evaluations so far        =   991
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.744607E-02
+    Highest phi this iteration                    =  5.941938E-02
+
+
+ ITERATION NUMBER 101
+    Number of function evaluations so far        =   1001
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.747746E-02
+    Highest phi this iteration                    =  5.943658E-02
+
+
+ ITERATION NUMBER 102
+    Number of function evaluations so far        =   1011
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.744447E-02
+    Highest phi this iteration                    =  5.965980E-02
+
+
+ ITERATION NUMBER 103
+    Number of function evaluations so far        =   1021
+    Lowest objective function so far             =  5.741961E-02
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  5.739534E-02
+    Highest phi this iteration                    =  6.068489E-02
+
+
+ ITERATION NUMBER 104
+    Number of function evaluations so far        =   1031
+    Lowest objective function so far             =  5.739534E-02
+    Iteration number of lowest phi so far        =   103
+
+    Lowest  phi this iteration                    =  5.742801E-02
+    Highest phi this iteration                    =  5.832889E-02
+
+
+ ITERATION NUMBER 105
+    Number of function evaluations so far        =   1041
+    Lowest objective function so far             =  5.739534E-02
+    Iteration number of lowest phi so far        =   103
+
+    Lowest  phi this iteration                    =  5.737733E-02
+    Highest phi this iteration                    =  5.765235E-02
+
+
+ ITERATION NUMBER 106
+    Number of function evaluations so far        =   1051
+    Lowest objective function so far             =  5.737733E-02
+    Iteration number of lowest phi so far        =   105
+
+    Lowest  phi this iteration                    =  5.740663E-02
+    Highest phi this iteration                    =  5.950264E-02
+
+
+ ITERATION NUMBER 107
+    Number of function evaluations so far        =   1061
+    Lowest objective function so far             =  5.737733E-02
+    Iteration number of lowest phi so far        =   105
+
+    Lowest  phi this iteration                    =  5.737237E-02
+    Highest phi this iteration                    =  5.805049E-02
+
+
+ ITERATION NUMBER 108
+    Number of function evaluations so far        =   1071
+    Lowest objective function so far             =  5.737237E-02
+    Iteration number of lowest phi so far        =   107
+
+    Lowest  phi this iteration                    =  5.737452E-02
+    Highest phi this iteration                    =  5.822071E-02
+
+
+ ITERATION NUMBER 109
+    Number of function evaluations so far        =   1081
+    Lowest objective function so far             =  5.737237E-02
+    Iteration number of lowest phi so far        =   107
+
+    Lowest  phi this iteration                    =  5.736736E-02
+    Highest phi this iteration                    =  5.766238E-02
+
+
+ ITERATION NUMBER 110
+    Number of function evaluations so far        =   1091
+    Lowest objective function so far             =  5.736736E-02
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  5.737236E-02
+    Highest phi this iteration                    =  5.743778E-02
+
+
+ ITERATION NUMBER 111
+    Number of function evaluations so far        =   1101
+    Lowest objective function so far             =  5.736736E-02
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  5.738203E-02
+    Highest phi this iteration                    =  5.804282E-02
+
+
+ ITERATION NUMBER 112
+    Number of function evaluations so far        =   1111
+    Lowest objective function so far             =  5.736736E-02
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  5.736823E-02
+    Highest phi this iteration                    =  5.800607E-02
+
+
+ ITERATION NUMBER 113
+    Number of function evaluations so far        =   1121
+    Lowest objective function so far             =  5.736736E-02
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  5.736877E-02
+    Highest phi this iteration                    =  5.741465E-02
+
+
+ ITERATION NUMBER 114
+    Number of function evaluations so far        =   1131
+    Lowest objective function so far             =  5.736736E-02
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  5.736661E-02
+    Highest phi this iteration                    =  5.752221E-02
+
+
+ ITERATION NUMBER 115
+    Number of function evaluations so far        =   1141
+    Lowest objective function so far             =  5.736661E-02
+    Iteration number of lowest phi so far        =   114
+
+    Lowest  phi this iteration                    =  5.736585E-02
+    Highest phi this iteration                    =  5.738223E-02
+
+
+ ITERATION NUMBER 116
+    Number of function evaluations so far        =   1151
+    Lowest objective function so far             =  5.736585E-02
+    Iteration number of lowest phi so far        =   115
+
+    Lowest  phi this iteration                    =  5.736654E-02
+    Highest phi this iteration                    =  5.804703E-02
+
+
+ ITERATION NUMBER 117
+    Number of function evaluations so far        =   1161
+    Lowest objective function so far             =  5.736585E-02
+    Iteration number of lowest phi so far        =   115
+
+    Lowest  phi this iteration                    =  5.736629E-02
+    Highest phi this iteration                    =  5.803300E-02
+
+
+ ITERATION NUMBER 118
+    Number of function evaluations so far        =   1171
+    Lowest objective function so far             =  5.736585E-02
+    Iteration number of lowest phi so far        =   115
+
+    Lowest  phi this iteration                    =  5.736611E-02
+    Highest phi this iteration                    =  5.738851E-02
+
+
+ ITERATION NUMBER 119
+    Number of function evaluations so far        =   1181
+    Lowest objective function so far             =  5.736585E-02
+    Iteration number of lowest phi so far        =   115
+
+    Lowest  phi this iteration                    =  5.736570E-02
+    Highest phi this iteration                    =  5.803121E-02
+
+
+ ITERATION NUMBER 120
+    Number of function evaluations so far        =   1191
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736571E-02
+    Highest phi this iteration                    =  5.802790E-02
+
+
+ ITERATION NUMBER 121
+    Number of function evaluations so far        =   1201
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736599E-02
+    Highest phi this iteration                    =  5.802349E-02
+
+
+ ITERATION NUMBER 122
+    Number of function evaluations so far        =   1211
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736575E-02
+    Highest phi this iteration                    =  5.801374E-02
+
+
+ ITERATION NUMBER 123
+    Number of function evaluations so far        =   1221
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736618E-02
+    Highest phi this iteration                    =  5.801064E-02
+
+
+ ITERATION NUMBER 124
+    Number of function evaluations so far        =   1231
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736578E-02
+    Highest phi this iteration                    =  5.801500E-02
+
+
+ ITERATION NUMBER 125
+    Number of function evaluations so far        =   1241
+    Lowest objective function so far             =  5.736570E-02
+    Iteration number of lowest phi so far        =   119
+
+    Lowest  phi this iteration                    =  5.736558E-02
+    Highest phi this iteration                    =  5.736893E-02
+
+
+ ITERATION NUMBER 126
+    Number of function evaluations so far        =   1251
+    Lowest objective function so far             =  5.736558E-02
+    Iteration number of lowest phi so far        =   125
+
+    Lowest  phi this iteration                    =  5.736558E-02
+    Highest phi this iteration                    =  5.736723E-02
+
+
+ ITERATION NUMBER 127
+    Number of function evaluations so far        =   1261
+    Lowest objective function so far             =  5.736558E-02
+    Iteration number of lowest phi so far        =   126
+
+    Lowest  phi this iteration                    =  5.736575E-02
+    Highest phi this iteration                    =  5.736750E-02
+
+
+ ITERATION NUMBER 128
+    Number of function evaluations so far        =   1271
+    Lowest objective function so far             =  5.736558E-02
+    Iteration number of lowest phi so far        =   126
+
+    Lowest  phi this iteration                    =  5.736569E-02
+    Highest phi this iteration                    =  5.736645E-02
+
+
+ ITERATION NUMBER 129
+    Number of function evaluations so far        =   1281
+    Lowest objective function so far             =  5.736558E-02
+    Iteration number of lowest phi so far        =   126
+
+    Lowest  phi this iteration                    =  5.736586E-02
+    Highest phi this iteration                    =  5.736762E-02
+
+
+ ITERATION NUMBER 130
+    Number of function evaluations so far        =   1291
+    Lowest objective function so far             =  5.736558E-02
+    Iteration number of lowest phi so far        =   126
+
+    Lowest  phi this iteration                    =  5.736548E-02
+    Highest phi this iteration                    =  5.736740E-02
+
+
+ ITERATION NUMBER 131
+    Number of function evaluations so far        =   1301
+    Lowest objective function so far             =  5.736548E-02
+    Iteration number of lowest phi so far        =   130
+
+    Lowest  phi this iteration                    =  5.736538E-02
+    Highest phi this iteration                    =  5.736648E-02
+
+
+ ITERATION NUMBER 132
+    Number of function evaluations so far        =   1311
+    Lowest objective function so far             =  5.736538E-02
+    Iteration number of lowest phi so far        =   131
+
+    Lowest  phi this iteration                    =  5.736568E-02
+    Highest phi this iteration                    =  5.736724E-02
+
+
+ ITERATION NUMBER 133
+    Number of function evaluations so far        =   1321
+    Lowest objective function so far             =  5.736538E-02
+    Iteration number of lowest phi so far        =   131
+
+    Lowest  phi this iteration                    =  5.736568E-02
+    Highest phi this iteration                    =  5.736664E-02
+
+
+ ITERATION NUMBER 134
+    Number of function evaluations so far        =   1331
+    Lowest objective function so far             =  5.736538E-02
+    Iteration number of lowest phi so far        =   131
+
+    Lowest  phi this iteration                    =  5.736560E-02
+    Highest phi this iteration                    =  5.736645E-02
+
+
+                        COMPLETION OF CMA-ES PROCESS
+
+ Reason for termination of CMA-ES process:-
+
+ Highest-to-lowest relative objective function difference for generated 
+   parameter sets below threshold over 10 successive iterations.
+
+ Optimised parameter values ----->
+
+    Name                Value
+    bins                  60.5361    
+    thetar               1.000000E-06
+    thetas               0.430000    
+    alpha                 1.92765    
+    n                     3.62713    
+    ksat                 4.057506E-04
+    l                    0.500000    
+    ihead                 145.000    
+    start                 300.000    
+    inten                 4.00000    
+    durat                 60.0000    
+    pulse                 150.000    
+
+ See file to_precal3.par for optimised parameter values.
+ See file to_precal3.unc for optimised covariance matrix.
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9

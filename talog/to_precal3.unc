@@ -1,4 +1,4 @@
-         alpha     2.120700000000000         1.000000         0.000000    
-             n     3.800000000000000         1.000000         0.000000    
-          ksat    6.0999999999999997E-04     1.000000         0.000000    
-             l    0.5000000000000000         1.000000         0.000000    ]
+START COVARIANCE_MATRIX
+  file to_precal3.cmf
+  Variance_multiplier  9.9304743E-05
+END COVARIANCE MATRIX

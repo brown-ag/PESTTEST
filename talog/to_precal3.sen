@@ -3,55 +3,105 @@
 
  OPTIMISATION ITERATION NO.  1 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            40.0000         5.406489E-04
    alpha           soil             2.12070         4.939694E-02
    n               soil             3.80000         8.964672E-02
+=======
+   bins            model            75.0000         6.106903E-04
+   alpha           soil             2.12070         5.275756E-02
+   n               soil             3.80000         3.708465E-02
+   ksat            soil            6.100000E-04     4.407101E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  2 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            64.6012         9.178041E-05
    alpha           soil             1.63973         6.446420E-02
    n               soil             4.01260         2.433086E-02
+=======
+   bins            model            75.0086         5.907120E-04
+   alpha           soil             2.05445         5.609294E-02
+   n               soil             3.88476         0.140510    
+   ksat            soil            7.358270E-04     4.478144E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  3 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            100.000         4.850629E-05
    alpha           soil             1.11231         0.113730    
    n               soil             5.17925         1.106168E-02
+=======
+   bins            model            75.0100         5.862390E-04
+   alpha           soil             2.07647         5.523485E-02
+   n               soil             3.88622         3.634220E-02
+   ksat            soil            7.865890E-04     4.592116E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  4 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            91.9896         4.641981E-05
    alpha           soil             1.18732         0.191150    
    n               soil             4.60276         6.391985E-02
+=======
+   bins            model            75.0106         5.835299E-04
+   alpha           soil             2.08858         5.478816E-02
+   n               soil             3.89526         3.615114E-02
+   ksat            soil            8.458020E-04     5.687759E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  5 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            18.3979         3.359120E-04
    alpha           soil             1.19541         0.103124    
    n               soil             4.58145         1.550698E-02
+=======
+   bins            model            75.0106         5.833673E-04
+   alpha           soil             2.09024         5.476087E-02
+   n               soil             3.89482         3.618043E-02
+   ksat            soil            8.512930E-04     5.635428E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  6 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            41.0651         7.925602E-05
    alpha           soil             1.39343         8.237361E-02
    n               soil             3.43606         0.181469    
+=======
+   bins            model            75.0103         2.340510E-04
+   alpha           soil             2.09983         5.770800E-02
+   n               soil             3.89415         0.203094    
+   ksat            soil            8.924180E-04     6.203797E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  7 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            53.9930         6.474766E-05
    alpha           soil             1.40536         8.123595E-02
    n               soil             3.43846         0.117735    
+=======
+   bins            model            75.0108         2.241753E-04
+   alpha           soil             2.18017         5.366981E-02
+   n               soil             3.90394         0.198703    
+   ksat            soil            9.318770E-04     6.382620E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
  OPTIMISATION ITERATION NO.  8 ----->
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            52.2932         6.508359E-05
    alpha           soil             1.40440         8.110259E-02
    n               soil             3.43865         2.575845E-02
@@ -69,6 +119,12 @@
    bins            model            57.0271         7.309492E-05
    alpha           soil             1.41209         8.034196E-02
    n               soil             3.41720         0.104193    
+=======
+   bins            model            75.0128         2.166496E-04
+   alpha           soil             2.24766         5.076412E-02
+   n               soil             3.91151         3.960285E-02
+   ksat            soil            9.991300E-04     6.242396E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
 
 
 
@@ -78,6 +134,13 @@
 
  Number of observations with non-zero weight =    96
  Parameter name    Group          Current value    Sensitivity
+<<<<<<< HEAD
    bins            model            53.9930         7.925602E-05
    alpha           soil             1.40536         8.237361E-02
    n               soil             3.43846         0.181469    
+=======
+   bins            model            75.0106         5.835299E-04
+   alpha           soil             2.09024         5.478816E-02
+   n               soil             3.89482         3.615114E-02
+   ksat            soil            8.512930E-04     5.687759E-02
+>>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9

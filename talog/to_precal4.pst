@@ -13,18 +13,18 @@ model relative 1 1 always_2 1 parabolic
 soil relative 0.001 0.0001 always_2 1 parabolic
 water relative 0.001 0.0001 always_2 1 parabolic
 * parameter data
-bins none factor  45  10 100 model 1 0 1
-thetar fixed relative   0.000001  0.01 0.02 soil 1 0 1
+bins fixed factor    100      10 100 model 1 0 1
+thetar fixed relative   0.0000001  0.01 0.02 soil 1 0 1
 thetas fixed relative   0.4300000      0.4 0.5 soil 1 0 1
-alpha none relative    2.120700      1 10 soil 1 0 1
-n none relative    3.80000      1.1 20 soil 1 0 1
-ksat log factor   6.1000000E-04  1e-7 1e-3 soil 1 0 1
+alpha none relative    2.090239      1 10 soil 1 0 1
+n none relative    3.894817      1.1 20 soil 1 0 1
+ksat fixed factor   0.00085  1e-7 1e-1 soil 1 0 1
 l fixed relative   0.5000000      0.45 0.55 soil 1 0 1
-ihead fixed relative   145.00000      50 250 water 1 0 1
+ihead fixed relative    145.0000      50 250 water 1 0 1
 start fixed relative    300.0000      120 360 water 1 0 1
 inten fixed relative    4.000000      1 15 water 1 0 1
 durat fixed relative    60.00000      30 240 water 1 0 1
-pulse fixed relative    150.00000      10 40 water 1 0 1
+pulse fixed relative    150.0000      10 40 water 1 0 1
 * observation groups
 tensio
 * observation data
