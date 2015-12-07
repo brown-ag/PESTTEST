@@ -3,7 +3,7 @@ import sys
 # User-defined Constants
 ######
 
-tensio_name='../tensio_data/tensio_4_5_14.csv'
+tensio_name='../tensio_data/tensio_4_7_13.csv'
 
 ######
 # FUNCTION DEFINITIONS
@@ -91,7 +91,7 @@ elif mode == "in":
 			#raw values currently not used from file:
 			#timestamp.append(str(ff[1]))
 			#minutes.append(int(ff[2]))
-			#matric.append(float(ff[3]))
+			matric.append(float(ff[3]))
 			#irrig.append(ff[4])
 		n+=1
 	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
@@ -100,6 +100,8 @@ elif mode == "in":
 	mrunn.append(mrun)
 	writeFile(mrunn,"run_model.sh")
 	
+	#calculates initial head for fixing in control file
+	initial_head=(matric[1]+matric[2]+matric[3]+matric[4])/4
 	
 	#write instruction file. this tells PEST where to find model predictions.
 	writeFile(ins_obs,"obsnode.pif")
@@ -109,9 +111,12 @@ elif mode == "in":
 	pstout=[]
 	flag=False
 	for f in foo:
+		if "ihead fixed relative" in f:
+			f="ihead fixed relative   "+str(initial_head)+"      50 250 water 1 0 1\n"
 		if not flag:
 			pstout.append(f)
 			if "observation data" in f:
+				flag=True
 				flag=True
 				for p in ctrl_obs:
 					pstout.append(p+"\n")
@@ -124,15 +129,20 @@ elif mode == "in":
 elif mode == "pest": 
 	#executes after instantiating pest but before running the TO model
 	irrig=[]
+	matric=[]
 	lines1 = readFile(tensio_name)
 	for l in lines1[1:len(lines1)]:
-		irrig.append(l.split(",")[4])
-	lines=readFile("pre_TO.IN")
-	startmin=int(float(lines[0].strip()))
-	intenslen=int(float(lines[1].strip()))
-	duratmin=int(float(lines[2].strip()))
-	pulselm=int(float(lines[3].strip()))
-	fstart=-1
+		sp=l.split(",")
+		irrig.append(sp[4])
+	
+	#allowed PEST to vary surface BC
+	#lines=readFile("pre_TO.IN")
+	#startmin=int(float(lines[0].strip()))
+	#intenslen=int(float(lines[1].strip()))
+	#duratmin=int(float(lines[2].strip()))
+	#pulselm=int(float(lines[3].strip()))
+	pulselm=150
+	start=-1
 	start=-1
 	end=-1
 	duration=0.0
@@ -151,8 +161,9 @@ elif mode == "pest":
 	if flag != 0 or start == -1 or end == -1:
 		print("Error integrating irrigation event")
 	print("Data start:"+str(start)+ " Data end: "+str(end))
-	start=startmin/15
-	duration=duratmin/15
+	duration=end-start
+	#duration=duration/15
+	start=(start)+(duration/2)
 	end=start+duration
 	print("Using start:"+str(start)+ " Using end: "+str(end))
 	

@@ -1,79 +1,45 @@
-
-                             CMAES_P RUN RECORD FILE
-
-
- Name of PEST control file : to_precal3.pst
-
- Problem dimensions ----->
-
-    Number of parameters                       : 12
-    Number of adjustable parameters            : 4
-    Number of observations                     : 96
-    Number of prior information eqns           : 0
-
- CMA control variables ----->
-
-    Population size (lambda)                   : 9
-    Number of parents (mu)                     : 4
-    Recombination weights                      : "superlinear decrease"
-    Random number seed                         : 1111
-    Employ SVD hybridization                   : no
-
- CMA termination criteria ----->
-
-    Relative objective fn improvement          :  1.0000E-03
-    Number of itns to which this applies       : 40
-    Maximum relative parameter change          :  1.0000E-03
-    Number of itns to which this applies       : 40
-    Relative generated obj fn difference       :  1.0000E-02
-    Number of itns to which this applies       : 10
-    Maximum number of iterations               : 27000
-
- Parameter data ----->
-
- Name         Transformation          Initial_value     Lower_bound       Upper_bound
- bins            none                    45.0000           10.0000            100.000    
- thetar          fixed                  1.000000E-06      1.000000E-02       2.000000E-02
- thetas          fixed                  0.430000          0.400000           0.500000    
- alpha           none                    2.12070           1.00000            10.0000    
- n               none                    3.80000           1.10000            20.0000    
- ksat            log                    6.100000E-04      1.000000E-07       1.000000E-03
- l               fixed                  0.500000          0.450000           0.550000    
- ihead           fixed                   145.000           50.0000            250.000    
- start           fixed                   300.000           120.000            360.000    
- inten           fixed                   4.00000           1.00000            15.0000    
- durat           fixed                   60.0000           30.0000            240.000    
- pulse           fixed                   150.000           10.0000            40.0000    
-
- Name         Scale             Offset
- bins           1.00000           0.00000    
- thetar         1.00000           0.00000    
- thetas         1.00000           0.00000    
- alpha          1.00000           0.00000    
- n              1.00000           0.00000    
- ksat           1.00000           0.00000    
- l              1.00000           0.00000    
- ihead          1.00000           0.00000    
- start          1.00000           0.00000    
- inten          1.00000           0.00000    
- durat          1.00000           0.00000    
- pulse          1.00000           0.00000    
-
- Initial parameter covariance data ----->
-
- Initial SIGMAs computed as 0.25 of (log transformed) parameter bounds.
-
- Name         Sigma
- bins           22.500    
- alpha          2.2500    
- n              4.7250    
- ksat           1.0000    
+                     PEST RUN RECORD: CASE to_precal3
 
 
-                           RECORD OF OPTIMISATION PROCESS
+ PEST Version: 13.4
 
 
-<<<<<<< HEAD
+ PEST run mode:-
+
+    Parameter estimation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     8
+    Number of adjustable parameters                :     4
+    Number of parameter groups                     :     3
+    Number of observations                         :    96
+    Number of prior estimates                      :     0
+
+
+ Model command line(s):-
+
+    ./run_model.sh
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       TO.IN.ptf
+       pre_TO.IN.ptf
+    for model input files:
+       TO.IN
+       pre_TO.IN
+
+    (Parameter values written using double precision protocol.)
+    (Decimal point always included.)
+
     Instruction files:
        obsnode.pif
     for reading model output files:
@@ -90,26 +56,22 @@
  Param        Increment   Increment   Increment   Forward or   Multiplier  Method
  group        type                    low bound   central      (central)   (central)
  model        relative     1.000       1.000      always_2        na         na
- soil         relative    1.0000E-03  1.0000E-04  always_2        na         na
- water        relative    1.0000E-03  1.0000E-04  always_2        na         na
+ soil         relative    1.0000E-02  1.0000E-03  always_2        na         na
+ water        relative    1.0000E-02  1.0000E-03  always_2        na         na
 
 
  Parameter definitions:-
 
  Name         Trans-            Change       Initial        Lower          Upper
               formation         limit        value          bound          bound
- bins         none              factor      40.0000        1.00000        100.000    
+ bins         fixed               na        50.0000          na             na
  thetar       fixed               na       1.000000E-06      na             na
- thetas       fixed               na       0.430000          na             na
- alpha        none              relative    2.12070        1.00000        10.0000    
- n            none              relative    3.80000        1.10000        20.0000    
- ksat         fixed               na       6.100000E-05      na             na
+ thetas       none              relative   0.430000       0.400000       0.500000    
+ alpha        none              factor      2.12070        1.00000        10.0000    
+ n            none              factor      3.80000        1.10000        10.0000    
+ ksat         log               factor     6.100000E-04   1.000000E-08   1.000000E-03
  l            fixed               na       0.500000          na             na
- ihead        fixed               na        145.000          na             na
- start        fixed               na        300.000          na             na
- inten        fixed               na        4.00000          na             na
- durat        fixed               na        60.0000          na             na
- pulse        fixed               na        150.000          na             na
+ ihead        fixed               na        126.708          na             na
 
  Name         Group          Scale         Offset        Model command number
  bins         model         1.00000        0.00000            1
@@ -120,10 +82,6 @@
  ksat         soil          1.00000        0.00000            1
  l            soil          1.00000        0.00000            1
  ihead        water         1.00000        0.00000            1
- start        water         1.00000        0.00000            1
- inten        water         1.00000        0.00000            1
- durat        water         1.00000        0.00000            1
- pulse        water         1.00000        0.00000            1
 
 
  Prior information:-
@@ -134,102 +92,102 @@
  Observations:-
 
  Observation name        Observation       Weight       Group
-  ten1                   -1.46441          1.000       tensio      
-  ten2                   -1.46096          1.000       tensio      
-  ten3                   -1.45867          1.000       tensio      
-  ten4                   -1.45982          1.000       tensio      
-  ten5                   -1.45695          1.000       tensio      
-  ten6                   -1.46154          1.000       tensio      
-  ten7                   -1.46039          1.000       tensio      
-  ten8                   -1.45867          1.000       tensio      
-  ten9                   -1.46211          1.000       tensio      
-  ten10                  -1.45350          1.000       tensio      
-  ten11                  -1.45408          1.000       tensio      
-  ten12                  -1.45178          1.000       tensio      
-  ten13                  -1.45235          1.000       tensio      
-  ten14                  -1.45867          1.000       tensio      
-  ten15                  -1.45235          1.000       tensio      
-  ten16                  -1.44891          1.000       tensio      
-  ten17                  -1.44948          1.000       tensio      
-  ten18                  -1.43054          1.000       tensio      
-  ten19                  -1.40413          1.000       tensio      
-  ten20                  -1.32032          1.000       tensio      
-  ten21                  -1.06028          1.000       tensio      
-  ten22                 -0.782434          1.000       tensio      
-  ten23                 -0.716992          1.000       tensio      
-  ten24                 -0.711251          1.000       tensio      
-  ten25                 -0.712400          1.000       tensio      
-  ten26                 -0.715270          1.000       tensio      
-  ten27                 -0.716992          1.000       tensio      
-  ten28                 -0.730769          1.000       tensio      
-  ten29                 -0.766935          1.000       tensio      
-  ten30                 -0.788749          1.000       tensio      
-  ten31                 -0.808840          1.000       tensio      
-  ten32                 -0.828358          1.000       tensio      
-  ten33                 -0.846728          1.000       tensio      
-  ten34                 -0.863949          1.000       tensio      
-  ten35                 -0.882893          1.000       tensio      
-  ten36                 -0.896096          1.000       tensio      
-  ten37                 -0.906429          1.000       tensio      
-  ten38                 -0.917336          1.000       tensio      
-  ten39                 -0.928243          1.000       tensio      
-  ten40                 -0.938002          1.000       tensio      
-  ten41                 -0.947761          1.000       tensio      
-  ten42                 -0.955224          1.000       tensio      
-  ten43                 -0.963261          1.000       tensio      
-  ten44                 -0.971297          1.000       tensio      
-  ten45                 -0.979908          1.000       tensio      
-  ten46                 -0.986223          1.000       tensio      
-  ten47                 -0.993685          1.000       tensio      
-  ten48                  -1.00057          1.000       tensio      
-  ten49                  -1.00689          1.000       tensio      
-  ten50                  -1.01320          1.000       tensio      
-  ten51                  -1.02009          1.000       tensio      
-  ten52                  -1.02583          1.000       tensio      
-  ten53                  -1.03100          1.000       tensio      
-  ten54                  -1.03559          1.000       tensio      
-  ten55                  -1.03961          1.000       tensio      
-  ten56                  -1.04420          1.000       tensio      
-  ten57                  -1.04994          1.000       tensio      
-  ten58                  -1.05281          1.000       tensio      
-  ten59                  -1.05626          1.000       tensio      
-  ten60                  -1.06085          1.000       tensio      
-  ten61                  -1.06372          1.000       tensio      
-  ten62                  -1.06831          1.000       tensio      
-  ten63                  -1.07233          1.000       tensio      
-  ten64                  -1.07577          1.000       tensio      
-  ten65                  -1.07807          1.000       tensio      
-  ten66                  -1.08209          1.000       tensio      
-  ten67                  -1.08553          1.000       tensio      
-  ten68                  -1.08840          1.000       tensio      
-  ten69                  -1.09127          1.000       tensio      
+  ten1                   -1.27382          1.000       tensio      
+  ten2                   -1.26464          1.000       tensio      
+  ten3                   -1.27095          1.000       tensio      
+  ten4                   -1.26177          1.000       tensio      
+  ten5                   -1.27095          1.000       tensio      
+  ten6                   -1.27325          1.000       tensio      
+  ten7                   -1.27555          1.000       tensio      
+  ten8                   -1.27095          1.000       tensio      
+  ten9                   -1.27210          1.000       tensio      
+  ten10                  -1.26062          1.000       tensio      
+  ten11                  -1.26693          1.000       tensio      
+  ten12                  -1.27555          1.000       tensio      
+  ten13                  -1.26464          1.000       tensio      
+  ten14                  -1.26923          1.000       tensio      
+  ten15                  -1.27440          1.000       tensio      
+  ten16                  -1.27669          1.000       tensio      
+  ten17                  -1.27153          1.000       tensio      
+  ten18                  -1.27497          1.000       tensio      
+  ten19                  -1.26234          1.000       tensio      
+  ten20                  -1.24512          1.000       tensio      
+  ten21                  -1.18944          1.000       tensio      
+  ten22                 -0.969001          1.000       tensio      
+  ten23                 -0.812285          1.000       tensio      
+  ten24                 -0.756602          1.000       tensio      
+  ten25                 -0.733639          1.000       tensio      
+  ten26                 -0.722158          1.000       tensio      
+  ten27                 -0.721584          1.000       tensio      
+  ten28                 -0.730195          1.000       tensio      
+  ten29                 -0.746843          1.000       tensio      
+  ten30                 -0.764064          1.000       tensio      
+  ten31                 -0.778416          1.000       tensio      
+  ten32                 -0.790471          1.000       tensio      
+  ten33                 -0.804822          1.000       tensio      
+  ten34                 -0.819173          1.000       tensio      
+  ten35                 -0.814007          1.000       tensio      
+  ten36                 -0.818025          1.000       tensio      
+  ten37                 -0.834673          1.000       tensio      
+  ten38                 -0.849024          1.000       tensio      
+  ten39                 -0.861653          1.000       tensio      
+  ten40                 -0.871412          1.000       tensio      
+  ten41                 -0.878301          1.000       tensio      
+  ten42                 -0.896096          1.000       tensio      
+  ten43                 -0.911596          1.000       tensio      
+  ten44                 -0.925373          1.000       tensio      
+  ten45                 -0.936854          1.000       tensio      
+  ten46                 -0.951206          1.000       tensio      
+  ten47                 -0.958668          1.000       tensio      
+  ten48                 -0.965557          1.000       tensio      
+  ten49                 -0.974168          1.000       tensio      
+  ten50                 -0.981056          1.000       tensio      
+  ten51                 -0.988519          1.000       tensio      
+  ten52                 -0.994259          1.000       tensio      
+  ten53                  -1.00459          1.000       tensio      
+  ten54                  -1.01378          1.000       tensio      
+  ten55                  -1.00746          1.000       tensio      
+  ten56                  -1.02239          1.000       tensio      
+  ten57                  -1.02583          1.000       tensio      
+  ten58                  -1.02755          1.000       tensio      
+  ten59                  -1.03674          1.000       tensio      
+  ten60                  -1.04363          1.000       tensio      
+  ten61                  -1.05741          1.000       tensio      
+  ten62                  -1.05913          1.000       tensio      
+  ten63                  -1.05224          1.000       tensio      
+  ten64                  -1.06028          1.000       tensio      
+  ten65                  -1.05339          1.000       tensio      
+  ten66                  -1.05970          1.000       tensio      
+  ten67                  -1.06487          1.000       tensio      
+  ten68                  -1.07348          1.000       tensio      
+  ten69                  -1.08668          1.000       tensio      
   ten70                  -1.09242          1.000       tensio      
-  ten71                  -1.09701          1.000       tensio      
-  ten72                  -1.10046          1.000       tensio      
+  ten71                  -1.09759          1.000       tensio      
+  ten72                  -1.09070          1.000       tensio      
   ten73                  -1.10218          1.000       tensio      
-  ten74                  -1.10505          1.000       tensio      
-  ten75                  -1.10735          1.000       tensio      
-  ten76                  -1.10964          1.000       tensio      
-  ten77                  -1.11309          1.000       tensio      
-  ten78                  -1.11424          1.000       tensio      
-  ten79                  -1.11711          1.000       tensio      
-  ten80                  -1.12055          1.000       tensio      
-  ten81                  -1.12285          1.000       tensio      
-  ten82                  -1.12514          1.000       tensio      
-  ten83                  -1.12801          1.000       tensio      
-  ten84                  -1.13031          1.000       tensio      
-  ten85                  -1.13146          1.000       tensio      
-  ten86                  -1.13548          1.000       tensio      
-  ten87                  -1.13720          1.000       tensio      
-  ten88                  -1.13777          1.000       tensio      
-  ten89                  -1.13949          1.000       tensio      
-  ten90                  -1.14294          1.000       tensio      
-  ten91                  -1.14466          1.000       tensio      
-  ten92                  -1.14696          1.000       tensio      
-  ten93                  -1.14811          1.000       tensio      
-  ten94                  -1.15040          1.000       tensio      
-  ten95                  -1.15729          1.000       tensio      
-  ten96                  -1.15385          1.000       tensio      
+  ten74                  -1.09529          1.000       tensio      
+  ten75                  -1.09242          1.000       tensio      
+  ten76                  -1.09300          1.000       tensio      
+  ten77                  -1.09242          1.000       tensio      
+  ten78                  -1.09587          1.000       tensio      
+  ten79                  -1.09931          1.000       tensio      
+  ten80                  -1.10505          1.000       tensio      
+  ten81                  -1.10735          1.000       tensio      
+  ten82                  -1.11309          1.000       tensio      
+  ten83                  -1.11653          1.000       tensio      
+  ten84                  -1.12113          1.000       tensio      
+  ten85                  -1.12974          1.000       tensio      
+  ten86                  -1.12342          1.000       tensio      
+  ten87                  -1.11194          1.000       tensio      
+  ten88                  -1.12400          1.000       tensio      
+  ten89                  -1.18140          1.000       tensio      
+  ten90                  -1.17451          1.000       tensio      
+  ten91                  -1.15098          1.000       tensio      
+  ten92                  -1.13720          1.000       tensio      
+  ten93                  -1.12629          1.000       tensio      
+  ten94                  -1.12400          1.000       tensio      
+  ten95                  -1.11596          1.000       tensio      
+  ten96                  -1.11079          1.000       tensio      
 
 
  Control settings:-
@@ -282,371 +240,621 @@
 
 
  INITIAL CONDITIONS: 
-    Sum of squared weighted residuals (ie phi) =   13.028    
+    Sum of squared weighted residuals (ie phi) =  0.84664    
 
        Current parameter values
-       bins             40.0000    
+       bins             50.0000    
        thetar          1.000000E-06
        thetas          0.430000    
        alpha            2.12070    
        n                3.80000    
-       ksat            6.100000E-05
+       ksat            6.100000E-04
        l               0.500000    
-       ihead            145.000    
-       start            300.000    
-       inten            4.00000    
-       durat            60.0000    
-       pulse            150.000    
+       ihead            126.708    
 
 
  OPTIMISATION ITERATION NO.        : 1
     Model calls so far             : 1
-    Starting phi for this iteration:   13.028    
+    Starting phi for this iteration:  0.84664    
+
+    Parameter "thetas" has no effect on observations.
 
         Lambda =   5.0000     ----->
-           Phi =   6.0475      (  0.464 of starting phi)
+           Phi =  0.67965      (  0.803 of starting phi)
 
         Lambda =   2.5000     ----->
-           Phi =   2.8629      (  0.220 of starting phi)
+           Phi =  0.64586      (  0.763 of starting phi)
 
-    No more lambdas: phi is less than 0.3000 of starting phi
-    Lowest phi this iteration:   2.8629    
+        Lambda =   1.2500     ----->
+           Phi =  0.62617      (  0.740 of starting phi)
+
+        Lambda =  0.62500     ----->
+           Phi =  0.66197      (  0.782 of starting phi)
+
+    No more lambdas: phi rising
+    Lowest phi this iteration:  0.62617    
 
        Current parameter values                 Previous parameter values
-       bins             64.6012                 bins              40.0000    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
        thetas          0.430000                 thetas           0.430000    
-       alpha            1.63973                 alpha             2.12070    
-       n                4.01260                 n                 3.80000    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       alpha            2.06537                 alpha             2.12070    
+       n                3.78388                 n                 3.80000    
+       ksat            7.421856E-04             ksat             6.100000E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.615     ["bins"]
-    Maximum relative change (relative-limited params): 0.2268     ["alpha"]
-    Maximum relative change (      all        params): 0.6150     ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.217     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 0.2167     ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 2
-    Model calls so far             : 6
-    Starting phi for this iteration:   2.8629    
-
-        Lambda =   1.2500     ----->
-           Phi =   3.3907      (  1.184 times starting phi)
+    Model calls so far             : 9
+    Starting phi for this iteration:  0.62617    
 
         Lambda =  0.62500     ----->
-           Phi =   3.2903      (  1.149 times starting phi)
+           Phi =  0.63193      (  1.009 times starting phi)
 
         Lambda =  0.31250     ----->
-           Phi =   2.9612      (  1.034 times starting phi)
+           Phi =  0.63021      (  1.006 times starting phi)
 
-        Lambda =  0.15625     ----->
-           Phi =   2.7482      (  0.960 of starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =   2.6885      (  0.939 of starting phi)
-
-        Lambda =  3.90625E-02 ----->
-           Phi =   2.5939      (  0.906 of starting phi)
-
-        Lambda =  1.95312E-02 ----->
-           Phi =   2.5496      (  0.891 of starting phi)
-
-        Lambda =  9.76562E-03 ----->
-           Phi =   2.5267      (  0.883 of starting phi)
-
-    No more lambdas: allowed lambdas per iteration =  8
-    Lowest phi this iteration:   2.5267    
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.63021    
 
        Current parameter values                 Previous parameter values
-       bins             100.000                 bins              64.6012    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.11231                 alpha             1.63973    
-       n                5.17925                 n                 4.01260    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.431863                 thetas           0.430000    
+       alpha            2.03523                 alpha             2.06537    
+       n                3.79479                 n                 3.78388    
+       ksat            6.929526E-04             ksat             7.421856E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.548     ["bins"]
-    Maximum relative change (relative-limited params): 0.3217     ["alpha"]
-    Maximum relative change (      all        params): 0.5480     ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.071     ["ksat"]
+    Maximum relative change (relative-limited params): 4.3335E-03 ["thetas"]
+    Maximum relative change (      all        params): 6.6335E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 3
-    Model calls so far             : 17
-    Starting phi for this iteration:   2.5267    
+    Model calls so far             : 15
+    Starting phi for this iteration:  0.63021    
 
-        Lambda =  4.88281E-03 ----->
-           Phi =   1.5084      (  0.597 of starting phi)
+        Lambda =  0.15625     ----->
+           Phi =  0.63348      (  1.005 times starting phi)
 
-        Lambda =  2.44141E-03 ----->
-           Phi =   1.5133      (  0.599 of starting phi)
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.60808      (  0.965 of starting phi)
 
-        Lambda =  9.76562E-03 ----->
-           Phi =   1.4976      (  0.593 of starting phi)
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.60890      (  0.966 of starting phi)
 
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:   1.4976    
+    No more lambdas: phi rising
+    Lowest phi this iteration:  0.60808    
 
        Current parameter values                 Previous parameter values
-       bins             91.9896                 bins              100.000    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.18732                 alpha             1.11231    
-       n                4.60276                 n                 5.17925    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434521                 thetas           0.431863    
+       alpha            2.00386                 alpha             2.03523    
+       n                3.82106                 n                 3.79479    
+       ksat            6.408820E-04             ksat             6.929526E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.087     ["bins"]
-    Maximum relative change (relative-limited params): 0.1113     ["n"]
-    Maximum relative change (      all        params): 0.1113     ["n"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.081     ["ksat"]
+    Maximum relative change (relative-limited params): 6.1531E-03 ["thetas"]
+    Maximum relative change (      all        params): 7.5143E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 4
-    Model calls so far             : 23
-    Starting phi for this iteration:   1.4976    
+    Model calls so far             : 22
+    Starting phi for this iteration:  0.60808    
 
-        Lambda =  9.76562E-03 ----->
-           Phi =   1.3130      (  0.877 of starting phi)
-
-        Lambda =  4.88281E-03 ----->
-           Phi =   1.3139      (  0.877 of starting phi)
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.61487      (  1.011 times starting phi)
 
         Lambda =  1.95312E-02 ----->
-           Phi =   1.3112      (  0.876 of starting phi)
+           Phi =  0.61501      (  1.011 times starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.61460      (  1.011 times starting phi)
 
     No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:   1.3112    
+    Lowest phi this iteration:  0.61460    
 
        Current parameter values                 Previous parameter values
-       bins             18.3979                 bins              91.9896    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.19541                 alpha             1.18732    
-       n                4.58145                 n                 4.60276    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434921                 thetas           0.434521    
+       alpha            2.00666                 alpha             2.00386    
+       n                3.82804                 n                 3.82106    
+       ksat            6.664089E-04             ksat             6.408820E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  5.000     ["bins"]
-    Maximum relative change (relative-limited params): 6.8087E-03 ["alpha"]
-    Maximum relative change (      all        params): 0.8000     ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.040     ["ksat"]
+    Maximum relative change (relative-limited params): 9.2158E-04 ["thetas"]
+    Maximum relative change (      all        params): 3.9831E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 5
     Model calls so far             : 29
-    Starting phi for this iteration:   1.3112    
+    Starting phi for this iteration:  0.61460    
 
-        Lambda =  1.95312E-02 ----->
-           Phi =  0.39873      (  0.304 of starting phi)
+    Parameter "thetas" has no effect on observations.
 
-        Lambda =  9.76562E-03 ----->
-           Phi =  0.48481      (  0.370 of starting phi)
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.62959      (  1.024 times starting phi)
 
         Lambda =  3.90625E-02 ----->
-           Phi =  0.36749      (  0.280 of starting phi)
+           Phi =  0.63714      (  1.037 times starting phi)
 
-    No more lambdas: phi is less than 0.3000 of starting phi
-    Lowest phi this iteration:  0.36749    
+        Lambda =  0.15625     ----->
+           Phi =  0.62936      (  1.024 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.62936    
 
        Current parameter values                 Previous parameter values
-       bins             41.0651                 bins              18.3979    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.39343                 alpha             1.19541    
-       n                3.43606                 n                 4.58145    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434921                 thetas           0.434921    
+       alpha            2.00377                 alpha             2.00666    
+       n                3.85480                 n                 3.82804    
+       ksat            7.291054E-04             ksat             6.664089E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  2.232     ["bins"]
-    Maximum relative change (relative-limited params): 0.2500     ["n"]
-    Maximum relative change (      all        params):  1.232     ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.094     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 9.4081E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 6
-    Model calls so far             : 35
-    Starting phi for this iteration:  0.36749    
+    Model calls so far             : 36
+    Starting phi for this iteration:  0.62936    
 
-        Lambda =  3.90625E-02 ----->
-           Phi =  0.32619      (  0.888 of starting phi)
-
-        Lambda =  1.95312E-02 ----->
-           Phi =  0.35602      (  0.969 of starting phi)
+        Lambda =  0.15625     ----->
+           Phi =  0.60296      (  0.958 of starting phi)
 
         Lambda =  7.81250E-02 ----->
-           Phi =  0.32620      (  0.888 of starting phi)
+           Phi =  0.60299      (  0.958 of starting phi)
 
-    No more lambdas: phi rising
-    Lowest phi this iteration:  0.32619    
+        Lambda =  0.31250     ----->
+           Phi =  0.60285      (  0.958 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.60285    
 
        Current parameter values                 Previous parameter values
-       bins             53.9930                 bins              41.0651    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.40536                 alpha             1.39343    
-       n                3.43846                 n                 3.43606    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.435002                 thetas           0.434921    
+       alpha            1.99791                 alpha             2.00377    
+       n                3.86409                 n                 3.85480    
+       ksat            6.970526E-04             ksat             7.291054E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.315     ["bins"]
-    Maximum relative change (relative-limited params): 8.5627E-03 ["alpha"]
-    Maximum relative change (      all        params): 0.3148     ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.046     ["ksat"]
+    Maximum relative change (relative-limited params): 1.8559E-04 ["thetas"]
+    Maximum relative change (      all        params): 4.3962E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 7
-    Model calls so far             : 41
-    Starting phi for this iteration:  0.32619    
+    Model calls so far             : 43
+    Starting phi for this iteration:  0.60285    
 
-        Lambda =  3.90625E-02 ----->
-           Phi =  0.35711      (  1.095 times starting phi)
+        Lambda =  0.31250     ----->
+           Phi =  0.60442      (  1.003 times starting phi)
 
-        Lambda =  1.95312E-02 ----->
-           Phi =  0.35712      (  1.095 times starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =  0.35711      (  1.095 times starting phi)
+        Lambda =  0.15625     ----->
+           Phi =  0.60316      (  1.001 times starting phi)
 
     No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.35711    
+    Lowest phi this iteration:  0.60316    
 
        Current parameter values                 Previous parameter values
-       bins             52.2932                 bins              53.9930    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.40440                 alpha             1.40536    
-       n                3.43865                 n                 3.43846    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434962                 thetas           0.435002    
+       alpha            1.99549                 alpha             1.99791    
+       n                3.86624                 n                 3.86409    
+       ksat            6.908174E-04             ksat             6.970526E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.033     ["bins"]
-    Maximum relative change (relative-limited params): 6.7803E-04 ["alpha"]
-    Maximum relative change (      all        params): 3.1481E-02 ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.009     ["ksat"]
+    Maximum relative change (relative-limited params): 9.2797E-05 ["thetas"]
+    Maximum relative change (      all        params): 8.9451E-03 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 8
-    Model calls so far             : 47
-    Starting phi for this iteration:  0.35711    
+    Model calls so far             : 49
+    Starting phi for this iteration:  0.60316    
 
         Lambda =  7.81250E-02 ----->
-           Phi =  0.38939      (  1.090 times starting phi)
+           Phi =  0.60227      (  0.999 of starting phi)
 
         Lambda =  3.90625E-02 ----->
-           Phi =  0.38861      (  1.088 times starting phi)
+           Phi =  0.57142      (  0.947 of starting phi)
 
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.38861    
+        Lambda =  1.95312E-02 ----->
+           Phi =  0.57163      (  0.948 of starting phi)
+
+    No more lambdas: phi rising
+    Lowest phi this iteration:  0.57142    
 
        Current parameter values                 Previous parameter values
-       bins             56.4088                 bins              52.2932    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.41786                 alpha             1.40440    
-       n                3.39628                 n                 3.43865    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434943                 thetas           0.434962    
+       alpha            1.94783                 alpha             1.99549    
+       n                3.91015                 n                 3.86624    
+       ksat            5.984271E-04             ksat             6.908174E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.079     ["bins"]
-    Maximum relative change (relative-limited params): 1.2320E-02 ["n"]
-    Maximum relative change (      all        params): 7.8703E-02 ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.154     ["ksat"]
+    Maximum relative change (relative-limited params): 4.3357E-05 ["thetas"]
+    Maximum relative change (      all        params): 0.1337     ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 9
-    Model calls so far             : 52
-    Starting phi for this iteration:  0.38861    
+    Model calls so far             : 56
+    Starting phi for this iteration:  0.57142    
+
+    Parameter "thetas" has no effect on observations.
 
         Lambda =  1.95312E-02 ----->
-           Phi =  0.35368      (  0.910 of starting phi)
+           Phi =  0.58803      (  1.029 times starting phi)
 
         Lambda =  9.76562E-03 ----->
-           Phi =  0.35370      (  0.910 of starting phi)
+           Phi =  0.58812      (  1.029 times starting phi)
 
         Lambda =  3.90625E-02 ----->
-           Phi =  0.35364      (  0.910 of starting phi)
+           Phi =  0.58786      (  1.029 times starting phi)
 
     No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.35364    
+    Lowest phi this iteration:  0.58786    
 
        Current parameter values                 Previous parameter values
-       bins             57.0271                 bins              56.4088    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.41209                 alpha             1.41786    
-       n                3.41720                 n                 3.39628    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.434943                 thetas           0.434943    
+       alpha            1.95715                 alpha             1.94783    
+       n                3.92043                 n                 3.91015    
+       ksat            6.423805E-04             ksat             5.984271E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.011     ["bins"]
-    Maximum relative change (relative-limited params): 6.1598E-03 ["n"]
-    Maximum relative change (      all        params): 1.0960E-02 ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.073     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 7.3448E-02 ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 10
-    Model calls so far             : 58
-    Starting phi for this iteration:  0.35364    
+    Model calls so far             : 63
+    Starting phi for this iteration:  0.58786    
 
         Lambda =  3.90625E-02 ----->
-           Phi =  0.39312      (  1.112 times starting phi)
+           Phi =  0.60880      (  1.036 times starting phi)
 
         Lambda =  1.95312E-02 ----->
-           Phi =  0.39311      (  1.112 times starting phi)
+           Phi =  0.60875      (  1.036 times starting phi)
 
     No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.39311    
+    Lowest phi this iteration:  0.60875    
 
        Current parameter values                 Previous parameter values
-       bins             56.9646                 bins              57.0271    
+       bins             50.0000                 bins              50.0000    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            1.41197                 alpha             1.41209    
-       n                3.41722                 n                 3.41720    
-       ksat            6.100000E-05             ksat             6.100000E-05
+       thetas          0.436011                 thetas           0.434943    
+       alpha            1.97113                 alpha             1.95715    
+       n                3.94500                 n                 3.92043    
+       ksat            7.219396E-04             ksat             6.423805E-04
        l               0.500000                 l                0.500000    
-       ihead            145.000                 ihead             145.000    
-       start            300.000                 start             300.000    
-       inten            4.00000                 inten             4.00000    
-       durat            60.0000                 durat             60.0000    
-       pulse            150.000                 pulse             150.000    
-    Maximum   factor change (  factor-limited params):  1.001     ["bins"]
-    Maximum relative change (relative-limited params): 9.0469E-05 ["alpha"]
-    Maximum relative change (      all        params): 1.0960E-03 ["bins"]
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.124     ["ksat"]
+    Maximum relative change (relative-limited params): 2.4567E-03 ["thetas"]
+    Maximum relative change (      all        params): 0.1239     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 11
+    Model calls so far             : 69
+    Starting phi for this iteration:  0.60875    
+
+        Lambda =  9.76562E-03 ----->
+           Phi =  0.60845      (  1.000 of starting phi)
+
+        Lambda =  4.88281E-03 ----->
+           Phi =  0.60845      (  1.000 of starting phi)
+
+        Lambda =  1.95312E-02 ----->
+           Phi =  0.60845      (  0.999 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.60845    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.435505                 thetas           0.436011    
+       alpha            1.96972                 alpha             1.97113    
+       n                3.94672                 n                 3.94500    
+       ksat            7.171956E-04             ksat             7.219396E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.007     ["ksat"]
+    Maximum relative change (relative-limited params): 1.1608E-03 ["thetas"]
+    Maximum relative change (      all        params): 6.5711E-03 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 12
+    Model calls so far             : 76
+    Starting phi for this iteration:  0.60845    
+
+    Parameter "thetas" has no effect on observations.
+
+        Lambda =  1.95312E-02 ----->
+           Phi =  0.54985      (  0.904 of starting phi)
+
+        Lambda =  9.76562E-03 ----->
+           Phi =  0.55000      (  0.904 of starting phi)
+
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.54964      (  0.903 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.54964    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.435505                 thetas           0.435505    
+       alpha            1.91609                 alpha             1.96972    
+       n                3.97292                 n                 3.94672    
+       ksat            5.788057E-04             ksat             7.171956E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.239     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 0.1930     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 13
+    Model calls so far             : 83
+    Starting phi for this iteration:  0.54964    
+
+    Parameter "thetas" has no effect on observations.
+
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.56993      (  1.037 times starting phi)
+
+        Lambda =  1.95312E-02 ----->
+           Phi =  0.57004      (  1.037 times starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.56973      (  1.037 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.56973    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.435505                 thetas           0.435505    
+       alpha            1.92836                 alpha             1.91609    
+       n                3.98221                 n                 3.97292    
+       ksat            6.289368E-04             ksat             5.788057E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.087     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 8.6611E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 14
+    Model calls so far             : 90
+    Starting phi for this iteration:  0.56973    
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.60246      (  1.057 times starting phi)
+
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.60776      (  1.067 times starting phi)
+
+        Lambda =  0.15625     ----->
+           Phi =  0.60012      (  1.053 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.60012    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.437331                 thetas           0.435505    
+       alpha            1.94392                 alpha             1.92836    
+       n                4.01274                 n                 3.98221    
+       ksat            7.228598E-04             ksat             6.289368E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.149     ["ksat"]
+    Maximum relative change (relative-limited params): 4.1924E-03 ["thetas"]
+    Maximum relative change (      all        params): 0.1493     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 15
+    Model calls so far             : 97
+    Starting phi for this iteration:  0.60012    
+
+        Lambda =  0.15625     ----->
+           Phi =  0.59622      (  0.993 of starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.59622      (  0.994 of starting phi)
+
+        Lambda =  0.31250     ----->
+           Phi =  0.59620      (  0.993 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.59620    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.437430                 thetas           0.437331    
+       alpha            1.94235                 alpha             1.94392    
+       n                4.01413                 n                 4.01274    
+       ksat            7.147948E-04             ksat             7.228598E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.011     ["ksat"]
+    Maximum relative change (relative-limited params): 2.2776E-04 ["thetas"]
+    Maximum relative change (      all        params): 1.1157E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 16
+    Model calls so far             : 104
+    Starting phi for this iteration:  0.59620    
+
+    Parameter "thetas" has no effect on observations.
+
+        Lambda =  0.31250     ----->
+           Phi =  0.53872      (  0.904 of starting phi)
+
+        Lambda =  0.15625     ----->
+           Phi =  0.53667      (  0.900 of starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.53667    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.437430                 thetas           0.437430    
+       alpha            1.89003                 alpha             1.94235    
+       n                4.03892                 n                 4.01413    
+       ksat            5.633482E-04             ksat             7.147948E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.269     ["ksat"]
+    Maximum relative change (relative-limited params):  0.000     ["bins"]
+    Maximum relative change (      all        params): 0.2119     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 17
+    Model calls so far             : 110
+    Starting phi for this iteration:  0.53667    
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.54925      (  1.023 times starting phi)
+
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.55040      (  1.026 times starting phi)
+
+        Lambda =  0.15625     ----->
+           Phi =  0.54914      (  1.023 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.54914    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.439969                 thetas           0.437430    
+       alpha            1.89252                 alpha             1.89003    
+       n                4.05580                 n                 4.03892    
+       ksat            5.997160E-04             ksat             5.633482E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.065     ["ksat"]
+    Maximum relative change (relative-limited params): 5.8031E-03 ["thetas"]
+    Maximum relative change (      all        params): 6.4556E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 18
+    Model calls so far             : 117
+    Starting phi for this iteration:  0.54914    
+
+        Lambda =  0.15625     ----->
+           Phi =  0.57929      (  1.055 times starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.58223      (  1.060 times starting phi)
+
+        Lambda =  0.31250     ----->
+           Phi =  0.57512      (  1.047 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.57512    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.441529                 thetas           0.439969    
+       alpha            1.90034                 alpha             1.89252    
+       n                4.07980                 n                 4.05580    
+       ksat            6.575115E-04             ksat             5.997160E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.096     ["ksat"]
+    Maximum relative change (relative-limited params): 3.5461E-03 ["thetas"]
+    Maximum relative change (      all        params): 9.6371E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 19
+    Model calls so far             : 124
+    Starting phi for this iteration:  0.57512    
+
+        Lambda =  0.31250     ----->
+           Phi =  0.58075      (  1.010 times starting phi)
+
+        Lambda =  0.15625     ----->
+           Phi =  0.55496      (  0.965 of starting phi)
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.55505      (  0.965 of starting phi)
+
+    No more lambdas: phi rising
+    Lowest phi this iteration:  0.55496    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.444059                 thetas           0.441529    
+       alpha            1.90726                 alpha             1.90034    
+       n                4.09060                 n                 4.07980    
+       ksat            6.947886E-04             ksat             6.575115E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.057     ["ksat"]
+    Maximum relative change (relative-limited params): 5.7293E-03 ["thetas"]
+    Maximum relative change (      all        params): 5.6694E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 20
+    Model calls so far             : 131
+    Starting phi for this iteration:  0.55496    
+
+        Lambda =  7.81250E-02 ----->
+           Phi =  0.58095      (  1.047 times starting phi)
+
+        Lambda =  3.90625E-02 ----->
+           Phi =  0.58094      (  1.047 times starting phi)
+
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  0.58094    
+
+       Current parameter values                 Previous parameter values
+       bins             50.0000                 bins              50.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.444072                 thetas           0.444059    
+       alpha            1.90657                 alpha             1.90726    
+       n                4.09102                 n                 4.09060    
+       ksat            6.928854E-04             ksat             6.947886E-04
+       l               0.500000                 l                0.500000    
+       ihead            126.708                 ihead             126.708    
+    Maximum   factor change (  factor-limited params):  1.003     ["ksat"]
+    Maximum relative change (relative-limited params): 3.0209E-05 ["thetas"]
+    Maximum relative change (      all        params): 2.7392E-03 ["ksat"]
 
     Optimisation complete:   4 optimisation iterations have elapsed since lowest
                            phi was achieved.
-    Total model calls:     63
+    Total model calls:    137
 
     The model has been run one final time using best parameters. 
     Thus all model input files contain best parameter values, and model 
@@ -655,32 +863,21 @@
 
                              OPTIMISATION RESULTS
 
-
- Adjustable parameters ----->
-
- Parameter        Estimated         95% percent confidence limits
-                  value             lower limit       upper limit
-  bins            53.9930            36.6077           71.3782    
-  alpha           1.40536            1.38875           1.42196    
-  n               3.43846            3.43163           3.44528    
-
- Note: confidence limits provide only an indication of parameter uncertainty.
-       They rely on a linearity assumption which  may not extend as far in 
-       parameter space as the confidence limits themselves - see PEST manual.
+ Covariance matrix and parameter confidence intervals cannot be determined:-
+ Normal matrix nearly singular; cannot be inverted.
 
 
- Fixed parameters ----->
+ Parameters ----->
 
- Parameter      Fixed value
+ Parameter      Estimated value
+  bins            50.0000    
   thetar         1.000000E-06
-  thetas         0.430000    
-  ksat           6.100000E-05
+  thetas         0.437430    
+  alpha           1.89003    
+  n               4.03892    
+  ksat           5.633482E-04
   l              0.500000    
-  ihead           145.000    
-  start           300.000    
-  inten           4.00000    
-  durat           60.0000    
-  pulse           150.000    
+  ihead           126.708    
 
  See file to_precal3.sen for parameter sensitivities.
 
@@ -689,102 +886,102 @@
 
  Observation            Measured       Calculated     Residual       Weight     Group
                         value          value
- ten1                  -1.46441       -1.43610      -2.830873E-02    1.000      tensio      
- ten2                  -1.46096       -1.43610      -2.486441E-02    1.000      tensio      
- ten3                  -1.45867       -1.43610      -2.256820E-02    1.000      tensio      
- ten4                  -1.45982       -1.43610      -2.371630E-02    1.000      tensio      
- ten5                  -1.45695       -1.43610      -2.084604E-02    1.000      tensio      
- ten6                  -1.46154       -1.43610      -2.543846E-02    1.000      tensio      
- ten7                  -1.46039       -1.43610      -2.429036E-02    1.000      tensio      
- ten8                  -1.45867       -1.43610      -2.256820E-02    1.000      tensio      
- ten9                  -1.46211       -1.43610      -2.601251E-02    1.000      tensio      
- ten10                 -1.45350       -1.43610      -1.740172E-02    1.000      tensio      
- ten11                 -1.45408       -1.43610      -1.797577E-02    1.000      tensio      
- ten12                 -1.45178       -1.43610      -1.567956E-02    1.000      tensio      
- ten13                 -1.45235       -1.43610      -1.625362E-02    1.000      tensio      
- ten14                 -1.45867       -1.43610      -2.256820E-02    1.000      tensio      
- ten15                 -1.45235       -1.43610      -1.625362E-02    1.000      tensio      
- ten16                 -1.44891       -1.43610      -1.280930E-02    1.000      tensio      
- ten17                 -1.44948       -1.43610      -1.338335E-02    1.000      tensio      
- ten18                 -1.43054       -1.43610       5.560390E-03    1.000      tensio      
- ten19                 -1.40413       -1.43610       3.196682E-02    1.000      tensio      
- ten20                 -1.32032       -1.43610       0.115779        1.000      tensio      
- ten21                 -1.06028       -1.36961       0.309337        1.000      tensio      
- ten22                -0.782434       -1.00236       0.219924        1.000      tensio      
- ten23                -0.716992      -0.877514       0.160522        1.000      tensio      
- ten24                -0.711251      -0.834519       0.123268        1.000      tensio      
- ten25                -0.712400      -0.834519       0.122119        1.000      tensio      
- ten26                -0.715270      -0.834519       0.119249        1.000      tensio      
- ten27                -0.716992      -0.834519       0.117527        1.000      tensio      
- ten28                -0.730769      -0.834519       0.103750        1.000      tensio      
- ten29                -0.766935      -0.834519       6.758444E-02    1.000      tensio      
- ten30                -0.788749      -0.834519       4.577044E-02    1.000      tensio      
- ten31                -0.808840      -0.855638       4.679759E-02    1.000      tensio      
- ten32                -0.828358      -0.855638       2.727979E-02    1.000      tensio      
- ten33                -0.846728      -0.855638       8.910101E-03    1.000      tensio      
- ten34                -0.863949      -0.855638      -8.311483E-03    1.000      tensio      
- ten35                -0.882893      -0.877514      -5.379226E-03    1.000      tensio      
- ten36                -0.896096      -0.877514      -1.858244E-02    1.000      tensio      
- ten37                -0.906429      -0.877514      -2.891539E-02    1.000      tensio      
- ten38                -0.917336      -0.877514      -3.982239E-02    1.000      tensio      
- ten39                -0.928243      -0.877514      -5.072940E-02    1.000      tensio      
- ten40                -0.938002      -0.877514      -6.048830E-02    1.000      tensio      
- ten41                -0.947761      -0.900248      -4.751319E-02    1.000      tensio      
- ten42                -0.955224      -0.900248      -5.497588E-02    1.000      tensio      
- ten43                -0.963261      -0.923957      -3.930362E-02    1.000      tensio      
- ten44                -0.971297      -0.923957      -4.734036E-02    1.000      tensio      
- ten45                -0.979908      -0.923957      -5.595115E-02    1.000      tensio      
- ten46                -0.986223      -0.948773      -3.744973E-02    1.000      tensio      
- ten47                -0.993685      -0.948773      -4.491242E-02    1.000      tensio      
- ten48                 -1.00057      -0.948773      -5.180105E-02    1.000      tensio      
- ten49                 -1.00689      -0.974847      -3.204163E-02    1.000      tensio      
- ten50                 -1.01320      -0.974847      -3.835621E-02    1.000      tensio      
- ten51                 -1.02009      -0.974847      -4.524485E-02    1.000      tensio      
- ten52                 -1.02583      -0.974847      -5.098538E-02    1.000      tensio      
- ten53                 -1.03100       -1.00236      -2.864085E-02    1.000      tensio      
- ten54                 -1.03559       -1.00236      -3.323327E-02    1.000      tensio      
- ten55                 -1.03961       -1.00236      -3.725164E-02    1.000      tensio      
- ten56                 -1.04420       -1.00236      -4.184407E-02    1.000      tensio      
- ten57                 -1.04994       -1.00236      -4.758459E-02    1.000      tensio      
- ten58                 -1.05281       -1.03151      -2.129986E-02    1.000      tensio      
- ten59                 -1.05626       -1.03151      -2.474418E-02    1.000      tensio      
- ten60                 -1.06085       -1.03151      -2.933660E-02    1.000      tensio      
- ten61                 -1.06372       -1.03151      -3.220686E-02    1.000      tensio      
- ten62                 -1.06831       -1.03151      -3.679928E-02    1.000      tensio      
- ten63                 -1.07233       -1.03151      -4.081765E-02    1.000      tensio      
- ten64                 -1.07577       -1.06256      -1.321397E-02    1.000      tensio      
- ten65                 -1.07807       -1.06256      -1.551018E-02    1.000      tensio      
- ten66                 -1.08209       -1.06256      -1.952855E-02    1.000      tensio      
- ten67                 -1.08553       -1.06256      -2.297287E-02    1.000      tensio      
- ten68                 -1.08840       -1.06256      -2.584313E-02    1.000      tensio      
- ten69                 -1.09127       -1.06256      -2.871340E-02    1.000      tensio      
- ten70                 -1.09242       -1.06256      -2.986150E-02    1.000      tensio      
- ten71                 -1.09701       -1.09580      -1.214925E-03    1.000      tensio      
- ten72                 -1.10046       -1.09580      -4.659242E-03    1.000      tensio      
- ten73                 -1.10218       -1.09580      -6.381401E-03    1.000      tensio      
- ten74                 -1.10505       -1.09580      -9.251665E-03    1.000      tensio      
- ten75                 -1.10735       -1.09580      -1.154788E-02    1.000      tensio      
- ten76                 -1.10964       -1.09580      -1.384409E-02    1.000      tensio      
- ten77                 -1.11309       -1.09580      -1.728840E-02    1.000      tensio      
- ten78                 -1.11424       -1.09580      -1.843651E-02    1.000      tensio      
- ten79                 -1.11711       -1.09580      -2.130677E-02    1.000      tensio      
- ten80                 -1.12055       -1.13159       1.104391E-02    1.000      tensio      
- ten81                 -1.12285       -1.13159       8.747698E-03    1.000      tensio      
- ten82                 -1.12514       -1.13159       6.451487E-03    1.000      tensio      
- ten83                 -1.12801       -1.13159       3.581223E-03    1.000      tensio      
- ten84                 -1.13031       -1.13159       1.285011E-03    1.000      tensio      
- ten85                 -1.13146       -1.13159       1.369059E-04    1.000      tensio      
- ten86                 -1.13548       -1.13159      -3.881464E-03    1.000      tensio      
- ten87                 -1.13720       -1.13159      -5.603622E-03    1.000      tensio      
- ten88                 -1.13777       -1.13159      -6.177675E-03    1.000      tensio      
- ten89                 -1.13949       -1.13159      -7.899834E-03    1.000      tensio      
- ten90                 -1.14294       -1.13159      -1.134415E-02    1.000      tensio      
- ten91                 -1.14466       -1.13159      -1.306631E-02    1.000      tensio      
- ten92                 -1.14696       -1.17040       2.343748E-02    1.000      tensio      
- ten93                 -1.14811       -1.17040       2.228937E-02    1.000      tensio      
- ten94                 -1.15040       -1.17040       1.999316E-02    1.000      tensio      
- ten95                 -1.15729       -1.17040       1.310453E-02    1.000      tensio      
- ten96                 -1.15385       -1.17040       1.654885E-02    1.000      tensio      
+ ten1                  -1.27382       -1.32742       5.360081E-02    1.000      tensio      
+ ten2                  -1.26464       -1.32742       6.278565E-02    1.000      tensio      
+ ten3                  -1.27095       -1.32742       5.647107E-02    1.000      tensio      
+ ten4                  -1.26177       -1.32742       6.565592E-02    1.000      tensio      
+ ten5                  -1.27095       -1.32742       5.647107E-02    1.000      tensio      
+ ten6                  -1.27325       -1.32742       5.417486E-02    1.000      tensio      
+ ten7                  -1.27555       -1.32742       5.187865E-02    1.000      tensio      
+ ten8                  -1.27095       -1.32742       5.647107E-02    1.000      tensio      
+ ten9                  -1.27210       -1.32742       5.532297E-02    1.000      tensio      
+ ten10                 -1.26062       -1.32742       6.680402E-02    1.000      tensio      
+ ten11                 -1.26693       -1.32742       6.048944E-02    1.000      tensio      
+ ten12                 -1.27555       -1.32742       5.187865E-02    1.000      tensio      
+ ten13                 -1.26464       -1.32742       6.278565E-02    1.000      tensio      
+ ten14                 -1.26923       -1.32742       5.819323E-02    1.000      tensio      
+ ten15                 -1.27440       -1.32742       5.302676E-02    1.000      tensio      
+ ten16                 -1.27669       -1.32742       5.073054E-02    1.000      tensio      
+ ten17                 -1.27153       -1.32742       5.589702E-02    1.000      tensio      
+ ten18                 -1.27497      -0.991568      -0.283403        1.000      tensio      
+ ten19                 -1.26234      -0.945311      -0.317031        1.000      tensio      
+ ten20                 -1.24512      -0.905690      -0.339431        1.000      tensio      
+ ten21                 -1.18944      -0.871090      -0.318347        1.000      tensio      
+ ten22                -0.969001      -0.840401      -0.128600        1.000      tensio      
+ ten23                -0.812285      -0.840401       2.811627E-02    1.000      tensio      
+ ten24                -0.756602      -0.812827       5.622539E-02    1.000      tensio      
+ ten25                -0.733639      -0.812827       7.918751E-02    1.000      tensio      
+ ten26                -0.722158      -0.812827       9.066856E-02    1.000      tensio      
+ ten27                -0.721584      -0.787783       6.619861E-02    1.000      tensio      
+ ten28                -0.730195      -0.787783       5.758782E-02    1.000      tensio      
+ ten29                -0.746843      -0.787783       4.094029E-02    1.000      tensio      
+ ten30                -0.764064      -0.764826       7.617061E-04    1.000      tensio      
+ ten31                -0.778416      -0.764826      -1.358961E-02    1.000      tensio      
+ ten32                -0.790471      -0.764826      -2.564472E-02    1.000      tensio      
+ ten33                -0.804822      -0.764826      -3.999604E-02    1.000      tensio      
+ ten34                -0.819173      -0.787783      -3.139036E-02    1.000      tensio      
+ ten35                -0.814007      -0.787783      -2.622389E-02    1.000      tensio      
+ ten36                -0.818025      -0.812827      -5.198258E-03    1.000      tensio      
+ ten37                -0.834673      -0.840401       5.728210E-03    1.000      tensio      
+ ten38                -0.849024      -0.840401      -8.623110E-03    1.000      tensio      
+ ten39                -0.861653      -0.871090       9.436728E-03    1.000      tensio      
+ ten40                -0.871412      -0.871090      -3.221699E-04    1.000      tensio      
+ ten41                -0.878301      -0.905690       2.738920E-02    1.000      tensio      
+ ten42                -0.896096      -0.905690       9.593559E-03    1.000      tensio      
+ ten43                -0.911596      -0.905690      -5.905867E-03    1.000      tensio      
+ ten44                -0.925373      -0.905690      -1.968313E-02    1.000      tensio      
+ ten45                -0.936854      -0.945311       8.456809E-03    1.000      tensio      
+ ten46                -0.951206      -0.945311      -5.894511E-03    1.000      tensio      
+ ten47                -0.958668      -0.945311      -1.335720E-02    1.000      tensio      
+ ten48                -0.965557      -0.945311      -2.024583E-02    1.000      tensio      
+ ten49                -0.974168      -0.945311      -2.885662E-02    1.000      tensio      
+ ten50                -0.981056      -0.991568       1.051174E-02    1.000      tensio      
+ ten51                -0.988519      -0.991568       3.049056E-03    1.000      tensio      
+ ten52                -0.994259      -0.991568      -2.691472E-03    1.000      tensio      
+ ten53                 -1.00459      -0.991568      -1.302442E-02    1.000      tensio      
+ ten54                 -1.01378      -0.991568      -2.220927E-02    1.000      tensio      
+ ten55                 -1.00746      -0.991568      -1.589469E-02    1.000      tensio      
+ ten56                 -1.02239      -0.991568      -3.082006E-02    1.000      tensio      
+ ten57                 -1.02583      -0.991568      -3.426438E-02    1.000      tensio      
+ ten58                 -1.02755       -1.04693       1.937346E-02    1.000      tensio      
+ ten59                 -1.03674       -1.04693       1.018862E-02    1.000      tensio      
+ ten60                 -1.04363       -1.04693       3.299986E-03    1.000      tensio      
+ ten61                 -1.05741       -1.04693      -1.047728E-02    1.000      tensio      
+ ten62                 -1.05913       -1.04693      -1.219944E-02    1.000      tensio      
+ ten63                 -1.05224       -1.04693      -5.310806E-03    1.000      tensio      
+ ten64                 -1.06028       -1.04693      -1.334755E-02    1.000      tensio      
+ ten65                 -1.05339       -1.04693      -6.458912E-03    1.000      tensio      
+ ten66                 -1.05970       -1.04693      -1.277349E-02    1.000      tensio      
+ ten67                 -1.06487       -1.04693      -1.793997E-02    1.000      tensio      
+ ten68                 -1.07348       -1.04693      -2.655076E-02    1.000      tensio      
+ ten69                 -1.08668       -1.04693      -3.975397E-02    1.000      tensio      
+ ten70                 -1.09242       -1.04693      -4.549450E-02    1.000      tensio      
+ ten71                 -1.09759       -1.11540       1.781502E-02    1.000      tensio      
+ ten72                 -1.09070       -1.11540       2.470366E-02    1.000      tensio      
+ ten73                 -1.10218       -1.11540       1.322260E-02    1.000      tensio      
+ ten74                 -1.09529       -1.11540       2.011123E-02    1.000      tensio      
+ ten75                 -1.09242       -1.11540       2.298150E-02    1.000      tensio      
+ ten76                 -1.09300       -1.11540       2.240744E-02    1.000      tensio      
+ ten77                 -1.09242       -1.11540       2.298150E-02    1.000      tensio      
+ ten78                 -1.09587       -1.11540       1.953718E-02    1.000      tensio      
+ ten79                 -1.09931       -1.11540       1.609286E-02    1.000      tensio      
+ ten80                 -1.10505       -1.11540       1.035234E-02    1.000      tensio      
+ ten81                 -1.10735       -1.11540       8.056124E-03    1.000      tensio      
+ ten82                 -1.11309       -1.11540       2.315596E-03    1.000      tensio      
+ ten83                 -1.11653       -1.11540      -1.128721E-03    1.000      tensio      
+ ten84                 -1.12113       -1.11540      -5.721144E-03    1.000      tensio      
+ ten85                 -1.12974       -1.11540      -1.433194E-02    1.000      tensio      
+ ten86                 -1.12342       -1.11540      -8.017355E-03    1.000      tensio      
+ ten87                 -1.11194       -1.11540       3.463701E-03    1.000      tensio      
+ ten88                 -1.12400       -1.11540      -8.591408E-03    1.000      tensio      
+ ten89                 -1.18140       -1.11540      -6.599669E-02    1.000      tensio      
+ ten90                 -1.17451       -1.11540      -5.910806E-02    1.000      tensio      
+ ten91                 -1.15098       -1.11540      -3.557189E-02    1.000      tensio      
+ ten92                 -1.13720       -1.11540      -2.179462E-02    1.000      tensio      
+ ten93                 -1.12629       -1.11540      -1.088762E-02    1.000      tensio      
+ ten94                 -1.12400       -1.11540      -8.591408E-03    1.000      tensio      
+ ten95                 -1.11596       -1.11540      -5.546682E-04    1.000      tensio      
+ ten96                 -1.11079       -1.20412       9.332981E-02    1.000      tensio      
 
  See file to_precal3.res for more details of residuals in graph-ready format.
 
@@ -793,23 +990,23 @@
 
  Objective function ----->
 
-   Sum of squared weighted residuals (ie phi)                =  0.3262    
+   Sum of squared weighted residuals (ie phi)                =  0.5367    
 
 
  Correlation Coefficient ----->
 
-   Correlation coefficient                                   =  0.96156    
+   Correlation coefficient                                   =  0.90081    
 
 
  Analysis of residuals ----->
 
    All residuals:-
       Number of residuals with non-zero weight                       =    96
-      Mean value of non-zero weighted residuals                      = -3.9984E-04
-      Maximum weighted residual [observation "ten21"]                =  0.3093    
-      Minimum weighted residual [observation "ten40"]                = -6.0488E-02
-      Standard variance of weighted residuals                        =  3.5074E-03
-      Standard error of weighted residuals                           =  5.9223E-02
+      Mean value of non-zero weighted residuals                      = -4.0055E-03
+      Maximum weighted residual [observation "ten96"]                =  9.3330E-02
+      Minimum weighted residual [observation "ten20"]                = -0.3394    
+      Standard variance of weighted residuals                        =  5.8334E-03
+      Standard error of weighted residuals                           =  7.6377E-02
 
       Note: the above variance was obtained by dividing the objective 
       function by the number of system degrees of freedom (ie. number of 
@@ -820,1272 +1017,6 @@
       prior information items with non-zero weight.
 
 
- K-L information statistics ----->
+ Covariance and other statistical matrices cannot be determined:-
+ Normal matrix nearly singular; cannot be inverted.
 
-
-   AIC   =  -537.7253    
-   AICC  =  -537.2857    
-   BIC   =  -527.4679    
-   KIC   =  -534.3228    
-
- Parameter covariance matrix ----->
-
-                  bins        alpha          n      
- bins            76.40       3.2239E-02  -4.0888E-03
- alpha          3.2239E-02   6.9692E-05  -1.8156E-06
- n             -4.0888E-03  -1.8156E-06   1.1776E-05
-
-
- Parameter correlation coefficient matrix ----->
-
-                  bins        alpha          n      
- bins            1.000       0.4418      -0.1363    
- alpha          0.4418        1.000      -6.3377E-02
- n             -0.1363      -6.3377E-02    1.000    
-
-
- Normalized eigenvectors of parameter covariance matrix ----->
-
-               Vector_1     Vector_2     Vector_3   
- bins           5.2664E-05   4.2209E-04   -1.000    
- alpha          2.0251E-03   -1.000      -4.2198E-04
- n               1.000       2.0251E-03   5.3519E-05
-
-
- Eigenvalues ----->
-
-                1.1557E-05   5.6088E-05    76.40    
-=======
-
- ITERATION NUMBER 1
-    Number of function evaluations so far        =   1
-    Lowest objective function so far             =   3.25194    
-    Iteration number of lowest phi so far        =   0
-
-    Lowest  phi this iteration                    =   4.66626    
-    Highest phi this iteration                    =   65.3767    
-
-
- ITERATION NUMBER 2
-    Number of function evaluations so far        =   11
-    Lowest objective function so far             =   3.25194    
-    Iteration number of lowest phi so far        =   0
-
-    Lowest  phi this iteration                    =   3.16608    
-    Highest phi this iteration                    =   58.0130    
-
-
- ITERATION NUMBER 3
-    Number of function evaluations so far        =   21
-    Lowest objective function so far             =   3.16608    
-    Iteration number of lowest phi so far        =   2
-
-    Lowest  phi this iteration                    =   2.96963    
-    Highest phi this iteration                    =   150.204    
-
-
- ITERATION NUMBER 4
-    Number of function evaluations so far        =   31
-    Lowest objective function so far             =   2.96963    
-    Iteration number of lowest phi so far        =   3
-
-    Lowest  phi this iteration                    =   1.39467    
-    Highest phi this iteration                    =   27.0327    
-
-
- ITERATION NUMBER 5
-    Number of function evaluations so far        =   41
-    Lowest objective function so far             =   1.39467    
-    Iteration number of lowest phi so far        =   4
-
-    Lowest  phi this iteration                    =   1.49430    
-    Highest phi this iteration                    =   58.1021    
-
-
- ITERATION NUMBER 6
-    Number of function evaluations so far        =   51
-    Lowest objective function so far             =   1.39467    
-    Iteration number of lowest phi so far        =   4
-
-    Lowest  phi this iteration                    =  0.199048    
-    Highest phi this iteration                    =   55.7046    
-
-
- ITERATION NUMBER 7
-    Number of function evaluations so far        =   61
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   4.80013    
-    Highest phi this iteration                    =   26.2748    
-
-
- ITERATION NUMBER 8
-    Number of function evaluations so far        =   71
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.62411    
-    Highest phi this iteration                    =   78.1682    
-
-
- ITERATION NUMBER 9
-    Number of function evaluations so far        =   81
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.78118    
-    Highest phi this iteration                    =   31.1027    
-
-
- ITERATION NUMBER 10
-    Number of function evaluations so far        =   91
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.50349    
-    Highest phi this iteration                    =   33.9879    
-
-
- ITERATION NUMBER 11
-    Number of function evaluations so far        =   101
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.74934    
-    Highest phi this iteration                    =   13.4361    
-
-
- ITERATION NUMBER 12
-    Number of function evaluations so far        =   111
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.61102    
-    Highest phi this iteration                    =   26.0111    
-
-
- ITERATION NUMBER 13
-    Number of function evaluations so far        =   121
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.88421    
-    Highest phi this iteration                    =   30.7459    
-
-
- ITERATION NUMBER 14
-    Number of function evaluations so far        =   131
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.59432    
-    Highest phi this iteration                    = model_run_failure
-
-
- ITERATION NUMBER 15
-    Number of function evaluations so far        =   141
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.55412    
-    Highest phi this iteration                    =   25.1452    
-
-
- ITERATION NUMBER 16
-    Number of function evaluations so far        =   151
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.42427    
-    Highest phi this iteration                    =   4.72222    
-
-
- ITERATION NUMBER 17
-    Number of function evaluations so far        =   161
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.33793    
-    Highest phi this iteration                    =   9.79895    
-
-
- ITERATION NUMBER 18
-    Number of function evaluations so far        =   171
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.88781    
-    Highest phi this iteration                    =   11.5142    
-
-
- ITERATION NUMBER 19
-    Number of function evaluations so far        =   181
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.77643    
-    Highest phi this iteration                    =   3.64659    
-
-
- ITERATION NUMBER 20
-    Number of function evaluations so far        =   191
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.52097    
-    Highest phi this iteration                    =   8.86232    
-
-
- ITERATION NUMBER 21
-    Number of function evaluations so far        =   201
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.60107    
-    Highest phi this iteration                    =   3.58899    
-
-
- ITERATION NUMBER 22
-    Number of function evaluations so far        =   211
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.53816    
-    Highest phi this iteration                    =   4.72536    
-
-
- ITERATION NUMBER 23
-    Number of function evaluations so far        =   221
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.23282    
-    Highest phi this iteration                    =   2.41530    
-
-
- ITERATION NUMBER 24
-    Number of function evaluations so far        =   231
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.56603    
-    Highest phi this iteration                    =   4.43791    
-
-
- ITERATION NUMBER 25
-    Number of function evaluations so far        =   241
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.36151    
-    Highest phi this iteration                    =   2.93831    
-
-
- ITERATION NUMBER 26
-    Number of function evaluations so far        =   251
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.09275    
-    Highest phi this iteration                    =   1.95747    
-
-
- ITERATION NUMBER 27
-    Number of function evaluations so far        =   261
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.697008    
-    Highest phi this iteration                    =   3.61616    
-
-
- ITERATION NUMBER 28
-    Number of function evaluations so far        =   271
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.883686    
-    Highest phi this iteration                    =   6.27019    
-
-
- ITERATION NUMBER 29
-    Number of function evaluations so far        =   281
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.766481    
-    Highest phi this iteration                    =   5.22146    
-
-
- ITERATION NUMBER 30
-    Number of function evaluations so far        =   291
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.748462    
-    Highest phi this iteration                    =   9.43644    
-
-
- ITERATION NUMBER 31
-    Number of function evaluations so far        =   301
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.934085    
-    Highest phi this iteration                    =   5.29016    
-
-
- ITERATION NUMBER 32
-    Number of function evaluations so far        =   311
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.847995    
-    Highest phi this iteration                    =   7.96286    
-
-
- ITERATION NUMBER 33
-    Number of function evaluations so far        =   321
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.390171    
-    Highest phi this iteration                    =   7.87314    
-
-
- ITERATION NUMBER 34
-    Number of function evaluations so far        =   331
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =   1.73120    
-    Highest phi this iteration                    =   16.1970    
-
-
- ITERATION NUMBER 35
-    Number of function evaluations so far        =   341
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.596939    
-    Highest phi this iteration                    =   18.0794    
-
-
- ITERATION NUMBER 36
-    Number of function evaluations so far        =   351
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.314847    
-    Highest phi this iteration                    =   2.68322    
-
-
- ITERATION NUMBER 37
-    Number of function evaluations so far        =   361
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.308501    
-    Highest phi this iteration                    =   8.00203    
-
-
- ITERATION NUMBER 38
-    Number of function evaluations so far        =   371
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.384602    
-    Highest phi this iteration                    =   11.7736    
-
-
- ITERATION NUMBER 39
-    Number of function evaluations so far        =   381
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.237828    
-    Highest phi this iteration                    =   5.92106    
-
-
- ITERATION NUMBER 40
-    Number of function evaluations so far        =   391
-    Lowest objective function so far             =  0.199048    
-    Iteration number of lowest phi so far        =   6
-
-    Lowest  phi this iteration                    =  0.116361    
-    Highest phi this iteration                    =   4.07545    
-
-
- ITERATION NUMBER 41
-    Number of function evaluations so far        =   401
-    Lowest objective function so far             =  0.116361    
-    Iteration number of lowest phi so far        =   40
-
-    Lowest  phi this iteration                    =  0.256382    
-    Highest phi this iteration                    =   2.25897    
-
-
- ITERATION NUMBER 42
-    Number of function evaluations so far        =   411
-    Lowest objective function so far             =  0.116361    
-    Iteration number of lowest phi so far        =   40
-
-    Lowest  phi this iteration                    =  0.148169    
-    Highest phi this iteration                    =   7.08751    
-
-
- ITERATION NUMBER 43
-    Number of function evaluations so far        =   421
-    Lowest objective function so far             =  0.116361    
-    Iteration number of lowest phi so far        =   40
-
-    Lowest  phi this iteration                    =  0.134954    
-    Highest phi this iteration                    =   1.41843    
-
-
- ITERATION NUMBER 44
-    Number of function evaluations so far        =   431
-    Lowest objective function so far             =  0.116361    
-    Iteration number of lowest phi so far        =   40
-
-    Lowest  phi this iteration                    =  0.148100    
-    Highest phi this iteration                    =   1.22503    
-
-
- ITERATION NUMBER 45
-    Number of function evaluations so far        =   441
-    Lowest objective function so far             =  0.116361    
-    Iteration number of lowest phi so far        =   40
-
-    Lowest  phi this iteration                    =  0.110748    
-    Highest phi this iteration                    =  0.691979    
-
-
- ITERATION NUMBER 46
-    Number of function evaluations so far        =   451
-    Lowest objective function so far             =  0.110748    
-    Iteration number of lowest phi so far        =   45
-
-    Lowest  phi this iteration                    =  0.143185    
-    Highest phi this iteration                    =  0.810685    
-
-
- ITERATION NUMBER 47
-    Number of function evaluations so far        =   461
-    Lowest objective function so far             =  0.110748    
-    Iteration number of lowest phi so far        =   45
-
-    Lowest  phi this iteration                    =  8.961401E-02
-    Highest phi this iteration                    =  0.456583    
-
-
- ITERATION NUMBER 48
-    Number of function evaluations so far        =   471
-    Lowest objective function so far             =  8.961401E-02
-    Iteration number of lowest phi so far        =   47
-
-    Lowest  phi this iteration                    =  0.142013    
-    Highest phi this iteration                    =  0.834029    
-
-
- ITERATION NUMBER 49
-    Number of function evaluations so far        =   481
-    Lowest objective function so far             =  8.961401E-02
-    Iteration number of lowest phi so far        =   47
-
-    Lowest  phi this iteration                    =  8.614336E-02
-    Highest phi this iteration                    =  0.466212    
-
-
- ITERATION NUMBER 50
-    Number of function evaluations so far        =   491
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  9.687188E-02
-    Highest phi this iteration                    =  0.836341    
-
-
- ITERATION NUMBER 51
-    Number of function evaluations so far        =   501
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  9.213386E-02
-    Highest phi this iteration                    =  0.697355    
-
-
- ITERATION NUMBER 52
-    Number of function evaluations so far        =   511
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.153107    
-    Highest phi this iteration                    =  0.607079    
-
-
- ITERATION NUMBER 53
-    Number of function evaluations so far        =   521
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.164397    
-    Highest phi this iteration                    =  0.495437    
-
-
- ITERATION NUMBER 54
-    Number of function evaluations so far        =   531
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.154306    
-    Highest phi this iteration                    =  0.815964    
-
-
- ITERATION NUMBER 55
-    Number of function evaluations so far        =   541
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.111480    
-    Highest phi this iteration                    =  0.678560    
-
-
- ITERATION NUMBER 56
-    Number of function evaluations so far        =   551
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.141363    
-    Highest phi this iteration                    =  0.541045    
-
-
- ITERATION NUMBER 57
-    Number of function evaluations so far        =   561
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.123036    
-    Highest phi this iteration                    =  0.553247    
-
-
- ITERATION NUMBER 58
-    Number of function evaluations so far        =   571
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  0.131671    
-    Highest phi this iteration                    =  0.843940    
-
-
- ITERATION NUMBER 59
-    Number of function evaluations so far        =   581
-    Lowest objective function so far             =  8.614336E-02
-    Iteration number of lowest phi so far        =   49
-
-    Lowest  phi this iteration                    =  7.177203E-02
-    Highest phi this iteration                    =  0.719877    
-
-
- ITERATION NUMBER 60
-    Number of function evaluations so far        =   591
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.340697E-02
-    Highest phi this iteration                    =  0.561933    
-
-
- ITERATION NUMBER 61
-    Number of function evaluations so far        =   601
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  0.125341    
-    Highest phi this iteration                    =  0.611851    
-
-
- ITERATION NUMBER 62
-    Number of function evaluations so far        =   611
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  7.389273E-02
-    Highest phi this iteration                    =  0.782918    
-
-
- ITERATION NUMBER 63
-    Number of function evaluations so far        =   621
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  0.114007    
-    Highest phi this iteration                    =  0.660981    
-
-
- ITERATION NUMBER 64
-    Number of function evaluations so far        =   631
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  0.221949    
-    Highest phi this iteration                    =  0.608398    
-
-
- ITERATION NUMBER 65
-    Number of function evaluations so far        =   641
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  0.113958    
-    Highest phi this iteration                    =  0.286309    
-
-
- ITERATION NUMBER 66
-    Number of function evaluations so far        =   651
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.342004E-02
-    Highest phi this iteration                    =  0.288387    
-
-
- ITERATION NUMBER 67
-    Number of function evaluations so far        =   661
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  9.718392E-02
-    Highest phi this iteration                    =  0.496002    
-
-
- ITERATION NUMBER 68
-    Number of function evaluations so far        =   671
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.918499E-02
-    Highest phi this iteration                    =  0.524604    
-
-
- ITERATION NUMBER 69
-    Number of function evaluations so far        =   681
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  7.241856E-02
-    Highest phi this iteration                    =  0.545063    
-
-
- ITERATION NUMBER 70
-    Number of function evaluations so far        =   691
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.607849E-02
-    Highest phi this iteration                    =  0.558265    
-
-
- ITERATION NUMBER 71
-    Number of function evaluations so far        =   701
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.343036E-02
-    Highest phi this iteration                    =  0.548619    
-
-
- ITERATION NUMBER 72
-    Number of function evaluations so far        =   711
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  8.341532E-02
-    Highest phi this iteration                    =  0.563622    
-
-
- ITERATION NUMBER 73
-    Number of function evaluations so far        =   721
-    Lowest objective function so far             =  7.177203E-02
-    Iteration number of lowest phi so far        =   59
-
-    Lowest  phi this iteration                    =  7.122079E-02
-    Highest phi this iteration                    =  0.554919    
-
-
- ITERATION NUMBER 74
-    Number of function evaluations so far        =   731
-    Lowest objective function so far             =  7.122079E-02
-    Iteration number of lowest phi so far        =   73
-
-    Lowest  phi this iteration                    =  9.011775E-02
-    Highest phi this iteration                    =  0.580814    
-
-
- ITERATION NUMBER 75
-    Number of function evaluations so far        =   741
-    Lowest objective function so far             =  7.122079E-02
-    Iteration number of lowest phi so far        =   73
-
-    Lowest  phi this iteration                    =  6.622064E-02
-    Highest phi this iteration                    =  0.579227    
-
-
- ITERATION NUMBER 76
-    Number of function evaluations so far        =   751
-    Lowest objective function so far             =  6.622064E-02
-    Iteration number of lowest phi so far        =   75
-
-    Lowest  phi this iteration                    =  7.151575E-02
-    Highest phi this iteration                    =  0.546824    
-
-
- ITERATION NUMBER 77
-    Number of function evaluations so far        =   761
-    Lowest objective function so far             =  6.622064E-02
-    Iteration number of lowest phi so far        =   75
-
-    Lowest  phi this iteration                    =  6.124314E-02
-    Highest phi this iteration                    =  0.602720    
-
-
- ITERATION NUMBER 78
-    Number of function evaluations so far        =   771
-    Lowest objective function so far             =  6.124314E-02
-    Iteration number of lowest phi so far        =   77
-
-    Lowest  phi this iteration                    =  6.399878E-02
-    Highest phi this iteration                    =  0.637736    
-
-
- ITERATION NUMBER 79
-    Number of function evaluations so far        =   781
-    Lowest objective function so far             =  6.124314E-02
-    Iteration number of lowest phi so far        =   77
-
-    Lowest  phi this iteration                    =  6.183668E-02
-    Highest phi this iteration                    =  0.589614    
-
-
- ITERATION NUMBER 80
-    Number of function evaluations so far        =   791
-    Lowest objective function so far             =  6.124314E-02
-    Iteration number of lowest phi so far        =   77
-
-    Lowest  phi this iteration                    =  6.351734E-02
-    Highest phi this iteration                    =  0.595563    
-
-
- ITERATION NUMBER 81
-    Number of function evaluations so far        =   801
-    Lowest objective function so far             =  6.124314E-02
-    Iteration number of lowest phi so far        =   77
-
-    Lowest  phi this iteration                    =  6.062354E-02
-    Highest phi this iteration                    =  7.063427E-02
-
-
- ITERATION NUMBER 82
-    Number of function evaluations so far        =   811
-    Lowest objective function so far             =  6.062354E-02
-    Iteration number of lowest phi so far        =   81
-
-    Lowest  phi this iteration                    =  5.944013E-02
-    Highest phi this iteration                    =  0.611127    
-
-
- ITERATION NUMBER 83
-    Number of function evaluations so far        =   821
-    Lowest objective function so far             =  5.944013E-02
-    Iteration number of lowest phi so far        =   82
-
-    Lowest  phi this iteration                    =  6.327790E-02
-    Highest phi this iteration                    =  0.588069    
-
-
- ITERATION NUMBER 84
-    Number of function evaluations so far        =   831
-    Lowest objective function so far             =  5.944013E-02
-    Iteration number of lowest phi so far        =   82
-
-    Lowest  phi this iteration                    =  6.211211E-02
-    Highest phi this iteration                    =  0.535097    
-
-
- ITERATION NUMBER 85
-    Number of function evaluations so far        =   841
-    Lowest objective function so far             =  5.944013E-02
-    Iteration number of lowest phi so far        =   82
-
-    Lowest  phi this iteration                    =  6.095531E-02
-    Highest phi this iteration                    =  0.618431    
-
-
- ITERATION NUMBER 86
-    Number of function evaluations so far        =   851
-    Lowest objective function so far             =  5.944013E-02
-    Iteration number of lowest phi so far        =   82
-
-    Lowest  phi this iteration                    =  5.873283E-02
-    Highest phi this iteration                    =  6.874055E-02
-
-
- ITERATION NUMBER 87
-    Number of function evaluations so far        =   861
-    Lowest objective function so far             =  5.873283E-02
-    Iteration number of lowest phi so far        =   86
-
-    Lowest  phi this iteration                    =  5.825610E-02
-    Highest phi this iteration                    =  0.618199    
-
-
- ITERATION NUMBER 88
-    Number of function evaluations so far        =   871
-    Lowest objective function so far             =  5.825610E-02
-    Iteration number of lowest phi so far        =   87
-
-    Lowest  phi this iteration                    =  5.791114E-02
-    Highest phi this iteration                    =  0.581172    
-
-
- ITERATION NUMBER 89
-    Number of function evaluations so far        =   881
-    Lowest objective function so far             =  5.791114E-02
-    Iteration number of lowest phi so far        =   88
-
-    Lowest  phi this iteration                    =  5.867837E-02
-    Highest phi this iteration                    =  0.614881    
-
-
- ITERATION NUMBER 90
-    Number of function evaluations so far        =   891
-    Lowest objective function so far             =  5.791114E-02
-    Iteration number of lowest phi so far        =   88
-
-    Lowest  phi this iteration                    =  5.898556E-02
-    Highest phi this iteration                    =  0.624555    
-
-
- ITERATION NUMBER 91
-    Number of function evaluations so far        =   901
-    Lowest objective function so far             =  5.791114E-02
-    Iteration number of lowest phi so far        =   88
-
-    Lowest  phi this iteration                    =  5.856400E-02
-    Highest phi this iteration                    =  0.623503    
-
-
- ITERATION NUMBER 92
-    Number of function evaluations so far        =   911
-    Lowest objective function so far             =  5.791114E-02
-    Iteration number of lowest phi so far        =   88
-
-    Lowest  phi this iteration                    =  5.741961E-02
-    Highest phi this iteration                    =  0.628156    
-
-
- ITERATION NUMBER 93
-    Number of function evaluations so far        =   921
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.759432E-02
-    Highest phi this iteration                    =  0.621528    
-
-
- ITERATION NUMBER 94
-    Number of function evaluations so far        =   931
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.799453E-02
-    Highest phi this iteration                    =  6.300353E-02
-
-
- ITERATION NUMBER 95
-    Number of function evaluations so far        =   941
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.762209E-02
-    Highest phi this iteration                    =  0.626381    
-
-
- ITERATION NUMBER 96
-    Number of function evaluations so far        =   951
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.758903E-02
-    Highest phi this iteration                    =  6.172636E-02
-
-
- ITERATION NUMBER 97
-    Number of function evaluations so far        =   961
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.756386E-02
-    Highest phi this iteration                    =  6.059077E-02
-
-
- ITERATION NUMBER 98
-    Number of function evaluations so far        =   971
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.750518E-02
-    Highest phi this iteration                    =  6.073567E-02
-
-
- ITERATION NUMBER 99
-    Number of function evaluations so far        =   981
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.747896E-02
-    Highest phi this iteration                    =  0.616445    
-
-
- ITERATION NUMBER 100
-    Number of function evaluations so far        =   991
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.744607E-02
-    Highest phi this iteration                    =  5.941938E-02
-
-
- ITERATION NUMBER 101
-    Number of function evaluations so far        =   1001
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.747746E-02
-    Highest phi this iteration                    =  5.943658E-02
-
-
- ITERATION NUMBER 102
-    Number of function evaluations so far        =   1011
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.744447E-02
-    Highest phi this iteration                    =  5.965980E-02
-
-
- ITERATION NUMBER 103
-    Number of function evaluations so far        =   1021
-    Lowest objective function so far             =  5.741961E-02
-    Iteration number of lowest phi so far        =   92
-
-    Lowest  phi this iteration                    =  5.739534E-02
-    Highest phi this iteration                    =  6.068489E-02
-
-
- ITERATION NUMBER 104
-    Number of function evaluations so far        =   1031
-    Lowest objective function so far             =  5.739534E-02
-    Iteration number of lowest phi so far        =   103
-
-    Lowest  phi this iteration                    =  5.742801E-02
-    Highest phi this iteration                    =  5.832889E-02
-
-
- ITERATION NUMBER 105
-    Number of function evaluations so far        =   1041
-    Lowest objective function so far             =  5.739534E-02
-    Iteration number of lowest phi so far        =   103
-
-    Lowest  phi this iteration                    =  5.737733E-02
-    Highest phi this iteration                    =  5.765235E-02
-
-
- ITERATION NUMBER 106
-    Number of function evaluations so far        =   1051
-    Lowest objective function so far             =  5.737733E-02
-    Iteration number of lowest phi so far        =   105
-
-    Lowest  phi this iteration                    =  5.740663E-02
-    Highest phi this iteration                    =  5.950264E-02
-
-
- ITERATION NUMBER 107
-    Number of function evaluations so far        =   1061
-    Lowest objective function so far             =  5.737733E-02
-    Iteration number of lowest phi so far        =   105
-
-    Lowest  phi this iteration                    =  5.737237E-02
-    Highest phi this iteration                    =  5.805049E-02
-
-
- ITERATION NUMBER 108
-    Number of function evaluations so far        =   1071
-    Lowest objective function so far             =  5.737237E-02
-    Iteration number of lowest phi so far        =   107
-
-    Lowest  phi this iteration                    =  5.737452E-02
-    Highest phi this iteration                    =  5.822071E-02
-
-
- ITERATION NUMBER 109
-    Number of function evaluations so far        =   1081
-    Lowest objective function so far             =  5.737237E-02
-    Iteration number of lowest phi so far        =   107
-
-    Lowest  phi this iteration                    =  5.736736E-02
-    Highest phi this iteration                    =  5.766238E-02
-
-
- ITERATION NUMBER 110
-    Number of function evaluations so far        =   1091
-    Lowest objective function so far             =  5.736736E-02
-    Iteration number of lowest phi so far        =   109
-
-    Lowest  phi this iteration                    =  5.737236E-02
-    Highest phi this iteration                    =  5.743778E-02
-
-
- ITERATION NUMBER 111
-    Number of function evaluations so far        =   1101
-    Lowest objective function so far             =  5.736736E-02
-    Iteration number of lowest phi so far        =   109
-
-    Lowest  phi this iteration                    =  5.738203E-02
-    Highest phi this iteration                    =  5.804282E-02
-
-
- ITERATION NUMBER 112
-    Number of function evaluations so far        =   1111
-    Lowest objective function so far             =  5.736736E-02
-    Iteration number of lowest phi so far        =   109
-
-    Lowest  phi this iteration                    =  5.736823E-02
-    Highest phi this iteration                    =  5.800607E-02
-
-
- ITERATION NUMBER 113
-    Number of function evaluations so far        =   1121
-    Lowest objective function so far             =  5.736736E-02
-    Iteration number of lowest phi so far        =   109
-
-    Lowest  phi this iteration                    =  5.736877E-02
-    Highest phi this iteration                    =  5.741465E-02
-
-
- ITERATION NUMBER 114
-    Number of function evaluations so far        =   1131
-    Lowest objective function so far             =  5.736736E-02
-    Iteration number of lowest phi so far        =   109
-
-    Lowest  phi this iteration                    =  5.736661E-02
-    Highest phi this iteration                    =  5.752221E-02
-
-
- ITERATION NUMBER 115
-    Number of function evaluations so far        =   1141
-    Lowest objective function so far             =  5.736661E-02
-    Iteration number of lowest phi so far        =   114
-
-    Lowest  phi this iteration                    =  5.736585E-02
-    Highest phi this iteration                    =  5.738223E-02
-
-
- ITERATION NUMBER 116
-    Number of function evaluations so far        =   1151
-    Lowest objective function so far             =  5.736585E-02
-    Iteration number of lowest phi so far        =   115
-
-    Lowest  phi this iteration                    =  5.736654E-02
-    Highest phi this iteration                    =  5.804703E-02
-
-
- ITERATION NUMBER 117
-    Number of function evaluations so far        =   1161
-    Lowest objective function so far             =  5.736585E-02
-    Iteration number of lowest phi so far        =   115
-
-    Lowest  phi this iteration                    =  5.736629E-02
-    Highest phi this iteration                    =  5.803300E-02
-
-
- ITERATION NUMBER 118
-    Number of function evaluations so far        =   1171
-    Lowest objective function so far             =  5.736585E-02
-    Iteration number of lowest phi so far        =   115
-
-    Lowest  phi this iteration                    =  5.736611E-02
-    Highest phi this iteration                    =  5.738851E-02
-
-
- ITERATION NUMBER 119
-    Number of function evaluations so far        =   1181
-    Lowest objective function so far             =  5.736585E-02
-    Iteration number of lowest phi so far        =   115
-
-    Lowest  phi this iteration                    =  5.736570E-02
-    Highest phi this iteration                    =  5.803121E-02
-
-
- ITERATION NUMBER 120
-    Number of function evaluations so far        =   1191
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736571E-02
-    Highest phi this iteration                    =  5.802790E-02
-
-
- ITERATION NUMBER 121
-    Number of function evaluations so far        =   1201
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736599E-02
-    Highest phi this iteration                    =  5.802349E-02
-
-
- ITERATION NUMBER 122
-    Number of function evaluations so far        =   1211
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736575E-02
-    Highest phi this iteration                    =  5.801374E-02
-
-
- ITERATION NUMBER 123
-    Number of function evaluations so far        =   1221
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736618E-02
-    Highest phi this iteration                    =  5.801064E-02
-
-
- ITERATION NUMBER 124
-    Number of function evaluations so far        =   1231
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736578E-02
-    Highest phi this iteration                    =  5.801500E-02
-
-
- ITERATION NUMBER 125
-    Number of function evaluations so far        =   1241
-    Lowest objective function so far             =  5.736570E-02
-    Iteration number of lowest phi so far        =   119
-
-    Lowest  phi this iteration                    =  5.736558E-02
-    Highest phi this iteration                    =  5.736893E-02
-
-
- ITERATION NUMBER 126
-    Number of function evaluations so far        =   1251
-    Lowest objective function so far             =  5.736558E-02
-    Iteration number of lowest phi so far        =   125
-
-    Lowest  phi this iteration                    =  5.736558E-02
-    Highest phi this iteration                    =  5.736723E-02
-
-
- ITERATION NUMBER 127
-    Number of function evaluations so far        =   1261
-    Lowest objective function so far             =  5.736558E-02
-    Iteration number of lowest phi so far        =   126
-
-    Lowest  phi this iteration                    =  5.736575E-02
-    Highest phi this iteration                    =  5.736750E-02
-
-
- ITERATION NUMBER 128
-    Number of function evaluations so far        =   1271
-    Lowest objective function so far             =  5.736558E-02
-    Iteration number of lowest phi so far        =   126
-
-    Lowest  phi this iteration                    =  5.736569E-02
-    Highest phi this iteration                    =  5.736645E-02
-
-
- ITERATION NUMBER 129
-    Number of function evaluations so far        =   1281
-    Lowest objective function so far             =  5.736558E-02
-    Iteration number of lowest phi so far        =   126
-
-    Lowest  phi this iteration                    =  5.736586E-02
-    Highest phi this iteration                    =  5.736762E-02
-
-
- ITERATION NUMBER 130
-    Number of function evaluations so far        =   1291
-    Lowest objective function so far             =  5.736558E-02
-    Iteration number of lowest phi so far        =   126
-
-    Lowest  phi this iteration                    =  5.736548E-02
-    Highest phi this iteration                    =  5.736740E-02
-
-
- ITERATION NUMBER 131
-    Number of function evaluations so far        =   1301
-    Lowest objective function so far             =  5.736548E-02
-    Iteration number of lowest phi so far        =   130
-
-    Lowest  phi this iteration                    =  5.736538E-02
-    Highest phi this iteration                    =  5.736648E-02
-
-
- ITERATION NUMBER 132
-    Number of function evaluations so far        =   1311
-    Lowest objective function so far             =  5.736538E-02
-    Iteration number of lowest phi so far        =   131
-
-    Lowest  phi this iteration                    =  5.736568E-02
-    Highest phi this iteration                    =  5.736724E-02
-
-
- ITERATION NUMBER 133
-    Number of function evaluations so far        =   1321
-    Lowest objective function so far             =  5.736538E-02
-    Iteration number of lowest phi so far        =   131
-
-    Lowest  phi this iteration                    =  5.736568E-02
-    Highest phi this iteration                    =  5.736664E-02
-
-
- ITERATION NUMBER 134
-    Number of function evaluations so far        =   1331
-    Lowest objective function so far             =  5.736538E-02
-    Iteration number of lowest phi so far        =   131
-
-    Lowest  phi this iteration                    =  5.736560E-02
-    Highest phi this iteration                    =  5.736645E-02
-
-
-                        COMPLETION OF CMA-ES PROCESS
-
- Reason for termination of CMA-ES process:-
-
- Highest-to-lowest relative objective function difference for generated 
-   parameter sets below threshold over 10 successive iterations.
-
- Optimised parameter values ----->
-
-    Name                Value
-    bins                  60.5361    
-    thetar               1.000000E-06
-    thetas               0.430000    
-    alpha                 1.92765    
-    n                     3.62713    
-    ksat                 4.057506E-04
-    l                    0.500000    
-    ihead                 145.000    
-    start                 300.000    
-    inten                 4.00000    
-    durat                 60.0000    
-    pulse                 150.000    
-
- See file to_precal3.par for optimised parameter values.
- See file to_precal3.unc for optimised covariance matrix.
->>>>>>> 674c2978bdd8a84eb948c31f3f9560733a6f59e9
