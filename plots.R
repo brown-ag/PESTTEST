@@ -1,0 +1,7 @@
+talog_bins=read.csv("./talog/niceplots/talog_bins.csv")
+x11()
+plot(talog_bins$minu, talog_bins$meas*100, xlab="Minutes",ylab="Matric potential, cm water")
+lines(talog_bins$minu, talog_bins$hundr*100,col="RED",lwd=3)
+lines(talog_bins$minu, talog_bins$thous*100,col="BLUE",lwd=3)
+legend(1000,-80,c("Measured","100 bins","1000 bins"),pch=c(1,-1,-1),lty=c(0,1,1),lwd=c(1,2.5,2.5),col=c('black','red','blue'))
+locator(1)
