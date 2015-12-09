@@ -3,7 +3,6 @@ import sys
 # User-defined Constants
 ######
 
-tensio_name='../tensio_data/tensio_4_7_13.csv'
 
 ######
 # FUNCTION DEFINITIONS
@@ -63,7 +62,10 @@ def writeFile(what, filename):
 ######
 case=sys.argv[1]
 mode=sys.argv[2]
-print(sys.argv[0]+" for case: "+case+" in mode:"+mode)
+tensiomfile=sys.argv[3]
+
+tensio_name='../tensio_data/'+tensiomfile+".csv" #//TEMPORARY FIX AB
+print(sys.argv[0]+" for case: "+case+" in mode:"+mode+" using "+tensio_name)
 
 if mode == "help" or mode == "h" or mode == "-h":
 	print("This is helpful?")
@@ -79,23 +81,34 @@ elif mode == "in":
 	timestamp=[]
 	minutes=[]
 	matric=[]
-	#irrig=[]
+	irrig=[]
+	lastirrig=-1
+	maxdepth=0
+	
 	for l in lines:
 		if n != 0:
 			ff=l.split(",")
-			ctrl_obs.append("ten"+str(n)+" "+str(float(ff[3])/-100)+" 1 tensio")
-				#for printing field observations for control file
-			ins_obs.append("l1 w w w !ten"+str(n)+"!\n") 
-				# for reading model output values in instruction file
-				
-			#raw values currently not used from file:
-			#timestamp.append(str(ff[1]))
-			#minutes.append(int(ff[2]))
+			timestamp.append(str(ff[1]))
+			minutes.append(int(ff[2]))
 			matric.append(float(ff[3]))
-			#irrig.append(ff[4])
+			irrig.append(int(ff[4]))
+			instruction="l1 w w w !ten"+str(n)+"!\n"
+			if(int(ff[4]) == 0):
+				if(lastirrig == 1):
+					instruction="l1 w w w !ten"+str(n)+"! !msbc"+str(n)+"!\n"
+					maxdepth=n
+			ins_obs.append(instruction) 	
+			ctrl_obs.append("ten"+str(n)+" "+str(float(ff[3])/-100)+" 1 tensio")
+			#for printing field observations for control file
+			# for reading model output values in instruction file
+			lastirrig=int(ff[4])	
+			#raw values currently not used from file:
+
 		n+=1
+	ctrl_obs.append("msbc"+str(maxdepth)+" 0.1 10000 surf") #add surface bc condition to the bottom to not 
+															#interfere with model output of matric potential
 	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
-	mrun="python tprecal.py "+case+" pest\n./test_alf\n#Rscript viewcsv.R "+case+" 2"
+	mrun="python tprecal.py "+case+" pest "+tensiomfile+"\n./test_alf\n#Rscript viewcsv.R "+case+" 2"
 	mrunn=[]
 	mrunn.append(mrun)
 	writeFile(mrunn,"run_model.sh")
@@ -164,7 +177,7 @@ elif mode == "pest":
 	duration=end-start
 	#duration=duration/15
 	start=(start)+(duration/2)
-	end=start+duration
+	end=start+(duration/2)
 	print("Using start:"+str(start)+ " Using end: "+str(end))
 	
 	#depthinc=float(intenslen)

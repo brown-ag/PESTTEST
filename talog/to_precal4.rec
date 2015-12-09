@@ -12,9 +12,9 @@
  Case dimensions:-
 
     Number of parameters                           :     8
-    Number of adjustable parameters                :     3
+    Number of adjustable parameters                :     4
     Number of parameter groups                     :     3
-    Number of observations                         :    96
+    Number of observations                         :    97
     Number of prior estimates                      :     0
 
 
@@ -56,7 +56,7 @@
  Param        Increment   Increment   Increment   Forward or   Multiplier  Method
  group        type                    low bound   central      (central)   (central)
  model        relative     1.000       1.000      always_2        na         na
- soil         relative    1.0000E-02  1.0000E-03  always_2        na         na
+ soil         relative    0.1000      1.0000E-03  always_2        na         na
  water        relative    1.0000E-02  1.0000E-03  always_2        na         na
 
 
@@ -64,14 +64,14 @@
 
  Name         Trans-            Change       Initial        Lower          Upper
               formation         limit        value          bound          bound
- bins         fixed               na        40.0000          na             na
+ bins         fixed               na        1000.00          na             na
  thetar       fixed               na       1.000000E-06      na             na
- thetas       fixed               na       0.430000          na             na
- alpha        none              factor      4.00000        1.00000        10.0000    
- n            none              factor      2.10000        1.10000        10.0000    
- ksat         log               factor     6.100000E-04   1.000000E-08   1.000000E-03
+ thetas       none              relative   0.438131       0.400000       0.500000    
+ alpha        none              factor      1.92951        1.00000        10.0000    
+ n            none              relative    3.72056        1.20000        4.00000    
+ ksat         log               relative   3.719248E-04   1.000000E-06   3.000000E-03
  l            fixed               na       0.500000          na             na
- ihead        fixed               na        126.708          na             na
+ ihead        fixed               na        145.910          na             na
 
  Name         Group          Scale         Offset        Model command number
  bins         model         1.00000        0.00000            1
@@ -92,102 +92,103 @@
  Observations:-
 
  Observation name        Observation       Weight       Group
-  ten1                   -1.27382          1.000       tensio      
-  ten2                   -1.26464          1.000       tensio      
-  ten3                   -1.27095          1.000       tensio      
-  ten4                   -1.26177          1.000       tensio      
-  ten5                   -1.27095          1.000       tensio      
-  ten6                   -1.27325          1.000       tensio      
-  ten7                   -1.27555          1.000       tensio      
-  ten8                   -1.27095          1.000       tensio      
-  ten9                   -1.27210          1.000       tensio      
-  ten10                  -1.26062          1.000       tensio      
-  ten11                  -1.26693          1.000       tensio      
-  ten12                  -1.27555          1.000       tensio      
-  ten13                  -1.26464          1.000       tensio      
-  ten14                  -1.26923          1.000       tensio      
-  ten15                  -1.27440          1.000       tensio      
-  ten16                  -1.27669          1.000       tensio      
-  ten17                  -1.27153          1.000       tensio      
-  ten18                  -1.27497          1.000       tensio      
-  ten19                  -1.26234          1.000       tensio      
-  ten20                  -1.24512          1.000       tensio      
-  ten21                  -1.18944          1.000       tensio      
-  ten22                 -0.969001          1.000       tensio      
-  ten23                 -0.812285          1.000       tensio      
-  ten24                 -0.756602          1.000       tensio      
-  ten25                 -0.733639          1.000       tensio      
-  ten26                 -0.722158          1.000       tensio      
-  ten27                 -0.721584          1.000       tensio      
-  ten28                 -0.730195          1.000       tensio      
-  ten29                 -0.746843          1.000       tensio      
-  ten30                 -0.764064          1.000       tensio      
-  ten31                 -0.778416          1.000       tensio      
-  ten32                 -0.790471          1.000       tensio      
-  ten33                 -0.804822          1.000       tensio      
-  ten34                 -0.819173          1.000       tensio      
-  ten35                 -0.814007          1.000       tensio      
-  ten36                 -0.818025          1.000       tensio      
-  ten37                 -0.834673          1.000       tensio      
-  ten38                 -0.849024          1.000       tensio      
-  ten39                 -0.861653          1.000       tensio      
-  ten40                 -0.871412          1.000       tensio      
-  ten41                 -0.878301          1.000       tensio      
-  ten42                 -0.896096          1.000       tensio      
-  ten43                 -0.911596          1.000       tensio      
-  ten44                 -0.925373          1.000       tensio      
-  ten45                 -0.936854          1.000       tensio      
-  ten46                 -0.951206          1.000       tensio      
-  ten47                 -0.958668          1.000       tensio      
-  ten48                 -0.965557          1.000       tensio      
-  ten49                 -0.974168          1.000       tensio      
-  ten50                 -0.981056          1.000       tensio      
-  ten51                 -0.988519          1.000       tensio      
-  ten52                 -0.994259          1.000       tensio      
-  ten53                  -1.00459          1.000       tensio      
-  ten54                  -1.01378          1.000       tensio      
-  ten55                  -1.00746          1.000       tensio      
-  ten56                  -1.02239          1.000       tensio      
-  ten57                  -1.02583          1.000       tensio      
-  ten58                  -1.02755          1.000       tensio      
-  ten59                  -1.03674          1.000       tensio      
-  ten60                  -1.04363          1.000       tensio      
-  ten61                  -1.05741          1.000       tensio      
-  ten62                  -1.05913          1.000       tensio      
-  ten63                  -1.05224          1.000       tensio      
-  ten64                  -1.06028          1.000       tensio      
-  ten65                  -1.05339          1.000       tensio      
-  ten66                  -1.05970          1.000       tensio      
-  ten67                  -1.06487          1.000       tensio      
-  ten68                  -1.07348          1.000       tensio      
-  ten69                  -1.08668          1.000       tensio      
+  ten1                   -1.46441          1.000       tensio      
+  ten2                   -1.46096          1.000       tensio      
+  ten3                   -1.45867          1.000       tensio      
+  ten4                   -1.45982          1.000       tensio      
+  ten5                   -1.45695          1.000       tensio      
+  ten6                   -1.46154          1.000       tensio      
+  ten7                   -1.46039          1.000       tensio      
+  ten8                   -1.45867          1.000       tensio      
+  ten9                   -1.46211          1.000       tensio      
+  ten10                  -1.45350          1.000       tensio      
+  ten11                  -1.45408          1.000       tensio      
+  ten12                  -1.45178          1.000       tensio      
+  ten13                  -1.45235          1.000       tensio      
+  ten14                  -1.45867          1.000       tensio      
+  ten15                  -1.45235          1.000       tensio      
+  ten16                  -1.44891          1.000       tensio      
+  ten17                  -1.44948          1.000       tensio      
+  ten18                  -1.43054          1.000       tensio      
+  ten19                  -1.40413          1.000       tensio      
+  ten20                  -1.32032          1.000       tensio      
+  ten21                  -1.06028          1.000       tensio      
+  ten22                 -0.782434          1.000       tensio      
+  ten23                 -0.716992          1.000       tensio      
+  ten24                 -0.711251          1.000       tensio      
+  ten25                 -0.712400          1.000       tensio      
+  ten26                 -0.715270          1.000       tensio      
+  ten27                 -0.716992          1.000       tensio      
+  ten28                 -0.730769          1.000       tensio      
+  ten29                 -0.766935          1.000       tensio      
+  ten30                 -0.788749          1.000       tensio      
+  ten31                 -0.808840          1.000       tensio      
+  ten32                 -0.828358          1.000       tensio      
+  ten33                 -0.846728          1.000       tensio      
+  ten34                 -0.863949          1.000       tensio      
+  ten35                 -0.882893          1.000       tensio      
+  ten36                 -0.896096          1.000       tensio      
+  ten37                 -0.906429          1.000       tensio      
+  ten38                 -0.917336          1.000       tensio      
+  ten39                 -0.928243          1.000       tensio      
+  ten40                 -0.938002          1.000       tensio      
+  ten41                 -0.947761          1.000       tensio      
+  ten42                 -0.955224          1.000       tensio      
+  ten43                 -0.963261          1.000       tensio      
+  ten44                 -0.971297          1.000       tensio      
+  ten45                 -0.979908          1.000       tensio      
+  ten46                 -0.986223          1.000       tensio      
+  ten47                 -0.993685          1.000       tensio      
+  ten48                  -1.00057          1.000       tensio      
+  ten49                  -1.00689          1.000       tensio      
+  ten50                  -1.01320          1.000       tensio      
+  ten51                  -1.02009          1.000       tensio      
+  ten52                  -1.02583          1.000       tensio      
+  ten53                  -1.03100          1.000       tensio      
+  ten54                  -1.03559          1.000       tensio      
+  ten55                  -1.03961          1.000       tensio      
+  ten56                  -1.04420          1.000       tensio      
+  ten57                  -1.04994          1.000       tensio      
+  ten58                  -1.05281          1.000       tensio      
+  ten59                  -1.05626          1.000       tensio      
+  ten60                  -1.06085          1.000       tensio      
+  ten61                  -1.06372          1.000       tensio      
+  ten62                  -1.06831          1.000       tensio      
+  ten63                  -1.07233          1.000       tensio      
+  ten64                  -1.07577          1.000       tensio      
+  ten65                  -1.07807          1.000       tensio      
+  ten66                  -1.08209          1.000       tensio      
+  ten67                  -1.08553          1.000       tensio      
+  ten68                  -1.08840          1.000       tensio      
+  ten69                  -1.09127          1.000       tensio      
   ten70                  -1.09242          1.000       tensio      
-  ten71                  -1.09759          1.000       tensio      
-  ten72                  -1.09070          1.000       tensio      
+  ten71                  -1.09701          1.000       tensio      
+  ten72                  -1.10046          1.000       tensio      
   ten73                  -1.10218          1.000       tensio      
-  ten74                  -1.09529          1.000       tensio      
-  ten75                  -1.09242          1.000       tensio      
-  ten76                  -1.09300          1.000       tensio      
-  ten77                  -1.09242          1.000       tensio      
-  ten78                  -1.09587          1.000       tensio      
-  ten79                  -1.09931          1.000       tensio      
-  ten80                  -1.10505          1.000       tensio      
-  ten81                  -1.10735          1.000       tensio      
-  ten82                  -1.11309          1.000       tensio      
-  ten83                  -1.11653          1.000       tensio      
-  ten84                  -1.12113          1.000       tensio      
-  ten85                  -1.12974          1.000       tensio      
-  ten86                  -1.12342          1.000       tensio      
-  ten87                  -1.11194          1.000       tensio      
-  ten88                  -1.12400          1.000       tensio      
-  ten89                  -1.18140          1.000       tensio      
-  ten90                  -1.17451          1.000       tensio      
-  ten91                  -1.15098          1.000       tensio      
-  ten92                  -1.13720          1.000       tensio      
-  ten93                  -1.12629          1.000       tensio      
-  ten94                  -1.12400          1.000       tensio      
-  ten95                  -1.11596          1.000       tensio      
-  ten96                  -1.11079          1.000       tensio      
+  ten74                  -1.10505          1.000       tensio      
+  ten75                  -1.10735          1.000       tensio      
+  ten76                  -1.10964          1.000       tensio      
+  ten77                  -1.11309          1.000       tensio      
+  ten78                  -1.11424          1.000       tensio      
+  ten79                  -1.11711          1.000       tensio      
+  ten80                  -1.12055          1.000       tensio      
+  ten81                  -1.12285          1.000       tensio      
+  ten82                  -1.12514          1.000       tensio      
+  ten83                  -1.12801          1.000       tensio      
+  ten84                  -1.13031          1.000       tensio      
+  ten85                  -1.13146          1.000       tensio      
+  ten86                  -1.13548          1.000       tensio      
+  ten87                  -1.13720          1.000       tensio      
+  ten88                  -1.13777          1.000       tensio      
+  ten89                  -1.13949          1.000       tensio      
+  ten90                  -1.14294          1.000       tensio      
+  ten91                  -1.14466          1.000       tensio      
+  ten92                  -1.14696          1.000       tensio      
+  ten93                  -1.14811          1.000       tensio      
+  ten94                  -1.15040          1.000       tensio      
+  ten95                  -1.15729          1.000       tensio      
+  ten96                  -1.15385          1.000       tensio      
+  msbc25                 0.100000         1.0000E+04   surf        
 
 
  Control settings:-
@@ -204,7 +205,7 @@
     Undertake observation re-referencing                         : no
 
     Maximum  factor  parameter change (factor-limited changes)   :  5.0000
-    Maximum relative parameter change (relative-limited changes) : na
+    Maximum relative parameter change (relative-limited changes) :  5.0000
     Fraction of initial parameter values used in computing
     change limit for near-zero parameters                        : 1.00000E-03
     Allow bending of parameter upgrade vector                    : no
@@ -240,586 +241,116 @@
 
 
  INITIAL CONDITIONS: 
-    Sum of squared weighted residuals (ie phi) =   6.0704    
+    Sum of squared weighted residuals (ie phi)               =  1.00000E+06
+    Contribution to phi from observation group "tensio"      =  0.56507    
+    Contribution to phi from observation group "surf"        =  1.00000E+06
 
        Current parameter values
-       bins             40.0000    
+       bins             1000.00    
        thetar          1.000000E-06
-       thetas          0.430000    
-       alpha            4.00000    
-       n                2.10000    
-       ksat            6.100000E-04
+       thetas          0.438131    
+       alpha            1.92951    
+       n                3.72056    
+       ksat            3.719248E-04
        l               0.500000    
-       ihead            126.708    
+       ihead            145.910    
 
 
  OPTIMISATION ITERATION NO.        : 1
     Model calls so far             : 1
-    Starting phi for this iteration:   6.0704    
+    Starting phi for this iteration                          :  1.00000E+06
+    Contribution to phi from observation group "tensio"      :  0.56507    
+    Contribution to phi from observation group "surf"        :  1.00000E+06
 
         Lambda =   5.0000     ----->
-           Phi =   3.1801      (  0.524 of starting phi)
+           Phi =  1.00000E+06  (  1.000 of starting phi)
 
         Lambda =   2.5000     ----->
-           Phi =   3.1261      (  0.515 of starting phi)
+           Phi =  1.00000E+06  (  1.000 of starting phi)
 
-        Lambda =   1.2500     ----->
-           Phi =   3.1804      (  0.524 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:   3.1261    
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  1.00000E+06
 
        Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
+       bins             1000.00                 bins              1000.00    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            3.92666                 alpha             4.00000    
-       n                2.13143                 n                 2.10000    
-       ksat            1.000000E-03             ksat             6.100000E-04
+       thetas          0.500000                 thetas           0.438131    
+       alpha            1.95578                 alpha             1.92951    
+       n                3.66884                 n                 3.72056    
+       ksat            4.538176E-04             ksat             3.719248E-04
        l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.639     ["ksat"]
-    Maximum relative change: 0.6393     ["ksat"]
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change (  factor-limited params):  1.014     ["alpha"]
+    Maximum relative change (relative-limited params): 0.2202     ["ksat"]
+    Maximum relative change (      all        params): 0.2202     ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 2
     Model calls so far             : 7
-    Starting phi for this iteration:   3.1261    
-        param "ksat" frozen: gradient and update vectors out of bounds
+    Starting phi for this iteration                          :  1.00000E+06
+    Contribution to phi from observation group "tensio"      :  0.52673    
+    Contribution to phi from observation group "surf"        :  1.00000E+06
+        param "thetas" frozen: gradient and update vectors out of bounds
 
         Lambda =   1.2500     ----->
-           Phi =   1.3409      (  0.429 of starting phi)
+           Phi =  1.00000E+06  (  1.000 of starting phi)
 
         Lambda =  0.62500     ----->
-           Phi =   1.3534      (  0.433 of starting phi)
+           Phi =  1.00000E+06  (  1.000 of starting phi)
 
-        Lambda =   2.5000     ----->
-           Phi =   1.3946      (  0.446 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:   1.3409    
+    No more lambdas: relative phi reduction between lambdas less than 0.0100
+    Lowest phi this iteration:  1.00000E+06
 
        Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
+       bins             1000.00                 bins              1000.00    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            3.36042                 alpha             3.92666    
-       n                2.16613                 n                 2.13143    
-       ksat            1.000000E-03             ksat             1.000000E-03
+       thetas          0.500000                 thetas           0.500000    
+       alpha            2.11045                 alpha             1.95578    
+       n                3.65085                 n                 3.66884    
+       ksat            7.278204E-04             ksat             4.538176E-04
        l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.169     ["alpha"]
-    Maximum relative change: 0.1442     ["alpha"]
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change (  factor-limited params):  1.079     ["alpha"]
+    Maximum relative change (relative-limited params): 0.6038     ["ksat"]
+    Maximum relative change (      all        params): 0.6038     ["ksat"]
 
 
  OPTIMISATION ITERATION NO.        : 3
     Model calls so far             : 13
-    Starting phi for this iteration:   1.3409    
+    Starting phi for this iteration                          :  1.00000E+06
+    Contribution to phi from observation group "tensio"      :  0.51397    
+    Contribution to phi from observation group "surf"        :  1.00000E+06
     All frozen parameters freed.
-        param "ksat" frozen: gradient and update vectors out of bounds
-
-        Lambda =   1.2500     ----->
-           Phi =   1.1613      (  0.866 of starting phi)
-
-        Lambda =  0.62500     ----->
-           Phi =   1.1633      (  0.868 of starting phi)
-
-        Lambda =   2.5000     ----->
-           Phi =   1.1654      (  0.869 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:   1.1613    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            3.18516                 alpha             3.36042    
-       n                2.18027                 n                 2.16613    
-       ksat            1.000000E-03             ksat             1.000000E-03
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.055     ["alpha"]
-    Maximum relative change: 5.2157E-02 ["alpha"]
-
-
- OPTIMISATION ITERATION NO.        : 4
-    Model calls so far             : 19
-    Starting phi for this iteration:   1.1613    
-    All frozen parameters freed.
-
-        Lambda =   1.2500     ----->
-           Phi =   1.0290      (  0.886 of starting phi)
-
-        Lambda =  0.62500     ----->
-           Phi =   1.0184      (  0.877 of starting phi)
+        param "thetas" frozen: gradient and update vectors out of bounds
 
         Lambda =  0.31250     ----->
-           Phi =   1.0107      (  0.870 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:   1.0107    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            3.11883                 alpha             3.18516    
-       n                2.21057                 n                 2.18027    
-       ksat            9.598344E-04             ksat             1.000000E-03
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.042     ["ksat"]
-    Maximum relative change: 4.0166E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 5
-    Model calls so far             : 25
-    Starting phi for this iteration:   1.0107    
+           Phi =  1.00000E+06  (  1.000 times starting phi)
 
         Lambda =  0.15625     ----->
-           Phi =   1.0905      (  1.079 times starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =   1.0920      (  1.080 times starting phi)
-
-        Lambda =  0.31250     ----->
-           Phi =   1.0909      (  1.079 times starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:   1.0905    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            3.05362                 alpha             3.11883    
-       n                2.21649                 n                 2.21057    
-       ksat            8.945183E-04             ksat             9.598344E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.073     ["ksat"]
-    Maximum relative change: 6.8049E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 6
-    Model calls so far             : 31
-    Starting phi for this iteration:   1.0905    
-
-        Lambda =  0.15625     ----->
-           Phi =   1.0428      (  0.956 of starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =   1.0459      (  0.959 of starting phi)
-
-        Lambda =  0.31250     ----->
-           Phi =   1.0423      (  0.956 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:   1.0423    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.98952                 alpha             3.05362    
-       n                2.24377                 n                 2.21649    
-       ksat            8.412021E-04             ksat             8.945183E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.063     ["ksat"]
-    Maximum relative change: 5.9603E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 7
-    Model calls so far             : 37
-    Starting phi for this iteration:   1.0423    
-
-        Lambda =  0.31250     ----->
-           Phi =   1.0012      (  0.961 of starting phi)
-
-        Lambda =  0.15625     ----->
-           Phi =   1.0143      (  0.973 of starting phi)
+           Phi =  1.00000E+06  (  1.000 times starting phi)
 
         Lambda =  0.62500     ----->
-           Phi =   1.0096      (  0.969 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:   1.0012    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.89805                 alpha             2.98952    
-       n                2.27163                 n                 2.24377    
-       ksat            7.652192E-04             ksat             8.412021E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.099     ["ksat"]
-    Maximum relative change: 9.0327E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 8
-    Model calls so far             : 43
-    Starting phi for this iteration:   1.0012    
-
-        Lambda =  0.31250     ----->
-           Phi =  0.95633      (  0.955 of starting phi)
-
-        Lambda =  0.15625     ----->
-           Phi =  0.96619      (  0.965 of starting phi)
-
-        Lambda =  0.62500     ----->
-           Phi =  0.96752      (  0.966 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:  0.95633    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.80503                 alpha             2.89805    
-       n                2.29562                 n                 2.27163    
-       ksat            6.809704E-04             ksat             7.652192E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.124     ["ksat"]
-    Maximum relative change: 0.1101     ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 9
-    Model calls so far             : 49
-    Starting phi for this iteration:  0.95633    
-
-        Lambda =  0.31250     ----->
-           Phi =  0.93592      (  0.979 of starting phi)
-
-        Lambda =  0.15625     ----->
-           Phi =  0.93695      (  0.980 of starting phi)
-
-        Lambda =  0.62500     ----->
-           Phi =  0.94311      (  0.986 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:  0.93592    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.79922                 alpha             2.80503    
-       n                2.30722                 n                 2.29562    
-       ksat            7.100048E-04             ksat             6.809704E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.043     ["ksat"]
-    Maximum relative change: 4.2637E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 10
-    Model calls so far             : 55
-    Starting phi for this iteration:  0.93592    
-
-        Lambda =  0.31250     ----->
-           Phi =  0.93320      (  0.997 of starting phi)
-
-        Lambda =  0.15625     ----->
-           Phi =  0.93365      (  0.998 of starting phi)
-
-        Lambda =  0.62500     ----->
-           Phi =  0.93263      (  0.996 of starting phi)
+           Phi =  1.00000E+06  (  1.000 of starting phi)
 
     No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.93263    
+    Lowest phi this iteration:  1.00000E+06
 
        Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
+       bins             1000.00                 bins              1000.00    
        thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.78693                 alpha             2.79922    
-       n                2.31166                 n                 2.30722    
-       ksat            6.953361E-04             ksat             7.100048E-04
+       thetas          0.500000                 thetas           0.500000    
+       alpha            2.30475                 alpha             2.11045    
+       n                3.55522                 n                 3.65085    
+       ksat            1.061472E-03             ksat             7.278204E-04
        l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.021     ["ksat"]
-    Maximum relative change: 2.0660E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 11
-    Model calls so far             : 61
-    Starting phi for this iteration:  0.93263    
-
-        Lambda =  0.62500     ----->
-           Phi =  0.93034      (  0.998 of starting phi)
-
-        Lambda =  0.31250     ----->
-           Phi =  0.92811      (  0.995 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.92811    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.75155                 alpha             2.78693    
-       n                2.33166                 n                 2.31166    
-       ksat            6.551798E-04             ksat             6.953361E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.061     ["ksat"]
-    Maximum relative change: 5.7751E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 12
-    Model calls so far             : 66
-    Starting phi for this iteration:  0.92811    
-
-        Lambda =  0.15625     ----->
-           Phi =  0.88692      (  0.956 of starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =  0.88347      (  0.952 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.88347    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.71752                 alpha             2.75155    
-       n                2.34616                 n                 2.33166    
-       ksat            6.695039E-04             ksat             6.551798E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.022     ["ksat"]
-    Maximum relative change: 2.1863E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 13
-    Model calls so far             : 71
-    Starting phi for this iteration:  0.88347    
-
-        Lambda =  3.90625E-02 ----->
-           Phi =  0.86171      (  0.975 of starting phi)
-
-        Lambda =  1.95312E-02 ----->
-           Phi =  0.86175      (  0.975 of starting phi)
-
-        Lambda =  7.81250E-02 ----->
-           Phi =  0.86163      (  0.975 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.86163    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.70684                 alpha             2.71752    
-       n                2.35592                 n                 2.34616    
-       ksat            6.932287E-04             ksat             6.695039E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.035     ["ksat"]
-    Maximum relative change: 3.5436E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 14
-    Model calls so far             : 77
-    Starting phi for this iteration:  0.86163    
-
-        Lambda =  7.81250E-02 ----->
-           Phi =  0.86482      (  1.004 times starting phi)
-
-        Lambda =  3.90625E-02 ----->
-           Phi =  0.86476      (  1.004 times starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.86476    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.69858                 alpha             2.70684    
-       n                2.35592                 n                 2.35592    
-       ksat            6.812630E-04             ksat             6.932287E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.018     ["ksat"]
-    Maximum relative change: 1.7261E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 15
-    Model calls so far             : 82
-    Starting phi for this iteration:  0.86476    
-
-        Lambda =  1.95312E-02 ----->
-           Phi =  0.85864      (  0.993 of starting phi)
-
-        Lambda =  9.76562E-03 ----->
-           Phi =  0.85862      (  0.993 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.85862    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.67122                 alpha             2.69858    
-       n                2.36538                 n                 2.35592    
-       ksat            6.562088E-04             ksat             6.812630E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.038     ["ksat"]
-    Maximum relative change: 3.6776E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 16
-    Model calls so far             : 87
-    Starting phi for this iteration:  0.85862    
-
-        Lambda =  4.88281E-03 ----->
-           Phi =  0.83903      (  0.977 of starting phi)
-
-        Lambda =  2.44141E-03 ----->
-           Phi =  0.83902      (  0.977 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.83902    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.62965                 alpha             2.67122    
-       n                2.38118                 n                 2.36538    
-       ksat            6.222563E-04             ksat             6.562088E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.055     ["ksat"]
-    Maximum relative change: 5.1740E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 17
-    Model calls so far             : 92
-    Starting phi for this iteration:  0.83902    
-
-        Lambda =  1.22070E-03 ----->
-           Phi =  0.83218      (  0.992 of starting phi)
-
-        Lambda =  6.10352E-04 ----->
-           Phi =  0.83218      (  0.992 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.83218    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.59515                 alpha             2.62965    
-       n                2.39297                 n                 2.38118    
-       ksat            5.936041E-04             ksat             6.222563E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.048     ["ksat"]
-    Maximum relative change: 4.6046E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 18
-    Model calls so far             : 97
-    Starting phi for this iteration:  0.83218    
-
-        Lambda =  3.05176E-04 ----->
-           Phi =  0.80147      (  0.963 of starting phi)
-
-        Lambda =  1.52588E-04 ----->
-           Phi =  0.80147      (  0.963 of starting phi)
-
-        Lambda =  6.10352E-04 ----->
-           Phi =  0.80147      (  0.963 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.80147    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.55760                 alpha             2.59515    
-       n                2.41350                 n                 2.39297    
-       ksat            5.823113E-04             ksat             5.936041E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.019     ["ksat"]
-    Maximum relative change: 1.9024E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 19
-    Model calls so far             : 103
-    Starting phi for this iteration:  0.80147    
-
-        Lambda =  6.10352E-04 ----->
-           Phi =  0.78910      (  0.985 of starting phi)
-
-        Lambda =  3.05176E-04 ----->
-           Phi =  0.78910      (  0.985 of starting phi)
-
-        Lambda =  1.22070E-03 ----->
-           Phi =  0.78910      (  0.985 of starting phi)
-
-    No more lambdas: phi rising
-    Lowest phi this iteration:  0.78910    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.52860                 alpha             2.55760    
-       n                2.42598                 n                 2.41350    
-       ksat            5.566107E-04             ksat             5.823113E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.046     ["ksat"]
-    Maximum relative change: 4.4135E-02 ["ksat"]
-
-
- OPTIMISATION ITERATION NO.        : 20
-    Model calls so far             : 109
-    Starting phi for this iteration:  0.78910    
-
-        Lambda =  6.10352E-04 ----->
-           Phi =  0.75387      (  0.955 of starting phi)
-
-        Lambda =  3.05176E-04 ----->
-           Phi =  0.75388      (  0.955 of starting phi)
-
-        Lambda =  1.22070E-03 ----->
-           Phi =  0.75384      (  0.955 of starting phi)
-
-    No more lambdas: relative phi reduction between lambdas less than 0.0100
-    Lowest phi this iteration:  0.75384    
-
-       Current parameter values                 Previous parameter values
-       bins             40.0000                 bins              40.0000    
-       thetar          1.000000E-06             thetar           1.000000E-06
-       thetas          0.430000                 thetas           0.430000    
-       alpha            2.47288                 alpha             2.52860    
-       n                2.44978                 n                 2.42598    
-       ksat            5.214958E-04             ksat             5.566107E-04
-       l               0.500000                 l                0.500000    
-       ihead            126.708                 ihead             126.708    
-    Maximum   factor change:  1.067     ["ksat"]
-    Maximum relative change: 6.3087E-02 ["ksat"]
-
-    Optimisation complete: optimisation iteration limit of  20 realized.
-    Total model calls:    115
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change (  factor-limited params):  1.092     ["alpha"]
+    Maximum relative change (relative-limited params): 0.4584     ["ksat"]
+    Maximum relative change (      all        params): 0.4584     ["ksat"]
+
+    Optimisation complete: the  4 lowest phi's are within a relative distance
+                           of eachother of 5.000E-03
+    Total model calls:     20
 
     The model has been run one final time using best parameters. 
     Thus all model input files contain best parameter values, and model 
@@ -833,9 +364,10 @@
 
  Parameter        Estimated         95% percent confidence limits
                   value             lower limit       upper limit
-  alpha           2.47288            2.37501           2.57076    
-  n               2.44978            2.42551           2.47405    
-  ksat           5.214958E-04       4.274080E-04      6.362955E-04
+  thetas         0.500000           -129.415           130.415    
+  alpha           2.30475           -358.281           362.891    
+  n               3.55522           -884.448           891.559    
+  ksat           1.061472E-03       1.061472-303      1.061472+297
 
  Note: confidence limits provide only an indication of parameter uncertainty.
        They rely on a linearity assumption which  may not extend as far in 
@@ -845,11 +377,10 @@
  Fixed parameters ----->
 
  Parameter      Fixed value
-  bins            40.0000    
+  bins            1000.00    
   thetar         1.000000E-06
-  thetas         0.430000    
   l              0.500000    
-  ihead           126.708    
+  ihead           145.910    
 
  See file to_precal4.sen for parameter sensitivities.
 
@@ -858,102 +389,103 @@
 
  Observation            Measured       Calculated     Residual       Weight     Group
                         value          value
- ten1                  -1.27382       -1.31626       4.243381E-02    1.000      tensio      
- ten2                  -1.26464       -1.31626       5.161865E-02    1.000      tensio      
- ten3                  -1.27095       -1.31626       4.530407E-02    1.000      tensio      
- ten4                  -1.26177       -1.31626       5.448892E-02    1.000      tensio      
- ten5                  -1.27095       -1.31626       4.530407E-02    1.000      tensio      
- ten6                  -1.27325       -1.31626       4.300786E-02    1.000      tensio      
- ten7                  -1.27555       -1.31626       4.071165E-02    1.000      tensio      
- ten8                  -1.27095       -1.31626       4.530407E-02    1.000      tensio      
- ten9                  -1.27210       -1.31626       4.415597E-02    1.000      tensio      
- ten10                 -1.26062       -1.31626       5.563702E-02    1.000      tensio      
- ten11                 -1.26693       -1.31626       4.932244E-02    1.000      tensio      
- ten12                 -1.27555       -1.31626       4.071165E-02    1.000      tensio      
- ten13                 -1.26464       -1.31626       5.161865E-02    1.000      tensio      
- ten14                 -1.26923       -1.31626       4.702623E-02    1.000      tensio      
- ten15                 -1.27440       -1.31626       4.185976E-02    1.000      tensio      
- ten16                 -1.27669       -1.31626       3.956354E-02    1.000      tensio      
- ten17                 -1.27153       -1.09338      -0.178143        1.000      tensio      
- ten18                 -1.27497       -1.00963      -0.265337        1.000      tensio      
- ten19                 -1.26234      -0.938186      -0.324156        1.000      tensio      
- ten20                 -1.24512      -0.876223      -0.368898        1.000      tensio      
- ten21                 -1.18944      -0.821736      -0.367701        1.000      tensio      
- ten22                -0.969001      -0.821736      -0.147265        1.000      tensio      
- ten23                -0.812285      -0.821736       9.451270E-03    1.000      tensio      
- ten24                -0.756602      -0.773249       1.664739E-02    1.000      tensio      
- ten25                -0.733639      -0.773249       3.960951E-02    1.000      tensio      
- ten26                -0.722158      -0.729652       7.493561E-03    1.000      tensio      
- ten27                -0.721584      -0.729652       8.067614E-03    1.000      tensio      
- ten28                -0.730195      -0.729652      -5.431780E-04    1.000      tensio      
- ten29                -0.746843      -0.690088      -5.675471E-02    1.000      tensio      
- ten30                -0.764064      -0.690088      -7.397629E-02    1.000      tensio      
- ten31                -0.778416      -0.690088      -8.832761E-02    1.000      tensio      
- ten32                -0.790471      -0.690088      -0.100383        1.000      tensio      
- ten33                -0.804822      -0.690088      -0.114734        1.000      tensio      
- ten34                -0.819173      -0.729652      -8.952136E-02    1.000      tensio      
- ten35                -0.814007      -0.729652      -8.435489E-02    1.000      tensio      
- ten36                -0.818025      -0.729652      -8.837326E-02    1.000      tensio      
- ten37                -0.834673      -0.773249      -6.142379E-02    1.000      tensio      
- ten38                -0.849024      -0.773249      -7.577511E-02    1.000      tensio      
- ten39                -0.861653      -0.821736      -3.991727E-02    1.000      tensio      
- ten40                -0.871412      -0.821736      -4.967617E-02    1.000      tensio      
- ten41                -0.878301      -0.821736      -5.656480E-02    1.000      tensio      
- ten42                -0.896096      -0.876223      -1.987344E-02    1.000      tensio      
- ten43                -0.911596      -0.876223      -3.537287E-02    1.000      tensio      
- ten44                -0.925373      -0.876223      -4.915013E-02    1.000      tensio      
- ten45                -0.936854      -0.876223      -6.063119E-02    1.000      tensio      
- ten46                -0.951206      -0.938186      -1.301951E-02    1.000      tensio      
- ten47                -0.958668      -0.938186      -2.048220E-02    1.000      tensio      
- ten48                -0.965557      -0.938186      -2.737083E-02    1.000      tensio      
- ten49                -0.974168      -0.938186      -3.598162E-02    1.000      tensio      
- ten50                -0.981056      -0.938186      -4.287026E-02    1.000      tensio      
- ten51                -0.988519      -0.938186      -5.033294E-02    1.000      tensio      
- ten52                -0.994259       -1.00963       1.537453E-02    1.000      tensio      
- ten53                 -1.00459       -1.00963       5.041577E-03    1.000      tensio      
- ten54                 -1.01378       -1.00963      -4.143268E-03    1.000      tensio      
- ten55                 -1.00746       -1.00963       2.171313E-03    1.000      tensio      
- ten56                 -1.02239       -1.00963      -1.275406E-02    1.000      tensio      
- ten57                 -1.02583       -1.00963      -1.619838E-02    1.000      tensio      
- ten58                 -1.02755       -1.00963      -1.792054E-02    1.000      tensio      
- ten59                 -1.03674       -1.00963      -2.710538E-02    1.000      tensio      
- ten60                 -1.04363       -1.00963      -3.399401E-02    1.000      tensio      
- ten61                 -1.05741       -1.00963      -4.777128E-02    1.000      tensio      
- ten62                 -1.05913       -1.09338       3.425656E-02    1.000      tensio      
- ten63                 -1.05224       -1.09338       4.114519E-02    1.000      tensio      
- ten64                 -1.06028       -1.09338       3.310845E-02    1.000      tensio      
- ten65                 -1.05339       -1.09338       3.999709E-02    1.000      tensio      
- ten66                 -1.05970       -1.09338       3.368251E-02    1.000      tensio      
- ten67                 -1.06487       -1.09338       2.851603E-02    1.000      tensio      
- ten68                 -1.07348       -1.09338       1.990524E-02    1.000      tensio      
- ten69                 -1.08668       -1.09338       6.702025E-03    1.000      tensio      
- ten70                 -1.09242       -1.09338       9.614971E-04    1.000      tensio      
- ten71                 -1.09759       -1.09338      -4.204978E-03    1.000      tensio      
- ten72                 -1.09070       -1.09338       2.683656E-03    1.000      tensio      
- ten73                 -1.10218       -1.09338      -8.797401E-03    1.000      tensio      
- ten74                 -1.09529       -1.09338      -1.908767E-03    1.000      tensio      
- ten75                 -1.09242       -1.09338       9.614971E-04    1.000      tensio      
- ten76                 -1.09300       -1.09338       3.874443E-04    1.000      tensio      
- ten77                 -1.09242       -1.19352       0.101102        1.000      tensio      
- ten78                 -1.09587       -1.19352       9.765818E-02    1.000      tensio      
- ten79                 -1.09931       -1.19352       9.421386E-02    1.000      tensio      
- ten80                 -1.10505       -1.19352       8.847334E-02    1.000      tensio      
- ten81                 -1.10735       -1.19352       8.617712E-02    1.000      tensio      
- ten82                 -1.11309       -1.19352       8.043660E-02    1.000      tensio      
- ten83                 -1.11653       -1.19352       7.699228E-02    1.000      tensio      
- ten84                 -1.12113       -1.19352       7.239986E-02    1.000      tensio      
- ten85                 -1.12974       -1.19352       6.378906E-02    1.000      tensio      
- ten86                 -1.12342       -1.19352       7.010365E-02    1.000      tensio      
- ten87                 -1.11194       -1.19352       8.158470E-02    1.000      tensio      
- ten88                 -1.12400       -1.19352       6.952959E-02    1.000      tensio      
- ten89                 -1.18140       -1.19352       1.212431E-02    1.000      tensio      
- ten90                 -1.17451       -1.19352       1.901294E-02    1.000      tensio      
- ten91                 -1.15098       -1.19352       4.254911E-02    1.000      tensio      
- ten92                 -1.13720       -1.19352       5.632638E-02    1.000      tensio      
- ten93                 -1.12629       -1.19352       6.723338E-02    1.000      tensio      
- ten94                 -1.12400       -1.19352       6.952959E-02    1.000      tensio      
- ten95                 -1.11596       -1.19352       7.756633E-02    1.000      tensio      
- ten96                 -1.11079       -1.19352       8.273281E-02    1.000      tensio      
+ ten1                  -1.46441       -1.45480      -9.605726E-03    1.000      tensio      
+ ten2                  -1.46096       -1.45480      -6.161409E-03    1.000      tensio      
+ ten3                  -1.45867       -1.45480      -3.865197E-03    1.000      tensio      
+ ten4                  -1.45982       -1.45480      -5.013303E-03    1.000      tensio      
+ ten5                  -1.45695       -1.45480      -2.143039E-03    1.000      tensio      
+ ten6                  -1.46154       -1.45480      -6.735462E-03    1.000      tensio      
+ ten7                  -1.46039       -1.45480      -5.587356E-03    1.000      tensio      
+ ten8                  -1.45867       -1.45480      -3.865197E-03    1.000      tensio      
+ ten9                  -1.46211       -1.45480      -7.309514E-03    1.000      tensio      
+ ten10                 -1.45350       -1.45480       1.301278E-03    1.000      tensio      
+ ten11                 -1.45408       -1.45480       7.272250E-04    1.000      tensio      
+ ten12                 -1.45178       -1.45480       3.023436E-03    1.000      tensio      
+ ten13                 -1.45235       -1.45480       2.449383E-03    1.000      tensio      
+ ten14                 -1.45867       -1.45480      -3.865197E-03    1.000      tensio      
+ ten15                 -1.45235       -1.45480       2.449383E-03    1.000      tensio      
+ ten16                 -1.44891       -1.45480       5.893700E-03    1.000      tensio      
+ ten17                 -1.44948       -1.45480       5.319648E-03    1.000      tensio      
+ ten18                 -1.43054       -1.19943      -0.231107        1.000      tensio      
+ ten19                 -1.40413       -1.05173      -0.352405        1.000      tensio      
+ ten20                 -1.32032      -0.960305      -0.360016        1.000      tensio      
+ ten21                 -1.06028      -0.913633      -0.146643        1.000      tensio      
+ ten22                -0.782434      -0.890333       0.107899        1.000      tensio      
+ ten23                -0.716992      -0.873437       0.156445        1.000      tensio      
+ ten24                -0.711251      -0.859716       0.148465        1.000      tensio      
+ ten25                -0.712400      -0.859716       0.147316        1.000      tensio      
+ ten26                -0.715270      -0.861957       0.146687        1.000      tensio      
+ ten27                -0.716992      -0.861957       0.144965        1.000      tensio      
+ ten28                -0.730769      -0.864216       0.133447        1.000      tensio      
+ ten29                -0.766935      -0.866493       9.955844E-02    1.000      tensio      
+ ten30                -0.788749      -0.866493       7.774444E-02    1.000      tensio      
+ ten31                -0.808840      -0.868789       5.994859E-02    1.000      tensio      
+ ten32                -0.828358      -0.871103       4.274479E-02    1.000      tensio      
+ ten33                -0.846728      -0.871103       2.437510E-02    1.000      tensio      
+ ten34                -0.863949      -0.873437       9.487517E-03    1.000      tensio      
+ ten35                -0.882893      -0.875790      -7.103226E-03    1.000      tensio      
+ ten36                -0.896096      -0.875790      -2.030644E-02    1.000      tensio      
+ ten37                -0.906429      -0.882968      -2.346139E-02    1.000      tensio      
+ ten38                -0.917336      -0.892830      -2.450639E-02    1.000      tensio      
+ ten39                -0.928243      -0.903044      -2.519940E-02    1.000      tensio      
+ ten40                -0.938002      -0.913633      -2.436930E-02    1.000      tensio      
+ ten41                -0.947761      -0.921837      -2.592419E-02    1.000      tensio      
+ ten42                -0.955224      -0.930279      -2.494488E-02    1.000      tensio      
+ ten43                -0.963261      -0.938971      -2.428962E-02    1.000      tensio      
+ ten44                -0.971297      -0.944911      -2.638636E-02    1.000      tensio      
+ ten45                -0.979908      -0.954051      -2.585715E-02    1.000      tensio      
+ ten46                -0.986223      -0.960305      -2.591773E-02    1.000      tensio      
+ ten47                -0.993685      -0.966692      -2.699342E-02    1.000      tensio      
+ ten48                 -1.00057      -0.973218      -2.735605E-02    1.000      tensio      
+ ten49                 -1.00689      -0.979888      -2.700063E-02    1.000      tensio      
+ ten50                 -1.01320      -0.986708      -2.649521E-02    1.000      tensio      
+ ten51                 -1.02009      -0.993685      -2.640685E-02    1.000      tensio      
+ ten52                 -1.02583      -0.997234      -2.859838E-02    1.000      tensio      
+ ten53                 -1.03100       -1.00446      -2.654085E-02    1.000      tensio      
+ ten54                 -1.03559       -1.00814      -2.745627E-02    1.000      tensio      
+ ten55                 -1.03961       -1.01186      -2.775364E-02    1.000      tensio      
+ ten56                 -1.04420       -1.01943      -2.476807E-02    1.000      tensio      
+ ten57                 -1.04994       -1.02329      -2.664859E-02    1.000      tensio      
+ ten58                 -1.05281       -1.02720      -2.561086E-02    1.000      tensio      
+ ten59                 -1.05626       -1.03116      -2.509818E-02    1.000      tensio      
+ ten60                 -1.06085       -1.03923      -2.162260E-02    1.000      tensio      
+ ten61                 -1.06372       -1.04334      -2.038086E-02    1.000      tensio      
+ ten62                 -1.06831       -1.04751      -2.080628E-02    1.000      tensio      
+ ten63                 -1.07233       -1.05173      -2.060265E-02    1.000      tensio      
+ ten64                 -1.07577       -1.05601      -1.976797E-02    1.000      tensio      
+ ten65                 -1.07807       -1.06034      -1.772718E-02    1.000      tensio      
+ ten66                 -1.08209       -1.06474      -1.734955E-02    1.000      tensio      
+ ten67                 -1.08553       -1.06474      -2.079387E-02    1.000      tensio      
+ ten68                 -1.08840       -1.06920      -1.920613E-02    1.000      tensio      
+ ten69                 -1.09127       -1.07372      -1.755640E-02    1.000      tensio      
+ ten70                 -1.09242       -1.07830      -1.412050E-02    1.000      tensio      
+ ten71                 -1.09701       -1.08295      -1.406293E-02    1.000      tensio      
+ ten72                 -1.10046       -1.08295      -1.750724E-02    1.000      tensio      
+ ten73                 -1.10218       -1.08767      -1.451240E-02    1.000      tensio      
+ ten74                 -1.10505       -1.09245      -1.259666E-02    1.000      tensio      
+ ten75                 -1.10735       -1.09731      -1.003488E-02    1.000      tensio      
+ ten76                 -1.10964       -1.09731      -1.233109E-02    1.000      tensio      
+ ten77                 -1.11309       -1.10224      -1.084540E-02    1.000      tensio      
+ ten78                 -1.11424       -1.10725      -6.988510E-03    1.000      tensio      
+ ten79                 -1.11711       -1.10725      -9.858774E-03    1.000      tensio      
+ ten80                 -1.12055       -1.11233      -8.222091E-03    1.000      tensio      
+ ten81                 -1.12285       -1.11233      -1.051830E-02    1.000      tensio      
+ ten82                 -1.12514       -1.11749      -7.653513E-03    1.000      tensio      
+ ten83                 -1.12801       -1.12273      -5.281777E-03    1.000      tensio      
+ ten84                 -1.13031       -1.12273      -7.577989E-03    1.000      tensio      
+ ten85                 -1.13146       -1.12806      -3.401094E-03    1.000      tensio      
+ ten86                 -1.13548       -1.12806      -7.419464E-03    1.000      tensio      
+ ten87                 -1.13720       -1.13347      -3.730622E-03    1.000      tensio      
+ ten88                 -1.13777       -1.13347      -4.304675E-03    1.000      tensio      
+ ten89                 -1.13949       -1.13897      -5.278335E-04    1.000      tensio      
+ ten90                 -1.14294       -1.13897      -3.972150E-03    1.000      tensio      
+ ten91                 -1.14466       -1.14456      -1.043088E-04    1.000      tensio      
+ ten92                 -1.14696       -1.14456      -2.400520E-03    1.000      tensio      
+ ten93                 -1.14811       -1.15024       2.134374E-03    1.000      tensio      
+ ten94                 -1.15040       -1.15024      -1.618370E-04    1.000      tensio      
+ ten95                 -1.15729       -1.15602      -1.270471E-03    1.000      tensio      
+ ten96                 -1.15385       -1.15602       2.173846E-03    1.000      tensio      
+ msbc25                0.100000        0.00000       0.100000       1.0000E+04  surf        
 
  See file to_precal4.res for more details of residuals in graph-ready format.
 
@@ -962,23 +494,25 @@
 
  Objective function ----->
 
-   Sum of squared weighted residuals (ie phi)                =  0.7538    
+   Sum of squared weighted residuals (ie phi)                =  1.00000E+06
+   Contribution to phi from observation group "tensio"       =  0.51332    
+   Contribution to phi from observation group "surf"         =  1.00000E+06
 
 
  Correlation Coefficient ----->
 
-   Correlation coefficient                                   =  0.89637    
+   Correlation coefficient                                   =  0.50476    
 
 
  Analysis of residuals ----->
 
    All residuals:-
-      Number of residuals with non-zero weight                       =    96
-      Mean value of non-zero weighted residuals                      = -6.9577E-03
-      Maximum weighted residual [observation "ten77"]                =  0.1011    
-      Minimum weighted residual [observation "ten20"]                = -0.3689    
-      Standard variance of weighted residuals                        =  8.1058E-03
-      Standard error of weighted residuals                           =  9.0032E-02
+      Number of residuals with non-zero weight                       =    97
+      Mean value of non-zero weighted residuals                      =   10.30    
+      Maximum weighted residual [observation "msbc25"]               =   1000.    
+      Minimum weighted residual [observation "ten20"]                = -0.3600    
+      Standard variance of weighted residuals                        =  1.0753E+04
+      Standard error of weighted residuals                           =   103.7    
 
       Note: the above variance was obtained by dividing the objective 
       function by the number of system degrees of freedom (ie. number of 
@@ -988,39 +522,64 @@
       the number of observations with non-zero weight plus the number of 
       prior information items with non-zero weight.
 
+   Residuals for observation group "tensio":-
+      Number of residuals with non-zero weight                       =    96
+      Mean value of non-zero weighted residuals                      = -8.6456E-03
+      Maximum weighted residual [observation "ten23"]                =  0.1564    
+      Minimum weighted residual [observation "ten20"]                = -0.3600    
+      "Variance" of weighted residuals                               =  5.3471E-03
+      "Standard error" of weighted residuals                         =  7.3124E-02
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "surf":-
+      Number of residuals with non-zero weight                       =     1
+      Mean value of non-zero weighted residuals                      =   1000.    
+      Maximum weighted residual [observation "msbc25"]               =   1000.    
+      Minimum weighted residual [observation "msbc25"]               =   1000.    
+      "Variance" of weighted residuals                               =  1.0000E+06
+      "Standard error" of weighted residuals                         =   1000.    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
 
  K-L information statistics ----->
 
 
-   AIC   =  -457.3044    
-   AICC  =  -456.8648    
-   BIC   =  -447.0470    
-   KIC   =  -447.8194    
+   AIC   =   906.3576    
+   AICC  =   907.0169    
+   BIC   =   919.2312    
+   KIC   =   851.2231    
 
  Parameter covariance matrix ----->
 
-                 alpha          n           ksat    
- alpha          2.4214E-03  -3.8348E-04   1.7867E-03
- n             -3.8348E-04   1.4890E-04  -2.2406E-04
- ksat           1.7867E-03  -2.2406E-04   1.8873E-03
+                 thetas       alpha          n           ksat    
+ thetas          4266.       -158.1       1.4214E+04   1.6375E+04
+ alpha          -158.1       3.2866E+04  -4.5840E+04   1.9656E+04
+ n              1.4214E+04  -4.5840E+04   1.9932E+05   9.9214E+04
+ ksat           1.6375E+04   1.9656E+04   9.9214E+04   1.3667E+05
 
 
  Parameter correlation coefficient matrix ----->
 
-                 alpha          n           ksat    
- alpha           1.000      -0.6387       0.8358    
- n             -0.6387        1.000      -0.4227    
- ksat           0.8358      -0.4227        1.000    
+                 thetas       alpha          n           ksat    
+ thetas          1.000      -1.3352E-02   0.4874       0.6782    
+ alpha         -1.3352E-02    1.000      -0.5664       0.2933    
+ n              0.4874      -0.5664        1.000       0.6011    
+ ksat           0.6782       0.2933       0.6011        1.000    
 
 
  Normalized eigenvectors of parameter covariance matrix ----->
 
-               Vector_1     Vector_2     Vector_3   
- alpha         -0.2656       0.6003      -0.7544    
- n             -0.9532      -0.2805       0.1124    
- ksat           0.1441      -0.7490      -0.6467    
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -0.5245       0.8458      -6.0625E-02  -7.6720E-02
+ alpha         -0.6863      -0.4558      -0.5566       0.1067    
+ n             -0.3163      -0.2389       0.4300      -0.8111    
+ ksat           0.3923       0.1408      -0.7082      -0.5699    
 
 
  Eigenvalues ----->
 
-                7.5906E-05   3.7132E-04   4.0104E-03
+                 384.3        3063.       9.3271E+04   2.7640E+05
