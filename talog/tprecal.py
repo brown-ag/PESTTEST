@@ -181,7 +181,7 @@ elif mode == "pest":
 	print("Using start:"+str(start)+ " Using end: "+str(end))
 	
 	#depthinc=float(intenslen)
-	depthinc=float(pulselm/duration)
+	depthinc=float(pulselm/(duration/2))
 	surfbc=[]
 	surfbc.append("Minutes\tP\tE\n")
 	for j in range(0,96):

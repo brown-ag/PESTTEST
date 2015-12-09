@@ -3,26 +3,26 @@
 
  OPTIMISATION ITERATION NO.  1 ----->
  Parameter name    Group          Current value    Sensitivity
-   thetas          soil            0.438131         3.462733E-02
-   alpha           soil             1.92951         4.152221E-02
-   n               soil             3.72056         1.508732E-02
-   ksat            soil            3.719248E-04     1.689963E-02
+   thetas          soil            0.438131         3.291493E-02
+   alpha           soil             1.92951         4.175853E-02
+   n               soil             3.72056         1.360458E-02
+   ksat            soil            3.719248E-04     1.740514E-02
 
 
  OPTIMISATION ITERATION NO.  2 ----->
  Parameter name    Group          Current value    Sensitivity
-   thetas          soil            0.500000         3.489555E-02
-   alpha           soil             1.95578         4.115673E-02
-   n               soil             3.66884         1.617515E-02
-   ksat            soil            4.538176E-04     1.846537E-02
+   thetas          soil            0.487373         2.994298E-02
+   alpha           soil             1.85501         4.480985E-02
+   n               soil             3.67312         1.438056E-02
+   ksat            soil            4.040373E-04     1.861557E-02
 
 
  OPTIMISATION ITERATION NO.  3 ----->
  Parameter name    Group          Current value    Sensitivity
-   thetas          soil            0.500000         3.293884E-02
-   alpha           soil             2.11045         3.849459E-02
-   n               soil             3.65085         1.799270E-02
-   ksat            soil            7.278204E-04     2.173497E-02
+   thetas          soil            0.500000         2.838589E-02
+   alpha           soil             1.87093         4.386892E-02
+   n               soil             3.67749         1.405034E-02
+   ksat            soil            3.968898E-04     1.821607E-02
 
 
 
@@ -32,10 +32,10 @@
 
  Number of observations with non-zero weight =    96
  Parameter name    Group          Current value    Sensitivity
-   thetas          soil            0.500000         3.328195E-02
-   alpha           soil             2.30475         3.889558E-02
-   n               soil             3.55522         1.818013E-02
-   ksat            soil            1.061472E-03     2.196138E-02
+   thetas          soil            0.500000         3.025489E-02
+   alpha           soil             1.87093         4.527662E-02
+   n               soil             3.67749         1.453036E-02
+   ksat            soil            3.968898E-04     1.880948E-02
 
 
 
@@ -44,9 +44,9 @@
  Number of observations with non-zero weight =     1
  Parameter name    Group          Current value    Sensitivity
    thetas          soil            0.500000          0.00000    
-   alpha           soil             2.30475          0.00000    
-   n               soil             3.55522          0.00000    
-   ksat            soil            1.061472E-03      0.00000    
+   alpha           soil             1.87093          0.00000    
+   n               soil             3.67749          0.00000    
+   ksat            soil            3.968898E-04      0.00000    
 
 
 
@@ -54,7 +54,7 @@
 
  Number of observations with non-zero weight =    97
  Parameter name    Group          Current value    Sensitivity
-   thetas          soil            0.500000         3.293884E-02
-   alpha           soil             2.30475         3.849459E-02
-   n               soil             3.55522         1.799270E-02
-   ksat            soil            1.061472E-03     2.173497E-02
+   thetas          soil            0.500000         2.994298E-02
+   alpha           soil             1.87093         4.480985E-02
+   n               soil             3.67749         1.438056E-02
+   ksat            soil            3.968898E-04     1.861557E-02
