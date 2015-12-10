@@ -1,0 +1,60 @@
+                   PARAMETER SENSITIVITIES: CASE c_tensio_5_5_17
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.404260         9.493169E-02
+   alpha           soil             2.10022         5.001802E-02
+   n               soil             3.75448         3.709929E-02
+   ksat            soil            1.317604E-04      193.642    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.400000         0.192618    
+   alpha           soil             1.72521         7.133462E-02
+   n               soil             3.73372         3.921492E-02
+   ksat            soil            2.905614E-04      83.6098    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.443084         0.132354    
+   alpha           soil             1.48097         8.762436E-02
+   n               soil             3.77920         3.477574E-02
+   ksat            soil            3.000000E-04      76.2169    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "tensio" ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.471282         0.133733    
+   alpha           soil             1.24108         8.853712E-02
+   n               soil             3.89181         3.513799E-02
+   ksat            soil            3.000000E-04      77.0109    
+
+
+
+ Composite sensitivities for observation group "surf" ----->
+
+ Number of observations with non-zero weight =     1
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.471282          0.00000    
+   alpha           soil             1.24108          0.00000    
+   n               soil             3.89181          0.00000    
+   ksat            soil            3.000000E-04      0.00000    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    97
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.471282         0.132354    
+   alpha           soil             1.24108         8.762436E-02
+   n               soil             3.89181         3.477574E-02
+   ksat            soil            3.000000E-04      76.2169    

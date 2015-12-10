@@ -1,0 +1,4 @@
+START COVARIANCE_MATRIX
+  file to_precal32.cmf
+  Variance_multiplier  1.1866533E-02
+END COVARIANCE MATRIX

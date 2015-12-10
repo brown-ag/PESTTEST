@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_4_5_14
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.400000          3.75870    
+ alpha             soil             2.01057          18.9670    
+ n                 soil             3.89018          31.6671    
+ ksat              soil            3.000000E-04     1.214362E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          14.13       -46.86        59.98       1.7704E-02
+ alpha          -46.86        359.7       -361.4       1.0278E-02
+ n               59.98       -361.4        1003.       5.4450E-02
+ ksat           1.7704E-02   1.0278E-02   5.4450E-02   1.4747E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000      -0.6573       0.5039       0.3879    
+ alpha         -0.6573        1.000      -0.6018       4.4623E-02
+ n              0.5039      -0.6018        1.000       0.1416    
+ ksat           0.3879       4.4623E-02   0.1416        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -2.2848E-03   0.9934       9.4928E-02  -6.3844E-02
+ alpha         -3.8167E-04   0.1128      -0.9052       0.4097    
+ n             -5.5206E-05  -1.8896E-02  -0.4143      -0.9100    
+ ksat            1.000       2.3118E-03  -1.5146E-04  -3.9723E-05
+
+
+ Eigenvalues ----->
+
+                1.0009E-04    7.665        199.2        1170.    

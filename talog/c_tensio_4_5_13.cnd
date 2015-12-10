@@ -1,0 +1,45 @@
+ RECORD OF "NORMAL MATRIX" CONDITION NUMBERS: CASE c_tensio_4_5_13
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    1
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     5.00    
+           MATRIX CONDITION NUMBER =   5.4847    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.50    
+           MATRIX CONDITION NUMBER =   3.7951    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    2
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.25    
+           MATRIX CONDITION NUMBER =   3.6468    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.25    
+           MATRIX CONDITION NUMBER =   3.4943    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.625    
+           MATRIX CONDITION NUMBER =   4.0770    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    3
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.312    
+           MATRIX CONDITION NUMBER =   7.3442    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.312    
+           MATRIX CONDITION NUMBER =   6.6387    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.156    
+           MATRIX CONDITION NUMBER =   8.2768    

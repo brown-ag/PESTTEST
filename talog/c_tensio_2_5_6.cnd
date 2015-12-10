@@ -1,0 +1,89 @@
+ RECORD OF "NORMAL MATRIX" CONDITION NUMBERS: CASE c_tensio_2_5_6
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    1
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     5.00    
+           MATRIX CONDITION NUMBER =   7.1085    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     2.50    
+           MATRIX CONDITION NUMBER =   5.4137    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     1.25    
+           MATRIX CONDITION NUMBER =   5.1471    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.625    
+           MATRIX CONDITION NUMBER =   5.9976    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.312    
+           MATRIX CONDITION NUMBER =   7.9154    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.156    
+           MATRIX CONDITION NUMBER =   9.8986    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    2
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.156    
+           MATRIX CONDITION NUMBER =   319.75    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    0.156    
+           MATRIX CONDITION NUMBER =   42.040    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    3
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    7.812E-02
+           MATRIX CONDITION NUMBER =   46.341    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    7.812E-02
+           MATRIX CONDITION NUMBER =   1.0405    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.906E-02
+           MATRIX CONDITION NUMBER =   1.0199    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    4
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.906E-02
+           MATRIX CONDITION NUMBER =   101.06    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    3.906E-02
+           MATRIX CONDITION NUMBER =   1.0199    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-02
+           MATRIX CONDITION NUMBER =   1.0099    
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    5
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-02
+           MATRIX CONDITION NUMBER =   202.30    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    1.953E-02
+           MATRIX CONDITION NUMBER =   1.0099    
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =    9.766E-03
+           MATRIX CONDITION NUMBER =   1.0049    

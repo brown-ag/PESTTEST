@@ -1,0 +1,6 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_to_tor
+
+ OPTIMISATION ITERATION NUMBER  6
+
+ Cannot evaluate parameter covariance matrix as the "normal matrix"
+ for the current parameter estimation problem is singular.

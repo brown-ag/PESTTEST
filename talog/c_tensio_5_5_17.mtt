@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_5_5_17
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.443084          7.35429    
+ alpha             soil             1.48097          17.8341    
+ n                 soil             3.77920          31.3283    
+ ksat              soil            3.000000E-04     1.880663E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          54.09        42.43       -43.86       6.3913E-02
+ alpha           42.43        318.1       -311.2       0.2478    
+ n              -43.86       -311.2        981.5      -0.1432    
+ ksat           6.3913E-02   0.2478      -0.1432       3.5369E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.3235      -0.1904       0.4621    
+ alpha          0.3235        1.000      -0.5570       0.7389    
+ n             -0.1904      -0.5570        1.000      -0.2430    
+ ksat           0.4621       0.7389      -0.2430        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -6.4423E-04   0.9864       0.1556      -5.3484E-02
+ alpha         -8.3897E-04  -0.1643       0.9149      -0.3686    
+ n             -1.4892E-04  -8.4333E-03   0.3724       0.9280    
+ ksat            1.000       4.9631E-04   9.2332E-04  -2.0553E-04
+
+
+ Eigenvalues ----->
+
+                1.2591E-04    47.39        198.6        1108.    

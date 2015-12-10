@@ -1,0 +1,46 @@
+                   PARAMETER SENSITIVITIES: CASE c_tensio_4_6_14
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             1.00000         0.114871    
+   n               soil             6.16940         1.028826E-02
+   ksat            soil            6.100000E-04      0.00000    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             1.00937         4.238735E-02
+   n               soil             6.17024         1.874098E-03
+   ksat            soil            6.100000E-04      0.00000    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             1.00842         4.246757E-02
+   n               soil             6.17028         1.875740E-03
+   ksat            soil            6.100000E-04      0.00000    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             1.00299         0.115617    
+   n               soil             6.17052         1.022519E-02
+   ksat            soil            6.100000E-04      0.00000    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             1.00937         0.114871    
+   n               soil             6.17024         1.028826E-02
+   ksat            soil            6.100000E-04      0.00000    

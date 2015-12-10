@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_3_12_10
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.400000          6.60568    
+ alpha             soil             2.00621          11.6805    
+ n                 soil             3.99253          25.0676    
+ ksat              soil            3.000000E-04     1.524602E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          43.64        10.17       -21.38       2.9251E-02
+ alpha           10.17        136.4       -280.1       4.7620E-02
+ n              -21.38       -280.1        628.4      -7.7618E-02
+ ksat           2.9251E-02   4.7620E-02  -7.7618E-02   2.3244E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.1318      -0.1291       0.2905    
+ alpha          0.1318        1.000      -0.9566       0.2674    
+ n             -0.1291      -0.9566        1.000      -0.2031    
+ ksat           0.2905       0.2674      -0.2031        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -6.0392E-04   1.3456E-02   0.9994      -3.3220E-02
+ alpha         -1.0902E-03  -0.9111      -1.4343E-03  -0.4122    
+ n             -3.8297E-04  -0.4120       3.5812E-02   0.9105    
+ ksat            1.000      -1.1429E-03   6.1569E-04  -1.2073E-04
+
+
+ Eigenvalues ----->
+
+                1.9258E-04    9.640        42.85        756.0    

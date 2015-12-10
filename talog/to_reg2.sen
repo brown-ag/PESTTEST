@@ -1,0 +1,89 @@
+                       PARAMETER SENSITIVITIES: CASE to_reg2
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             4.00000         7.944377E-02
+   n               soil             1.50000         0.465024    
+   ksat            soil            1.160000E-05     4.381527E-03
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.90152         5.024147E-02
+   n               soil             1.54457         0.275363    
+   ksat            soil            5.800000E-05     1.375097E-02
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.54721         4.887644E-02
+   n               soil             1.62174         0.252369    
+   ksat            soil            2.490830E-04     3.635306E-02
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.36411         3.965438E-02
+   n               soil             1.66918         0.268144    
+   ksat            soil            5.946909E-04     5.288619E-02
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.33086         5.085383E-02
+   n               soil             1.68499         0.309495    
+   ksat            soil            6.980837E-04     7.878569E-02
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.30219         5.003811E-02
+   n               soil             1.69085         0.307284    
+   ksat            soil            6.897339E-04     7.716563E-02
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.28526         5.006207E-02
+   n               soil             1.69455         0.306705    
+   ksat            soil            6.867090E-04     5.704218E-02
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.28144         3.333005E-02
+   n               soil             1.69579         0.303167    
+   ksat            soil            6.882198E-04     5.640494E-02
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "tensio" ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.33086         4.089213E-02
+   n               soil             1.68499         0.276523    
+   ksat            soil            6.980837E-04     5.453780E-02
+
+
+
+ Composite sensitivities for observation group "regul_soil" ----->
+
+ Number of observations with non-zero weight =     3
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.33086         1.100564E-02
+   n               soil             1.68499         1.100564E-02
+   ksat            soil            6.980837E-04     1.100564E-02
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    99
+ Parameter name    Group          Current value    Sensitivity
+   alpha           soil             3.33086         3.965438E-02
+   n               soil             1.68499         0.268144    
+   ksat            soil            6.980837E-04     5.288619E-02

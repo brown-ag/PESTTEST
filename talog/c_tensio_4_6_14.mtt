@@ -1,0 +1,6 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_4_6_14
+
+ OPTIMISATION ITERATION NUMBER  4
+
+ Cannot evaluate parameter covariance matrix as the "normal matrix"
+ for the current parameter estimation problem is singular.

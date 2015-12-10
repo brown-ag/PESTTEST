@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_2_5_5
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.400840          7.18084    
+ alpha             soil             2.09371          30.5763    
+ n                 soil             3.78981          40.3457    
+ ksat              soil            3.000000E-04     1.404514E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          51.56        52.68       -53.06       6.8565E-02
+ alpha           52.68        934.9       -1005.       0.1778    
+ n              -53.06       -1005.        1628.      -0.1589    
+ ksat           6.8565E-02   0.1778      -0.1589       1.9727E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.2399      -0.1831       0.6798    
+ alpha          0.2399        1.000      -0.8147       0.4141    
+ n             -0.1831      -0.8147        1.000      -0.2804    
+ ksat           0.6798       0.4141      -0.2804        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -1.2009E-03   0.9970       7.0884E-02  -3.2132E-02
+ alpha         -1.7749E-04  -7.6350E-02   0.8107      -0.5804    
+ n             -5.1103E-05  -1.5092E-02   0.5811       0.8137    
+ ksat            1.000       1.1830E-03   2.5872E-04  -1.0002E-04
+
+
+ Eigenvalues ----->
+
+                9.1479E-05    48.33        219.1        2347.    

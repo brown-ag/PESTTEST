@@ -105,7 +105,7 @@ elif mode == "in":
 			#raw values currently not used from file:
 
 		n+=1
-	ctrl_obs.append("msbc"+str(maxdepth)+" 0.1 10000 surf") #add surface bc condition to the bottom to not 
+	ctrl_obs.append("msbc"+str(maxdepth)+" 0.1 10000 predict") #add surface bc condition to the bottom to not 
 															#interfere with model output of matric potential
 	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
 	mrun="python tprecal.py "+case+" pest "+tensiomfile+"\n./test_alf\n#Rscript viewcsv.R "+case+" 2"

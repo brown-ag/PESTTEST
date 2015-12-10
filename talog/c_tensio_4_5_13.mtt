@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_4_5_13
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.400000          6.38964    
+ alpha             soil             2.00441          26.6593    
+ n                 soil             3.85402          35.2897    
+ ksat              soil            2.970376E-04     1.385898E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          40.83        4.907       -20.24       2.8960E-02
+ alpha           4.907        710.7       -711.9       0.2218    
+ n              -20.24       -711.9        1245.      -0.2271    
+ ksat           2.8960E-02   0.2218      -0.2271       1.9207E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       2.8804E-02  -8.9747E-02   0.3270    
+ alpha          2.8804E-02    1.000      -0.7567       0.6004    
+ n             -8.9747E-02  -0.7567        1.000      -0.4644    
+ ksat           0.3270       0.6004      -0.4644        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -6.7623E-04  -0.9990       4.2194E-02  -1.1443E-02
+ alpha         -3.1773E-04  -2.8179E-02  -0.8216      -0.5693    
+ n             -1.0234E-05  -3.3424E-02  -0.5685       0.8220    
+ ksat            1.000      -6.8488E-04  -2.3834E-04  -1.8022E-04
+
+
+ Eigenvalues ----->
+
+                1.0432E-04    40.29        217.9        1739.    

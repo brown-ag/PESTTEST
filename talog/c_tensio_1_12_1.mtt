@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_1_12_1
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.464760          4.53048    
+ alpha             soil             1.00000          9.74531    
+ n                 soil             4.14828          29.4205    
+ ksat              soil            3.000000E-04     1.867131E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          20.53        5.523       -7.986       1.9069E-02
+ alpha           5.523        94.97       -133.1       0.1387    
+ n              -7.986       -133.1        865.6      -3.9573E-02
+ ksat           1.9069E-02   0.1387      -3.9573E-02   3.4862E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.1251      -5.9913E-02   0.2254    
+ alpha          0.1251        1.000      -0.4642       0.7622    
+ n             -5.9913E-02  -0.4642        1.000      -7.2040E-02
+ ksat           0.2254       0.7622      -7.2040E-02    1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -5.4744E-04  -0.9969      -7.8283E-02  -1.0132E-02
+ alpha         -1.7482E-03   7.8880E-02  -0.9830      -0.1656    
+ n             -2.2811E-04   3.0001E-03  -0.1658       0.9861    
+ ksat            1.000      -4.0716E-04  -1.7992E-03  -7.0023E-05
+
+
+ Eigenvalues ----->
+
+                1.0475E-04    20.11        72.96        888.0    

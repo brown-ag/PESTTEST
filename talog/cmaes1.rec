@@ -1,0 +1,1169 @@
+
+                             CMAES_P RUN RECORD FILE
+
+
+ Name of PEST control file : cmaes1.pst
+
+ Problem dimensions ----->
+
+    Number of parameters                       : 8
+    Number of adjustable parameters            : 3
+    Number of observations                     : 96
+    Number of prior information eqns           : 0
+
+ CMA control variables ----->
+
+    Population size (lambda)                   : 8
+    Number of parents (mu)                     : 4
+    Recombination weights                      : "superlinear decrease"
+    Random number seed                         : 1111
+    Employ SVD hybridization                   : yes
+    Number of trial singular value thresholds  : 3
+    Employ soft or hard hybridization          : hard
+
+ CMA termination criteria ----->
+
+    Relative objective fn improvement          :  1.0000E-03
+    Number of itns to which this applies       : 40
+    Maximum relative parameter change          :  1.0000E-03
+    Number of itns to which this applies       : 40
+    Relative generated obj fn difference       :  1.0000E-02
+    Number of itns to which this applies       : 10
+    Maximum number of iterations               : 22627
+
+ Parameter data ----->
+
+ Name         Transformation          Initial_value     Lower_bound       Upper_bound
+ bins            fixed                   40.0000           10.0000            1000.00    
+ thetar          fixed                  1.000000E-06      1.000000E-02       2.000000E-02
+ thetas          fixed                  0.430000          0.400000           0.500000    
+ alpha           none                    2.94432           1.00000            10.0000    
+ n               none                    2.37294           1.10000            10.0000    
+ ksat            log                    9.561993E-04      1.000000E-08       1.000000E-03
+ l               fixed                  0.500000          0.450000           0.550000    
+ ihead           fixed                   145.910           50.0000            250.000    
+
+ Name         Scale             Offset
+ bins           1.00000           0.00000    
+ thetar         1.00000           0.00000    
+ thetas         1.00000           0.00000    
+ alpha          1.00000           0.00000    
+ n              1.00000           0.00000    
+ ksat           1.00000           0.00000    
+ l              1.00000           0.00000    
+ ihead          1.00000           0.00000    
+
+ Initial parameter covariance data ----->
+
+ Initial SIGMAs computed as 0.25 of (log transformed) parameter bounds.
+
+ Name         Sigma
+ alpha          2.2500    
+ n              2.2250    
+ ksat           1.2500    
+
+
+                           RECORD OF OPTIMISATION PROCESS
+
+
+
+ ITERATION NUMBER 1
+    Number of function evaluations so far        =   1
+    Lowest objective function so far             =  0.808525    
+    Iteration number of lowest phi so far        =   0
+
+    Lowest  phi this iteration                    =   2.26693    
+    Highest phi this iteration                    =   38.5592    
+
+
+ ITERATION NUMBER 2
+    Number of function evaluations so far        =   10
+    Lowest objective function so far             =  0.808525    
+    Iteration number of lowest phi so far        =   0
+
+    Lowest  phi this iteration                    =  0.504954    
+    Highest phi this iteration                    =   28.9992    
+
+
+ ITERATION NUMBER 3
+    Number of function evaluations so far        =   21
+    Lowest objective function so far             =  0.504954    
+    Iteration number of lowest phi so far        =   2
+
+    Lowest  phi this iteration                    =  0.492438    
+    Highest phi this iteration                    =   77.9583    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 4
+    Number of function evaluations so far        =   32
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.48551    
+    Highest phi this iteration                    =   14.2701    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 5
+    Number of function evaluations so far        =   43
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.00424    
+    Highest phi this iteration                    =   13.8345    
+
+
+ ITERATION NUMBER 6
+    Number of function evaluations so far        =   54
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   7.37936    
+    Highest phi this iteration                    =   38.4303    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 7
+    Number of function evaluations so far        =   65
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   2.05955    
+    Highest phi this iteration                    =   21.7099    
+
+
+ ITERATION NUMBER 8
+    Number of function evaluations so far        =   77
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.45113    
+    Highest phi this iteration                    =   31.5359    
+
+
+ ITERATION NUMBER 9
+    Number of function evaluations so far        =   88
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.57361    
+    Highest phi this iteration                    =   15.2721    
+
+
+ ITERATION NUMBER 10
+    Number of function evaluations so far        =   99
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   2.42465    
+    Highest phi this iteration                    =   35.5076    
+
+
+ ITERATION NUMBER 11
+    Number of function evaluations so far        =   111
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.94181    
+    Highest phi this iteration                    =   21.8551    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 12
+    Number of function evaluations so far        =   122
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =   1.49278    
+    Highest phi this iteration                    =   27.0937    
+
+
+ ITERATION NUMBER 13
+    Number of function evaluations so far        =   132
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.576088    
+    Highest phi this iteration                    =   11.9017    
+
+
+ ITERATION NUMBER 14
+    Number of function evaluations so far        =   143
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.576180    
+    Highest phi this iteration                    =   17.6465    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 15
+    Number of function evaluations so far        =   154
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.795990    
+    Highest phi this iteration                    =   9.96393    
+
+
+ ITERATION NUMBER 16
+    Number of function evaluations so far        =   165
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.903638    
+    Highest phi this iteration                    =   6.39015    
+
+
+ ITERATION NUMBER 17
+    Number of function evaluations so far        =   176
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.769615    
+    Highest phi this iteration                    =   5.07953    
+
+
+ ITERATION NUMBER 18
+    Number of function evaluations so far        =   188
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.758598    
+    Highest phi this iteration                    =   4.19476    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 19
+    Number of function evaluations so far        =   199
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.579336    
+    Highest phi this iteration                    =   1.54258    
+
+
+ ITERATION NUMBER 20
+    Number of function evaluations so far        =   209
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.686619    
+    Highest phi this iteration                    =   1.35025    
+
+
+ ITERATION NUMBER 21
+    Number of function evaluations so far        =   220
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.638939    
+    Highest phi this iteration                    =   1.54042    
+
+
+ ITERATION NUMBER 22
+    Number of function evaluations so far        =   231
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.591369    
+    Highest phi this iteration                    =   1.70999    
+
+
+ ITERATION NUMBER 23
+    Number of function evaluations so far        =   242
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.730302    
+    Highest phi this iteration                    =   1.58665    
+
+
+ ITERATION NUMBER 24
+    Number of function evaluations so far        =   253
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.853289    
+    Highest phi this iteration                    =   2.88119    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 25
+    Number of function evaluations so far        =   264
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.768495    
+    Highest phi this iteration                    =   1.76591    
+
+
+ ITERATION NUMBER 26
+    Number of function evaluations so far        =   275
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.804093    
+    Highest phi this iteration                    =   1.50517    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 27
+    Number of function evaluations so far        =   287
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.695098    
+    Highest phi this iteration                    =   1.99418    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 28
+    Number of function evaluations so far        =   297
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.598382    
+    Highest phi this iteration                    =   1.11417    
+
+
+ ITERATION NUMBER 29
+    Number of function evaluations so far        =   309
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.680574    
+    Highest phi this iteration                    =  0.924682    
+
+
+ ITERATION NUMBER 30
+    Number of function evaluations so far        =   320
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.529603    
+    Highest phi this iteration                    =   1.04114    
+
+
+ ITERATION NUMBER 31
+    Number of function evaluations so far        =   331
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.515997    
+    Highest phi this iteration                    =   1.67595    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 32
+    Number of function evaluations so far        =   342
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.580467    
+    Highest phi this iteration                    =   1.47633    
+
+
+ ITERATION NUMBER 33
+    Number of function evaluations so far        =   354
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.557401    
+    Highest phi this iteration                    =   1.92115    
+
+
+ ITERATION NUMBER 34
+    Number of function evaluations so far        =   365
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.546879    
+    Highest phi this iteration                    =   1.83155    
+
+
+ ITERATION NUMBER 35
+    Number of function evaluations so far        =   375
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.655943    
+    Highest phi this iteration                    =   3.34976    
+
+
+ ITERATION NUMBER 36
+    Number of function evaluations so far        =   384
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.526399    
+    Highest phi this iteration                    =   3.53540    
+
+
+ ITERATION NUMBER 37
+    Number of function evaluations so far        =   393
+    Lowest objective function so far             =  0.492438    
+    Iteration number of lowest phi so far        =   3
+
+    Lowest  phi this iteration                    =  0.377434    
+    Highest phi this iteration                    =   2.21651    
+
+
+ ITERATION NUMBER 38
+    Number of function evaluations so far        =   404
+    Lowest objective function so far             =  0.377434    
+    Iteration number of lowest phi so far        =   37
+
+    Lowest  phi this iteration                    =  0.354269    
+    Highest phi this iteration                    =   2.55658    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 39
+    Number of function evaluations so far        =   415
+    Lowest objective function so far             =  0.354269    
+    Iteration number of lowest phi so far        =   38
+
+    Lowest  phi this iteration                    =  0.343303    
+    Highest phi this iteration                    =   2.60256    
+
+
+ ITERATION NUMBER 40
+    Number of function evaluations so far        =   426
+    Lowest objective function so far             =  0.343303    
+    Iteration number of lowest phi so far        =   39
+
+    Lowest  phi this iteration                    =  0.331180    
+    Highest phi this iteration                    =   3.03436    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 41
+    Number of function evaluations so far        =   437
+    Lowest objective function so far             =  0.331180    
+    Iteration number of lowest phi so far        =   40
+
+    Lowest  phi this iteration                    =  0.304355    
+    Highest phi this iteration                    =   3.31908    
+
+
+ ITERATION NUMBER 42
+    Number of function evaluations so far        =   448
+    Lowest objective function so far             =  0.304355    
+    Iteration number of lowest phi so far        =   41
+
+    Lowest  phi this iteration                    =  0.440389    
+    Highest phi this iteration                    =   2.62272    
+
+
+ ITERATION NUMBER 43
+    Number of function evaluations so far        =   459
+    Lowest objective function so far             =  0.304355    
+    Iteration number of lowest phi so far        =   41
+
+    Lowest  phi this iteration                    =  0.493313    
+    Highest phi this iteration                    =   1.59787    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 44
+    Number of function evaluations so far        =   471
+    Lowest objective function so far             =  0.304355    
+    Iteration number of lowest phi so far        =   41
+
+    Lowest  phi this iteration                    =  0.322177    
+    Highest phi this iteration                    =   1.00528    
+
+
+ ITERATION NUMBER 45
+    Number of function evaluations so far        =   482
+    Lowest objective function so far             =  0.304355    
+    Iteration number of lowest phi so far        =   41
+
+    Lowest  phi this iteration                    =  0.322441    
+    Highest phi this iteration                    =   1.72989    
+
+
+ ITERATION NUMBER 46
+    Number of function evaluations so far        =   493
+    Lowest objective function so far             =  0.304355    
+    Iteration number of lowest phi so far        =   41
+
+    Lowest  phi this iteration                    =  0.293676    
+    Highest phi this iteration                    =  0.938103    
+
+
+ ITERATION NUMBER 47
+    Number of function evaluations so far        =   504
+    Lowest objective function so far             =  0.293676    
+    Iteration number of lowest phi so far        =   46
+
+    Lowest  phi this iteration                    =  0.293623    
+    Highest phi this iteration                    =   2.56804    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 48
+    Number of function evaluations so far        =   515
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.456007    
+    Highest phi this iteration                    =   1.60861    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 49
+    Number of function evaluations so far        =   526
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.424148    
+    Highest phi this iteration                    =   2.56300    
+
+
+ ITERATION NUMBER 50
+    Number of function evaluations so far        =   537
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.300604    
+    Highest phi this iteration                    =   1.11427    
+
+
+ ITERATION NUMBER 51
+    Number of function evaluations so far        =   548
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.325980    
+    Highest phi this iteration                    =   3.22041    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 52
+    Number of function evaluations so far        =   559
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.306769    
+    Highest phi this iteration                    =  0.441349    
+
+
+ ITERATION NUMBER 53
+    Number of function evaluations so far        =   570
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.306762    
+    Highest phi this iteration                    =   2.71156    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 54
+    Number of function evaluations so far        =   581
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.307345    
+    Highest phi this iteration                    =  0.403078    
+
+
+ ITERATION NUMBER 55
+    Number of function evaluations so far        =   592
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.310531    
+    Highest phi this iteration                    =   3.12960    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 56
+    Number of function evaluations so far        =   603
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.315891    
+    Highest phi this iteration                    =  0.462803    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 57
+    Number of function evaluations so far        =   614
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.300733    
+    Highest phi this iteration                    =   2.93431    
+
+
+ ITERATION NUMBER 58
+    Number of function evaluations so far        =   624
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.298159    
+    Highest phi this iteration                    =  0.354989    
+
+
+ ITERATION NUMBER 59
+    Number of function evaluations so far        =   635
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.298194    
+    Highest phi this iteration                    =   3.04900    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 60
+    Number of function evaluations so far        =   646
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.299455    
+    Highest phi this iteration                    =  0.380736    
+
+
+ ITERATION NUMBER 61
+    Number of function evaluations so far        =   658
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.298267    
+    Highest phi this iteration                    =   3.03519    
+
+
+ ITERATION NUMBER 62
+    Number of function evaluations so far        =   669
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.296650    
+    Highest phi this iteration                    =   2.86027    
+
+
+ ITERATION NUMBER 63
+    Number of function evaluations so far        =   680
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.296655    
+    Highest phi this iteration                    =   3.02878    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 64
+    Number of function evaluations so far        =   692
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.298763    
+    Highest phi this iteration                    =  0.310330    
+
+
+ ITERATION NUMBER 65
+    Number of function evaluations so far        =   702
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.297044    
+    Highest phi this iteration                    =  0.323178    
+
+
+ ITERATION NUMBER 66
+    Number of function evaluations so far        =   713
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295816    
+    Highest phi this iteration                    =  0.323245    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 67
+    Number of function evaluations so far        =   725
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.296119    
+    Highest phi this iteration                    =  0.307424    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 68
+    Number of function evaluations so far        =   736
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.296479    
+    Highest phi this iteration                    =  0.310152    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 69
+    Number of function evaluations so far        =   747
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295860    
+    Highest phi this iteration                    =  0.303021    
+
+
+ ITERATION NUMBER 70
+    Number of function evaluations so far        =   758
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295686    
+    Highest phi this iteration                    =  0.309635    
+
+
+ ITERATION NUMBER 71
+    Number of function evaluations so far        =   769
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295841    
+    Highest phi this iteration                    =  0.298954    
+
+
+ ITERATION NUMBER 72
+    Number of function evaluations so far        =   780
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295819    
+    Highest phi this iteration                    =  0.300073    
+
+
+ ITERATION NUMBER 73
+    Number of function evaluations so far        =   791
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295619    
+    Highest phi this iteration                    =  0.296345    
+
+
+ ITERATION NUMBER 74
+    Number of function evaluations so far        =   803
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295403    
+    Highest phi this iteration                    =  0.297528    
+
+
+ ITERATION NUMBER 75
+    Number of function evaluations so far        =   814
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.295097    
+    Highest phi this iteration                    =  0.298328    
+
+
+ ITERATION NUMBER 76
+    Number of function evaluations so far        =   825
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294759    
+    Highest phi this iteration                    =  0.304695    
+
+
+ ITERATION NUMBER 77
+    Number of function evaluations so far        =   836
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294621    
+    Highest phi this iteration                    =  0.298921    
+
+
+ ITERATION NUMBER 78
+    Number of function evaluations so far        =   847
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294622    
+    Highest phi this iteration                    =  0.307805    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 79
+    Number of function evaluations so far        =   858
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294823    
+    Highest phi this iteration                    =  0.300996    
+
+
+ ITERATION NUMBER 80
+    Number of function evaluations so far        =   870
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294022    
+    Highest phi this iteration                    =  0.297151    
+
+
+ ITERATION NUMBER 81
+    Number of function evaluations so far        =   881
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.294053    
+    Highest phi this iteration                    =  0.298250    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 82
+    Number of function evaluations so far        =   891
+    Lowest objective function so far             =  0.293623    
+    Iteration number of lowest phi so far        =   47
+
+    Lowest  phi this iteration                    =  0.293494    
+    Highest phi this iteration                    =  0.296581    
+
+
+ ITERATION NUMBER 83
+    Number of function evaluations so far        =   902
+    Lowest objective function so far             =  0.293494    
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  0.294127    
+    Highest phi this iteration                    =  0.298346    
+
+
+ ITERATION NUMBER 84
+    Number of function evaluations so far        =   913
+    Lowest objective function so far             =  0.293494    
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  0.294057    
+    Highest phi this iteration                    =  0.297090    
+
+
+ ITERATION NUMBER 85
+    Number of function evaluations so far        =   924
+    Lowest objective function so far             =  0.293494    
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  0.293881    
+    Highest phi this iteration                    =  0.303864    
+
+
+ ITERATION NUMBER 86
+    Number of function evaluations so far        =   935
+    Lowest objective function so far             =  0.293494    
+    Iteration number of lowest phi so far        =   82
+
+    Lowest  phi this iteration                    =  0.293292    
+    Highest phi this iteration                    =  0.294161    
+
+
+ ITERATION NUMBER 87
+    Number of function evaluations so far        =   945
+    Lowest objective function so far             =  0.293292    
+    Iteration number of lowest phi so far        =   86
+
+    Lowest  phi this iteration                    =  0.293230    
+    Highest phi this iteration                    =  0.303357    
+
+
+ ITERATION NUMBER 88
+    Number of function evaluations so far        =   956
+    Lowest objective function so far             =  0.293230    
+    Iteration number of lowest phi so far        =   87
+
+    Lowest  phi this iteration                    =  0.293134    
+    Highest phi this iteration                    =  0.294928    
+
+
+ ITERATION NUMBER 89
+    Number of function evaluations so far        =   967
+    Lowest objective function so far             =  0.293134    
+    Iteration number of lowest phi so far        =   88
+
+    Lowest  phi this iteration                    =  0.292830    
+    Highest phi this iteration                    =  0.296825    
+
+
+ ITERATION NUMBER 90
+    Number of function evaluations so far        =   978
+    Lowest objective function so far             =  0.292830    
+    Iteration number of lowest phi so far        =   89
+
+    Lowest  phi this iteration                    =  0.292829    
+    Highest phi this iteration                    =  0.306661    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 91
+    Number of function evaluations so far        =   989
+    Lowest objective function so far             =  0.292829    
+    Iteration number of lowest phi so far        =   90
+
+    Lowest  phi this iteration                    =  0.292763    
+    Highest phi this iteration                    =  0.295271    
+
+
+ ITERATION NUMBER 92
+    Number of function evaluations so far        =   1001
+    Lowest objective function so far             =  0.292763    
+    Iteration number of lowest phi so far        =   91
+
+    Lowest  phi this iteration                    =  0.292656    
+    Highest phi this iteration                    =  0.293128    
+
+
+ ITERATION NUMBER 93
+    Number of function evaluations so far        =   1011
+    Lowest objective function so far             =  0.292656    
+    Iteration number of lowest phi so far        =   92
+
+    Lowest  phi this iteration                    =  0.292420    
+    Highest phi this iteration                    =  0.294205    
+
+
+ ITERATION NUMBER 94
+    Number of function evaluations so far        =   1022
+    Lowest objective function so far             =  0.292420    
+    Iteration number of lowest phi so far        =   93
+
+    Lowest  phi this iteration                    =  0.291938    
+    Highest phi this iteration                    =  0.294215    
+
+
+ ITERATION NUMBER 95
+    Number of function evaluations so far        =   1034
+    Lowest objective function so far             =  0.291938    
+    Iteration number of lowest phi so far        =   94
+
+    Lowest  phi this iteration                    =  0.291967    
+    Highest phi this iteration                    =  0.306390    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 96
+    Number of function evaluations so far        =   1045
+    Lowest objective function so far             =  0.291938    
+    Iteration number of lowest phi so far        =   94
+
+    Lowest  phi this iteration                    =  0.292003    
+    Highest phi this iteration                    =  0.300391    
+
+
+ ITERATION NUMBER 97
+    Number of function evaluations so far        =   1056
+    Lowest objective function so far             =  0.291938    
+    Iteration number of lowest phi so far        =   94
+
+    Lowest  phi this iteration                    =  0.292062    
+    Highest phi this iteration                    =  0.305905    
+
+
+ ITERATION NUMBER 98
+    Number of function evaluations so far        =   1067
+    Lowest objective function so far             =  0.291938    
+    Iteration number of lowest phi so far        =   94
+
+    Lowest  phi this iteration                    =  0.291951    
+    Highest phi this iteration                    =  0.294248    
+
+
+ ITERATION NUMBER 99
+    Number of function evaluations so far        =   1078
+    Lowest objective function so far             =  0.291938    
+    Iteration number of lowest phi so far        =   94
+
+    Lowest  phi this iteration                    =  0.291786    
+    Highest phi this iteration                    =  0.300413    
+
+
+ ITERATION NUMBER 100
+    Number of function evaluations so far        =   1089
+    Lowest objective function so far             =  0.291786    
+    Iteration number of lowest phi so far        =   99
+
+    Lowest  phi this iteration                    =  0.291783    
+    Highest phi this iteration                    =  0.294082    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 101
+    Number of function evaluations so far        =   1100
+    Lowest objective function so far             =  0.291783    
+    Iteration number of lowest phi so far        =   100
+
+    Lowest  phi this iteration                    =  0.291679    
+    Highest phi this iteration                    =  0.292078    
+
+
+ ITERATION NUMBER 102
+    Number of function evaluations so far        =   1111
+    Lowest objective function so far             =  0.291679    
+    Iteration number of lowest phi so far        =   101
+
+    Lowest  phi this iteration                    =  0.291624    
+    Highest phi this iteration                    =  0.305828    
+
+
+ ITERATION NUMBER 103
+    Number of function evaluations so far        =   1122
+    Lowest objective function so far             =  0.291624    
+    Iteration number of lowest phi so far        =   102
+
+    Lowest  phi this iteration                    =  0.291642    
+    Highest phi this iteration                    =  0.305955    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 104
+    Number of function evaluations so far        =   1133
+    Lowest objective function so far             =  0.291624    
+    Iteration number of lowest phi so far        =   102
+
+    Lowest  phi this iteration                    =  0.291580    
+    Highest phi this iteration                    =  0.293806    
+
+
+ ITERATION NUMBER 105
+    Number of function evaluations so far        =   1144
+    Lowest objective function so far             =  0.291580    
+    Iteration number of lowest phi so far        =   104
+
+    Lowest  phi this iteration                    =  0.291571    
+    Highest phi this iteration                    =  0.293722    
+
+
+ ITERATION NUMBER 106
+    Number of function evaluations so far        =   1155
+    Lowest objective function so far             =  0.291571    
+    Iteration number of lowest phi so far        =   105
+
+    Lowest  phi this iteration                    =  0.291571    
+    Highest phi this iteration                    =  0.300170    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 107
+    Number of function evaluations so far        =   1166
+    Lowest objective function so far             =  0.291571    
+    Iteration number of lowest phi so far        =   106
+
+    Lowest  phi this iteration                    =  0.291571    
+    Highest phi this iteration                    =  0.293363    
+
+
+ ITERATION NUMBER 108
+    Number of function evaluations so far        =   1177
+    Lowest objective function so far             =  0.291571    
+    Iteration number of lowest phi so far        =   107
+
+    Lowest  phi this iteration                    =  0.291568    
+    Highest phi this iteration                    =  0.291608    
+
+
+ ITERATION NUMBER 109
+    Number of function evaluations so far        =   1187
+    Lowest objective function so far             =  0.291568    
+    Iteration number of lowest phi so far        =   108
+
+    Lowest  phi this iteration                    =  0.291567    
+    Highest phi this iteration                    =  0.291609    
+
+
+ ITERATION NUMBER 110
+    Number of function evaluations so far        =   1197
+    Lowest objective function so far             =  0.291567    
+    Iteration number of lowest phi so far        =   109
+
+    Lowest  phi this iteration                    =  0.291567    
+    Highest phi this iteration                    =  0.291619    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 111
+    Number of function evaluations so far        =   1207
+    Lowest objective function so far             =  0.291567    
+    Iteration number of lowest phi so far        =   110
+
+    Lowest  phi this iteration                    =  0.291568    
+    Highest phi this iteration                    =  0.291613    
+
+
+ ITERATION NUMBER 112
+    Number of function evaluations so far        =   1218
+    Lowest objective function so far             =  0.291567    
+    Iteration number of lowest phi so far        =   110
+
+    Lowest  phi this iteration                    =  0.291564    
+    Highest phi this iteration                    =  0.291574    
+
+
+ ITERATION NUMBER 113
+    Number of function evaluations so far        =   1228
+    Lowest objective function so far             =  0.291564    
+    Iteration number of lowest phi so far        =   112
+
+    Lowest  phi this iteration                    =  0.291563    
+    Highest phi this iteration                    =  0.291603    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 114
+    Number of function evaluations so far        =   1239
+    Lowest objective function so far             =  0.291563    
+    Iteration number of lowest phi so far        =   113
+
+    Lowest  phi this iteration                    =  0.291564    
+    Highest phi this iteration                    =  0.291580    
+
+
+ ITERATION NUMBER 115
+    Number of function evaluations so far        =   1250
+    Lowest objective function so far             =  0.291563    
+    Iteration number of lowest phi so far        =   113
+
+    Lowest  phi this iteration                    =  0.291564    
+    Highest phi this iteration                    =  0.291570    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+ ITERATION NUMBER 116
+    Number of function evaluations so far        =   1262
+    Lowest objective function so far             =  0.291563    
+    Iteration number of lowest phi so far        =   113
+
+    Lowest  phi this iteration                    =  0.291564    
+    Highest phi this iteration                    =  0.291571    
+    Best random param set this iteration replaced by SVD-determined param set.
+
+
+                        COMPLETION OF CMA-ES PROCESS
+
+ Reason for termination of CMA-ES process:-
+
+ Highest-to-lowest relative objective function difference for generated 
+   parameter sets below threshold over 10 successive iterations.
+
+ Optimised parameter values ----->
+
+    Name                Value
+    bins                  40.0000    
+    thetar               1.000000E-06
+    thetas               0.430000    
+    alpha                 1.85137    
+    n                     4.00969    
+    ksat                 5.820906E-04
+    l                    0.500000    
+    ihead                 145.910    
+
+ See file cmaes1.par for optimised parameter values.
+ See file cmaes1.unc for optimised covariance matrix.

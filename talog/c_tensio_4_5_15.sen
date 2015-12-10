@@ -1,0 +1,158 @@
+                   PARAMETER SENSITIVITIES: CASE c_tensio_4_5_15
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000         0.328248    
+   alpha           soil             1.00000         0.180690    
+   n               soil             6.16940         2.367403E-02
+   ksat            soil            6.100000E-04     3.210071E-02
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.441803         0.134799    
+   alpha           soil             1.00000         0.192992    
+   n               soil             6.28193         2.813686E-02
+   ksat            soil            1.000000E-03     4.345914E-02
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.435739         0.238612    
+   alpha           soil             1.00000         0.188376    
+   n               soil             6.25716         2.514956E-02
+   ksat            soil            1.000000E-03     4.405664E-02
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.407807         0.279081    
+   alpha           soil             1.00000         0.212375    
+   n               soil             4.97867         4.863084E-02
+   ksat            soil            1.000000E-03     5.482318E-02
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.400000          0.00000    
+   alpha           soil             1.00000         0.219685    
+   n               soil             4.85112         4.885369E-02
+   ksat            soil            1.000000E-03     5.651028E-02
+
+
+ OPTIMISATION ITERATION NO.  6 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.400000         0.315025    
+   alpha           soil             1.00000         0.205178    
+   n               soil             4.67899         4.818090E-02
+   ksat            soil            1.000000E-03     6.500599E-02
+
+
+ OPTIMISATION ITERATION NO.  7 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.400000         0.304994    
+   alpha           soil             1.00000         0.220487    
+   n               soil             4.35102         5.578245E-02
+   ksat            soil            1.000000E-03     7.996531E-02
+
+
+ OPTIMISATION ITERATION NO.  8 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.417612         0.357643    
+   alpha           soil             1.00000         0.220232    
+   n               soil             4.17143         6.223708E-02
+   ksat            soil            1.000000E-03     8.485603E-02
+
+
+ OPTIMISATION ITERATION NO.  9 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.415880         0.295161    
+   alpha           soil             1.00000         0.225778    
+   n               soil             3.97666         6.404802E-02
+   ksat            soil            1.000000E-03     8.181316E-02
+
+
+ OPTIMISATION ITERATION NO. 10 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.407300         0.315887    
+   alpha           soil             1.00000         0.233390    
+   n               soil             3.81038         7.582337E-02
+   ksat            soil            1.000000E-03     8.248625E-02
+
+
+ OPTIMISATION ITERATION NO. 11 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.411502         0.280304    
+   alpha           soil             1.00000         0.221807    
+   n               soil             3.75771         7.911749E-02
+   ksat            soil            1.000000E-03     8.166662E-02
+
+
+ OPTIMISATION ITERATION NO. 12 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.409379         0.130677    
+   alpha           soil             1.00000         0.237058    
+   n               soil             3.73740         7.846812E-02
+   ksat            soil            1.000000E-03     8.213598E-02
+
+
+ OPTIMISATION ITERATION NO. 13 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.410435         0.130389    
+   alpha           soil             1.00000         0.232131    
+   n               soil             3.73671         7.852256E-02
+   ksat            soil            1.000000E-03     8.217174E-02
+
+
+ OPTIMISATION ITERATION NO. 14 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.500000         0.270549    
+   alpha           soil             1.00000         0.232746    
+   n               soil             3.67653         7.908350E-02
+   ksat            soil            1.000000E-03     8.125792E-02
+
+
+ OPTIMISATION ITERATION NO. 15 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.486578         0.317156    
+   alpha           soil             1.00000         0.230076    
+   n               soil             3.56863         0.139921    
+   ksat            soil            1.000000E-03     8.823851E-02
+
+
+ OPTIMISATION ITERATION NO. 16 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.482224         0.252956    
+   alpha           soil             1.00000         0.539075    
+   n               soil             3.57245         0.147565    
+   ksat            soil            1.000000E-03     8.562924E-02
+
+
+ OPTIMISATION ITERATION NO. 17 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.484381         0.190894    
+   alpha           soil             1.00000         0.515528    
+   n               soil             3.57402         0.140000    
+   ksat            soil            1.000000E-03     8.426711E-02
+
+
+ OPTIMISATION ITERATION NO. 18 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.483298         0.210424    
+   alpha           soil             1.00000         0.515434    
+   n               soil             3.57428         0.140859    
+   ksat            soil            1.000000E-03     8.403157E-02
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.486578         0.270549    
+   alpha           soil             1.00000         0.232746    
+   n               soil             3.56863         7.908350E-02
+   ksat            soil            1.000000E-03     8.125792E-02

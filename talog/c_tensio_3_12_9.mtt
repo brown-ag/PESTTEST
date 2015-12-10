@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_3_12_9
+
+ OPTIMISATION ITERATION NUMBER  3
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.400000          3.66543    
+ alpha             soil             2.06117          16.2317    
+ n                 soil             3.74060          26.2945    
+ ksat              soil            3.000000E-04     1.631744E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          13.44        19.79       -10.14       3.2482E-02
+ alpha           19.79        263.5       -242.6       0.1523    
+ n              -10.14       -242.6        691.4      -8.8712E-02
+ ksat           3.2482E-02   0.1523      -8.8712E-02   2.6626E-04
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.3327      -0.1053       0.5431    
+ alpha          0.3327        1.000      -0.5685       0.5751    
+ n             -0.1053      -0.5685        1.000      -0.2068    
+ ksat           0.5431       0.5751      -0.2068        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -1.7062E-03   0.9950       9.6954E-02  -2.2075E-02
+ alpha         -5.2432E-04  -9.7420E-02   0.9061      -0.4118    
+ n             -8.0717E-05  -1.9922E-02   0.4119       0.9110    
+ ksat            1.000       1.6451E-03   6.7374E-04  -1.8003E-04
+
+
+ Eigenvalues ----->
+
+                1.3813E-04    11.70        155.3        801.3    

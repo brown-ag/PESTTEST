@@ -1,0 +1,4 @@
+START COVARIANCE_MATRIX
+  file cmaes1.cmf
+  Variance_multiplier  1.6824978E-04
+END COVARIANCE MATRIX

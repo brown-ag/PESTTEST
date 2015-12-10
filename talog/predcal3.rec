@@ -1,0 +1,272 @@
+                      PEST RUN RECORD: CASE predcal3
+
+
+ PEST Version: 13.4
+
+
+ PEST run mode:-
+
+    Predictive analyzer mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     8
+    Number of adjustable parameters                :     4
+    Number of parameter groups                     :     3
+    Number of observations                         :    97
+    Number of prior estimates                      :     0
+
+
+ Model command line(s):-
+
+    ./run_model.sh
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       TO.IN.ptf
+       pre_TO.IN.ptf
+    for model input files:
+       TO.IN
+       pre_TO.IN
+
+    (Parameter values written using double precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       obsnode.pif
+    for reading model output files:
+       alf_obsnode_60.txt
+
+
+ PEST-to-model message file:-
+
+    na
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ model        relative     1.000       1.000      always_2        na         na
+ soil         relative    0.1000      1.0000E-03  always_2        na         na
+ water        relative    1.0000E-02  1.0000E-03  always_2        na         na
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ bins         fixed               na        100.000          na             na
+ thetar       fixed               na       1.000000E-06      na             na
+ thetas       none              relative   0.430000       0.400000       0.500000    
+ alpha        none              factor      2.16000        1.00000        10.0000    
+ n            none              relative    3.80000        1.20000        4.00000    
+ ksat         log               relative   3.000000E-06   1.000000E-06   3.000000E-05
+ l            fixed               na       0.500000          na             na
+ ihead        fixed               na        145.910          na             na
+
+ Name         Group          Scale         Offset        Model command number
+ bins         model         1.00000        0.00000            1
+ thetar       soil          1.00000        0.00000            1
+ thetas       soil          1.00000        0.00000            1
+ alpha        soil          1.00000        0.00000            1
+ n            soil          1.00000        0.00000            1
+ ksat         soil          1.00000        0.00000            1
+ l            soil          1.00000        0.00000            1
+ ihead        water         1.00000        0.00000            1
+
+
+ Prior information:-
+
+    No prior information supplied
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  ten1                   -1.46441          1.000       tensio      
+  ten2                   -1.46096          1.000       tensio      
+  ten3                   -1.45867          1.000       tensio      
+  ten4                   -1.45982          1.000       tensio      
+  ten5                   -1.45695          1.000       tensio      
+  ten6                   -1.46154          1.000       tensio      
+  ten7                   -1.46039          1.000       tensio      
+  ten8                   -1.45867          1.000       tensio      
+  ten9                   -1.46211          1.000       tensio      
+  ten10                  -1.45350          1.000       tensio      
+  ten11                  -1.45408          1.000       tensio      
+  ten12                  -1.45178          1.000       tensio      
+  ten13                  -1.45235          1.000       tensio      
+  ten14                  -1.45867          1.000       tensio      
+  ten15                  -1.45235          1.000       tensio      
+  ten16                  -1.44891          1.000       tensio      
+  ten17                  -1.44948          1.000       tensio      
+  ten18                  -1.43054          1.000       tensio      
+  ten19                  -1.40413          1.000       tensio      
+  ten20                  -1.32032          1.000       tensio      
+  ten21                  -1.06028          1.000       tensio      
+  ten22                 -0.782434          1.000       tensio      
+  ten23                 -0.716992          1.000       tensio      
+  ten24                 -0.711251          1.000       tensio      
+  ten25                 -0.712400          1.000       tensio      
+  ten26                 -0.715270          1.000       tensio      
+  ten27                 -0.716992          1.000       tensio      
+  ten28                 -0.730769          1.000       tensio      
+  ten29                 -0.766935          1.000       tensio      
+  ten30                 -0.788749          1.000       tensio      
+  ten31                 -0.808840          1.000       tensio      
+  ten32                 -0.828358          1.000       tensio      
+  ten33                 -0.846728          1.000       tensio      
+  ten34                 -0.863949          1.000       tensio      
+  ten35                 -0.882893          1.000       tensio      
+  ten36                 -0.896096          1.000       tensio      
+  ten37                 -0.906429          1.000       tensio      
+  ten38                 -0.917336          1.000       tensio      
+  ten39                 -0.928243          1.000       tensio      
+  ten40                 -0.938002          1.000       tensio      
+  ten41                 -0.947761          1.000       tensio      
+  ten42                 -0.955224          1.000       tensio      
+  ten43                 -0.963261          1.000       tensio      
+  ten44                 -0.971297          1.000       tensio      
+  ten45                 -0.979908          1.000       tensio      
+  ten46                 -0.986223          1.000       tensio      
+  ten47                 -0.993685          1.000       tensio      
+  ten48                  -1.00057          1.000       tensio      
+  ten49                  -1.00689          1.000       tensio      
+  ten50                  -1.01320          1.000       tensio      
+  ten51                  -1.02009          1.000       tensio      
+  ten52                  -1.02583          1.000       tensio      
+  ten53                  -1.03100          1.000       tensio      
+  ten54                  -1.03559          1.000       tensio      
+  ten55                  -1.03961          1.000       tensio      
+  ten56                  -1.04420          1.000       tensio      
+  ten57                  -1.04994          1.000       tensio      
+  ten58                  -1.05281          1.000       tensio      
+  ten59                  -1.05626          1.000       tensio      
+  ten60                  -1.06085          1.000       tensio      
+  ten61                  -1.06372          1.000       tensio      
+  ten62                  -1.06831          1.000       tensio      
+  ten63                  -1.07233          1.000       tensio      
+  ten64                  -1.07577          1.000       tensio      
+  ten65                  -1.07807          1.000       tensio      
+  ten66                  -1.08209          1.000       tensio      
+  ten67                  -1.08553          1.000       tensio      
+  ten68                  -1.08840          1.000       tensio      
+  ten69                  -1.09127          1.000       tensio      
+  ten70                  -1.09242          1.000       tensio      
+  ten71                  -1.09701          1.000       tensio      
+  ten72                  -1.10046          1.000       tensio      
+  ten73                  -1.10218          1.000       tensio      
+  ten74                  -1.10505          1.000       tensio      
+  ten75                  -1.10735          1.000       tensio      
+  ten76                  -1.10964          1.000       tensio      
+  ten77                  -1.11309          1.000       tensio      
+  ten78                  -1.11424          1.000       tensio      
+  ten79                  -1.11711          1.000       tensio      
+  ten80                  -1.12055          1.000       tensio      
+  ten81                  -1.12285          1.000       tensio      
+  ten82                  -1.12514          1.000       tensio      
+  ten83                  -1.12801          1.000       tensio      
+  ten84                  -1.13031          1.000       tensio      
+  ten85                  -1.13146          1.000       tensio      
+  ten86                  -1.13548          1.000       tensio      
+  ten87                  -1.13720          1.000       tensio      
+  ten88                  -1.13777          1.000       tensio      
+  ten89                  -1.13949          1.000       tensio      
+  ten90                  -1.14294          1.000       tensio      
+  ten91                  -1.14466          1.000       tensio      
+  ten92                  -1.14696          1.000       tensio      
+  ten93                  -1.14811          1.000       tensio      
+  ten94                  -1.15040          1.000       tensio      
+  ten95                  -1.15729          1.000       tensio      
+  ten96                  -1.15385          1.000       tensio      
+
+
+ Prediction:-
+
+ Prediction name         Prediction        Weight       Group
+  msbc25                       na             na       predict     
+
+
+ Control settings:-
+
+    Initial lambda                                               :  5.0000    
+    Lambda adjustment factor                                     :  2.0000    
+    Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+    Limiting relative phi reduction between lambdas              : 1.00000E-02
+    Maximum trial lambdas per iteration                          :   8
+    Forgive model run failure during lamda testing               : no
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   :  5.0000
+    Maximum relative parameter change (relative-limited changes) :  5.0000
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : na                  
+    Iteration at which to first consider derivatives switch      : na
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.10000E-01
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :  40
+
+    Attempt automatic user intervention                          : no
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options: -
+
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+ Extra settings for predictive analysis:-
+
+    Search for maximum or minimum prediction                     : maximum
+    Phi defining calibration acceptance                          :  1.0000    
+    Maximum acceptable phi                                       :  1.5000    
+    Phi at which relative phi reduction calculation changes      :  2.0000    
+    Include effect of predictive noise                           : no
+
+    Limiting absolute prediction change between lambdas          :  0.0000    
+    Limiting relative prediction change between lambdas          : 5.00000E-03
+    Use line search for calculating parameter upgrade?           : yes
+    Initial line search factor                                   :  1.0000    
+    Line search refinement factor                                :  2.0000    
+    Maximum number of line search runs per lambda                :   7
+
+    Absolute prediction change below which to begin use of
+    central derivatives                                          :   na                
+    Relative prediction change below which to begin use of
+    central derivatives                                          :   na                
+
+    Maximum number of consecutive failures to improve prediction :   3
+    Minimal absolute prediction change indicating convergence    :  0.0000    
+
+ ******************************************************************************
+ Error condition prevents continued PEST execution:-
+
+ Cannot write data to run record file.
+ ******************************************************************************

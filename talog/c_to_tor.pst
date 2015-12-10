@@ -1,0 +1,128 @@
+pcf
+* control data
+restart estimation
+8 96 3  0 1
+2 1 double point 1 0 0
+5 2 0.3 0.01 8
+5 5 0.001
+0.1
+20 0.005 4 4 0.01 4
+1 1 1
+* parameter groups
+model relative 1 1 always_2 1 parabolic
+soil relative 0.01 0.001 always_2 1 parabolic
+water relative 0.01 0.001 always_2 1 parabolic
+* parameter data
+bins fixed factor  100  10 1000 model 1 0 1
+thetar fixed relative   5.0000000E-02  0.04 0.06 soil 1 0 1
+thetas fixed relative   0.4300000      0.4 0.5 soil 1 0 1
+alpha fixed relative    3.807596      1 5 soil 1 0 1
+n fixed relative    1.484401      1.1 4 soil 1 0 1
+ksat log factor   5.3283500E-04  1e-7 1e-1 soil 1 0 1
+l none relative   0.50000      0.1 2 soil 1 0 1
+ihead fixed relative   145.96727899      50 250 water 1 0 1
+* observation groups
+tensio
+* observation data
+ten1 -1.46039035591 1 tensio
+ten2 -1.45579793341 1 tensio
+ten3 -1.45866819747 1 tensio
+ten4 -1.45866819747 1 tensio
+ten5 -1.46555683123 1 tensio
+ten6 -1.46670493685 1 tensio
+ten7 -1.46842709529 1 tensio
+ten8 -1.4598163031 1 tensio
+ten9 -1.46383467279 1 tensio
+ten10 -1.45924225029 1 tensio
+ten11 -1.45924225029 1 tensio
+ten12 -1.12743972445 1 tensio
+ten13 -0.584959816303 1 tensio
+ten14 -0.630884041332 1 tensio
+ten15 -0.598163030999 1 tensio
+ten16 -0.59242250287 1 tensio
+ten17 -0.602181400689 1 tensio
+ten18 -0.603903559127 1 tensio
+ten19 -0.607921928817 1 tensio
+ten20 -0.622273249139 1 tensio
+ten21 -0.651549942595 1 tensio
+ten22 -0.695752009185 1 tensio
+ten23 -0.722158438576 1 tensio
+ten24 -0.738231917336 1 tensio
+ten25 -0.749712973594 1 tensio
+ten26 -0.766360505166 1 tensio
+ten27 -0.783008036739 1 tensio
+ten28 -0.796211251435 1 tensio
+ten29 -0.807118254879 1 tensio
+ten30 -0.820321469575 1 tensio
+ten31 -0.817451205511 1 tensio
+ten32 -0.816303099885 1 tensio
+ten33 -0.82721010333 1 tensio
+ten34 -0.832950631458 1 tensio
+ten35 -0.842709529277 1 tensio
+ten36 -0.85132032147 1 tensio
+ten37 -0.85935706085 1 tensio
+ten38 -0.866819747417 1 tensio
+ten39 -0.870264064294 1 tensio
+ten40 -0.842135476464 1 tensio
+ten41 -0.795637198622 1 tensio
+ten42 -0.83524684271 1 tensio
+ten43 -0.89150401837 1 tensio
+ten44 -0.936854190586 1 tensio
+ten45 -0.974167623421 1 tensio
+ten46 -0.997703788749 1 tensio
+ten47 -1.01090700344 1 tensio
+ten48 -1.0223880597 1 tensio
+ten49 -1.02870264064 1 tensio
+ten50 -1.03501722158 1 tensio
+ten51 -1.03903559127 1 tensio
+ten52 -1.04305396096 1 tensio
+ten53 -1.04879448909 1 tensio
+ten54 -1.04994259472 1 tensio
+ten55 -1.05683122847 1 tensio
+ten56 -1.06371986223 1 tensio
+ten57 -1.0671641791 1 tensio
+ten58 -1.06946039036 1 tensio
+ten59 -1.07233065442 1 tensio
+ten60 -1.07520091848 1 tensio
+ten61 -1.07692307692 1 tensio
+ten62 -1.07864523536 1 tensio
+ten63 -1.08323765786 1 tensio
+ten64 -1.08610792193 1 tensio
+ten65 -1.08897818599 1 tensio
+ten66 -1.08897818599 1 tensio
+ten67 -1.09127439724 1 tensio
+ten68 -1.09529276693 1 tensio
+ten69 -1.09988518944 1 tensio
+ten70 -1.10103329506 1 tensio
+ten71 -1.10677382319 1 tensio
+ten72 -1.10849598163 1 tensio
+ten73 -1.11079219288 1 tensio
+ten74 -1.11308840413 1 tensio
+ten75 -1.11538461538 1 tensio
+ten76 -1.11710677382 1 tensio
+ten77 -1.11997703789 1 tensio
+ten78 -1.12112514351 1 tensio
+ten79 -1.12284730195 1 tensio
+ten80 -1.1251435132 1 tensio
+ten81 -1.12629161883 1 tensio
+ten82 -1.12916188289 1 tensio
+ten83 -1.12858783008 1 tensio
+ten84 -1.13203214696 1 tensio
+ten85 -1.13260619977 1 tensio
+ten86 -1.13605051665 1 tensio
+ten87 -1.13605051665 1 tensio
+ten88 -1.13662456946 1 tensio
+ten89 -1.13777267509 1 tensio
+ten90 -1.1383467279 1 tensio
+ten91 -1.1383467279 1 tensio
+ten92 -1.13605051665 1 tensio
+ten93 -1.13490241102 1 tensio
+ten94 -1.12916188289 1 tensio
+ten95 -1.12342135476 1 tensio
+ten96 -1.12456946039 1 tensio
+* model command line
+./run_model.sh
+* model input/output
+TO.IN.ptf TO.IN
+pre_TO.IN.ptf pre_TO.IN
+obsnode.pif alf_obsnode_60.txt

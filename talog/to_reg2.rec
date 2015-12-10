@@ -1,0 +1,916 @@
+                       PEST RUN RECORD: CASE to_reg2
+
+
+ PEST Version: 13.4
+
+
+ PEST run mode:-
+
+    Regularisation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :     8
+    Number of adjustable parameters                :     3
+    Number of parameter groups                     :     3
+    Number of observations                         :    96
+    Number of prior estimates                      :     3
+
+
+ Model command line(s):-
+
+    ./run_model.sh
+
+
+ Jacobian command line:-
+
+    na
+
+
+ Model interface files:-
+
+    Templates:
+       TO.IN.ptf
+       pre_TO.IN.ptf
+    for model input files:
+       TO.IN
+       pre_TO.IN
+
+    (Parameter values written using double precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       obsnode.pif
+    for reading model output files:
+       alf_obsnode_60.txt
+
+
+ PEST-to-model message file:-
+
+    na
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ model        relative     1.000       1.000      always_2        na         na
+ soil         relative    1.0000E-02  1.0000E-03  always_2        na         na
+ water        relative    1.0000E-02  1.0000E-03  always_2        na         na
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ bins         fixed               na        40.0000          na             na
+ thetar       fixed               na       1.000000E-06      na             na
+ thetas       fixed               na       0.430000          na             na
+ alpha        none              factor      4.00000        1.00000        10.0000    
+ n            none              factor      1.50000        1.10000        10.0000    
+ ksat         log               factor     1.160000E-05   1.000000E-08   1.000000E-03
+ l            fixed               na       0.500000          na             na
+ ihead        fixed               na        145.910          na             na
+
+ Name         Group          Scale         Offset        Model command number
+ bins         model         1.00000        0.00000            1
+ thetar       soil          1.00000        0.00000            1
+ thetas       soil          1.00000        0.00000            1
+ alpha        soil          1.00000        0.00000            1
+ n            soil          1.00000        0.00000            1
+ ksat         soil          1.00000        0.00000            1
+ l            soil          1.00000        0.00000            1
+ ihead        water         1.00000        0.00000            1
+
+
+ Prior information:-
+
+ Prior info               Factor             Parameter              Prior         Weight
+ name                                                               information
+                alpha      1.00000       *       alpha         =     3.60000       1.000
+                    n      1.00000       *       n             =     1.50000       1.000
+                 ksat      1.00000       *   log[ksat]         =    -5.00000       1.000
+
+ Prior Info Name           Observation Group
+ alpha                        regul_soil
+ n                            regul_soil
+ ksat                         regul_soil
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  ten1                   -1.46441          1.000       tensio      
+  ten2                   -1.46096          1.000       tensio      
+  ten3                   -1.45867          1.000       tensio      
+  ten4                   -1.45982          1.000       tensio      
+  ten5                   -1.45695          1.000       tensio      
+  ten6                   -1.46154          1.000       tensio      
+  ten7                   -1.46039          1.000       tensio      
+  ten8                   -1.45867          1.000       tensio      
+  ten9                   -1.46211          1.000       tensio      
+  ten10                  -1.45350          1.000       tensio      
+  ten11                  -1.45408          1.000       tensio      
+  ten12                  -1.45178          1.000       tensio      
+  ten13                  -1.45235          1.000       tensio      
+  ten14                  -1.45867          1.000       tensio      
+  ten15                  -1.45235          1.000       tensio      
+  ten16                  -1.44891          1.000       tensio      
+  ten17                  -1.44948          1.000       tensio      
+  ten18                  -1.43054          1.000       tensio      
+  ten19                  -1.40413          1.000       tensio      
+  ten20                  -1.32032          1.000       tensio      
+  ten21                  -1.06028          1.000       tensio      
+  ten22                 -0.782434          1.000       tensio      
+  ten23                 -0.716992          1.000       tensio      
+  ten24                 -0.711251          1.000       tensio      
+  ten25                 -0.712400          1.000       tensio      
+  ten26                 -0.715270          1.000       tensio      
+  ten27                 -0.716992          1.000       tensio      
+  ten28                 -0.730769          1.000       tensio      
+  ten29                 -0.766935          1.000       tensio      
+  ten30                 -0.788749          1.000       tensio      
+  ten31                 -0.808840          1.000       tensio      
+  ten32                 -0.828358          1.000       tensio      
+  ten33                 -0.846728          1.000       tensio      
+  ten34                 -0.863949          1.000       tensio      
+  ten35                 -0.882893          1.000       tensio      
+  ten36                 -0.896096          1.000       tensio      
+  ten37                 -0.906429          1.000       tensio      
+  ten38                 -0.917336          1.000       tensio      
+  ten39                 -0.928243          1.000       tensio      
+  ten40                 -0.938002          1.000       tensio      
+  ten41                 -0.947761          1.000       tensio      
+  ten42                 -0.955224          1.000       tensio      
+  ten43                 -0.963261          1.000       tensio      
+  ten44                 -0.971297          1.000       tensio      
+  ten45                 -0.979908          1.000       tensio      
+  ten46                 -0.986223          1.000       tensio      
+  ten47                 -0.993685          1.000       tensio      
+  ten48                  -1.00057          1.000       tensio      
+  ten49                  -1.00689          1.000       tensio      
+  ten50                  -1.01320          1.000       tensio      
+  ten51                  -1.02009          1.000       tensio      
+  ten52                  -1.02583          1.000       tensio      
+  ten53                  -1.03100          1.000       tensio      
+  ten54                  -1.03559          1.000       tensio      
+  ten55                  -1.03961          1.000       tensio      
+  ten56                  -1.04420          1.000       tensio      
+  ten57                  -1.04994          1.000       tensio      
+  ten58                  -1.05281          1.000       tensio      
+  ten59                  -1.05626          1.000       tensio      
+  ten60                  -1.06085          1.000       tensio      
+  ten61                  -1.06372          1.000       tensio      
+  ten62                  -1.06831          1.000       tensio      
+  ten63                  -1.07233          1.000       tensio      
+  ten64                  -1.07577          1.000       tensio      
+  ten65                  -1.07807          1.000       tensio      
+  ten66                  -1.08209          1.000       tensio      
+  ten67                  -1.08553          1.000       tensio      
+  ten68                  -1.08840          1.000       tensio      
+  ten69                  -1.09127          1.000       tensio      
+  ten70                  -1.09242          1.000       tensio      
+  ten71                  -1.09701          1.000       tensio      
+  ten72                  -1.10046          1.000       tensio      
+  ten73                  -1.10218          1.000       tensio      
+  ten74                  -1.10505          1.000       tensio      
+  ten75                  -1.10735          1.000       tensio      
+  ten76                  -1.10964          1.000       tensio      
+  ten77                  -1.11309          1.000       tensio      
+  ten78                  -1.11424          1.000       tensio      
+  ten79                  -1.11711          1.000       tensio      
+  ten80                  -1.12055          1.000       tensio      
+  ten81                  -1.12285          1.000       tensio      
+  ten82                  -1.12514          1.000       tensio      
+  ten83                  -1.12801          1.000       tensio      
+  ten84                  -1.13031          1.000       tensio      
+  ten85                  -1.13146          1.000       tensio      
+  ten86                  -1.13548          1.000       tensio      
+  ten87                  -1.13720          1.000       tensio      
+  ten88                  -1.13777          1.000       tensio      
+  ten89                  -1.13949          1.000       tensio      
+  ten90                  -1.14294          1.000       tensio      
+  ten91                  -1.14466          1.000       tensio      
+  ten92                  -1.14696          1.000       tensio      
+  ten93                  -1.14811          1.000       tensio      
+  ten94                  -1.15040          1.000       tensio      
+  ten95                  -1.15729          1.000       tensio      
+  ten96                  -1.15385          1.000       tensio      
+
+
+ Control settings:-
+
+    Initial lambda                                               :  5.0000    
+    Lambda adjustment factor                                     :  2.0000    
+    Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+    Limiting relative phi reduction between lambdas              : 1.00000E-02
+    Maximum trial lambdas per iteration                          :   8
+    Forgive model run failure during lamda testing               : no
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   :  5.0000
+    Maximum relative parameter change (relative-limited changes) : na
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : na                  
+    Iteration at which to first consider derivatives switch      : na
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.10000E-01
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :  20
+
+    Attempt automatic user intervention                          : no
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options: -
+
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+ Extra settings for regularisation mode:-
+
+    Target/current measurement objective function ratio          : 0.10000    
+    Acceptable/target measurement objective function ratio       :  1.0500    
+    Minimum target measurement objective function value          : 1.00000E-10
+    Terminate inversion when measurement obj. fn. below target   : yes
+
+    Initial regularisation weight factor                         :  1.0000    
+    Minimum regularisation weight factor                         : 1.00000E-10
+    Maximum regularisation weight factor                         : 1.00000E+10
+
+    Weight factor solution adjustment ratio                      :  1.3000    
+    Weight factor solution tolerance                             : 1.00000E-02
+    Automatic inter-regularisation group weights adjustment      : yes
+    Use sensitivities or number of items                         : sensitivities
+
+    Implement memory conservation                                : no
+    Declare all regularisation information as linear             : no
+
+
+                             OPTIMISATION RECORD
+
+
+ INITIAL CONDITIONS: 
+    Current regularisation weight factor                     =   1.0000    
+    Current value of measurement objective function          =   53.417    
+    Current value of regularisation objective function       =  0.16415    
+
+    Sum of squared weighted residuals (ie phi)               =   53.581    
+    Contribution to phi from observation group "tensio"      =   53.417    
+    Contribution to phi from observation group "regul_soil"  =  0.16415    
+
+       Current parameter values
+       bins             40.0000    
+       thetar          1.000000E-06
+       thetas          0.430000    
+       alpha            4.00000    
+       n                1.50000    
+       ksat            1.160000E-05
+       l               0.500000    
+       ihead            145.910    
+
+
+ OPTIMISATION ITERATION NO.        : 1
+    Model calls so far             : 1
+    Current regularisation weight factor                     :   1.0000    
+    Current value of measurement objective function          :   53.417    
+    Current value of regularisation objective function       :  0.16415    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   53.581    
+    Contribution to phi from observation group "tensio"      :   53.417    
+    Contribution to phi from observation group "regul_soil"  :  0.16415    
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   5.3417    
+
+    Re-calculated regularisation weight factor               :  7.25382E-02
+    New starting objective function for this itn. (ie. phi)  :   53.418    
+    Contribution to phi from observation group "tensio"      :   53.417    
+    Contribution to phi from observation group "regul_soil"  :  8.63747E-04
+
+        Lambda =   5.0000     ----->
+           Phi =   33.027      (  0.618 of starting phi)
+     Meas. fn. =   33.023    
+    Regul. fn. =  0.71955    
+
+        Lambda =   2.5000     ----->
+           Phi =   33.455      (  0.626 of starting phi)
+     Meas. fn. =   33.451    
+    Regul. fn. =  0.72951    
+
+        Lambda =   10.000     ----->
+           Phi =   32.663      (  0.611 of starting phi)
+     Meas. fn. =   32.659    
+    Regul. fn. =  0.70220    
+
+        Lambda =   20.000     ----->
+           Phi =   32.158      (  0.602 of starting phi)
+     Meas. fn. =   32.155    
+    Regul. fn. =  0.67572    
+
+        Lambda =   40.000     ----->
+           Phi =   38.460      (  0.720 of starting phi)
+     Meas. fn. =   38.458    
+    Regul. fn. =  0.39877    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.90152                 alpha             4.00000    
+       n                1.54457                 n                 1.50000    
+       ksat            5.800000E-05             ksat             1.160000E-05
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  5.000     ["ksat"]
+    Maximum relative change:  4.000     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 2
+    Model calls so far             : 9
+    Current regularisation weight factor                     :  7.25382E-02
+    Current value of measurement objective function          :   32.155    
+    Current value of regularisation objective function       :  0.67572    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   32.158    
+    Contribution to phi from observation group "tensio"      :   32.155    
+    Contribution to phi from observation group "regul_soil"  :  3.55552E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :   3.2155    
+
+    Re-calculated regularisation weight factor               :  0.12259    
+    Instability in weight factor calc. - reducing target meas. obj. fn.
+    FRACPHIM-adjusted target measurement objective function  :   1.6077    
+
+    Re-calculated regularisation weight factor               :  5.57986E-02
+    New starting objective function for this itn. (ie. phi)  :   32.157    
+    Contribution to phi from observation group "tensio"      :   32.155    
+    Contribution to phi from observation group "regul_soil"  :  2.10386E-03
+
+        Lambda =   20.000     ----->
+           Phi =   9.1958      (  0.286 of starting phi)
+     Meas. fn. =   9.1897    
+    Regul. fn. =   1.9674    
+
+    No more lambdas: phi is less than 0.3000 of starting phi
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.54721                 alpha             3.90152    
+       n                1.62174                 n                 1.54457    
+       ksat            2.490830E-04             ksat             5.800000E-05
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  4.295     ["ksat"]
+    Maximum relative change:  3.295     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 3
+    Model calls so far             : 13
+    Current regularisation weight factor                     :  5.57986E-02
+    Current value of measurement objective function          :   9.1897    
+    Current value of regularisation objective function       :   1.9674    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   9.1958    
+    Contribution to phi from observation group "tensio"      :   9.1897    
+    Contribution to phi from observation group "regul_soil"  :  6.12542E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.91897    
+
+    Re-calculated regularisation weight factor               :  4.29220E-02
+    New starting objective function for this itn. (ie. phi)  :   9.1933    
+    Contribution to phi from observation group "tensio"      :   9.1897    
+    Contribution to phi from observation group "regul_soil"  :  3.62451E-03
+
+        Lambda =   10.000     ----->
+           Phi =   1.6588      (  0.180 of starting phi)
+     Meas. fn. =   1.6529    
+    Regul. fn. =   3.2324    
+
+    No more lambdas: phi is less than 0.3000 of starting phi
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.36411                 alpha             3.54721    
+       n                1.66918                 n                 1.62174    
+       ksat            5.946909E-04             ksat             2.490830E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  2.388     ["ksat"]
+    Maximum relative change:  1.388     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 4
+    Model calls so far             : 17
+    Current regularisation weight factor                     :  4.29220E-02
+    Current value of measurement objective function          :   1.6529    
+    Current value of regularisation objective function       :   3.2324    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   1.6588    
+    Contribution to phi from observation group "tensio"      :   1.6529    
+    Contribution to phi from observation group "regul_soil"  :  5.95500E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.16529    
+
+    Re-calculated regularisation weight factor               :  3.30169E-02
+    New starting objective function for this itn. (ie. phi)  :   1.6564    
+    Contribution to phi from observation group "tensio"      :   1.6529    
+    Contribution to phi from observation group "regul_soil"  :  3.52367E-03
+
+        Lambda =   5.0000     ----->
+           Phi =   1.3606      (  0.821 of starting phi)
+     Meas. fn. =   1.3569    
+    Regul. fn. =   3.4489    
+
+        Lambda =   2.5000     ----->
+           Phi =   1.2704      (  0.767 of starting phi)
+     Meas. fn. =   1.2666    
+    Regul. fn. =   3.5067    
+
+        Lambda =   1.2500     ----->
+           Phi =   1.3164      (  0.795 of starting phi)
+     Meas. fn. =   1.3126    
+    Regul. fn. =   3.5386    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.33086                 alpha             3.36411    
+       n                1.68499                 n                 1.66918    
+       ksat            6.980837E-04             ksat             5.946909E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  1.174     ["ksat"]
+    Maximum relative change: 0.1739     ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 5
+    Model calls so far             : 23
+    Current regularisation weight factor                     :  3.30169E-02
+    Current value of measurement objective function          :   1.2666    
+    Current value of regularisation objective function       :   3.5067    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   1.2704    
+    Contribution to phi from observation group "tensio"      :   1.2666    
+    Contribution to phi from observation group "regul_soil"  :  3.82266E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.12666    
+
+    Re-calculated regularisation weight factor               :  2.53976E-02
+    New starting objective function for this itn. (ie. phi)  :   1.2688    
+    Contribution to phi from observation group "tensio"      :   1.2666    
+    Contribution to phi from observation group "regul_soil"  :  2.26193E-03
+
+        Lambda =   1.2500     ----->
+           Phi =   1.3133      (  1.035 times starting phi)
+     Meas. fn. =   1.3110    
+    Regul. fn. =   3.5098    
+
+        Lambda =  0.62500     ----->
+           Phi =   1.2736      (  1.004 times starting phi)
+     Meas. fn. =   1.2713    
+    Regul. fn. =   3.5059    
+
+        Lambda =  0.31250     ----->
+           Phi =   1.2744      (  1.004 times starting phi)
+     Meas. fn. =   1.2722    
+    Regul. fn. =   3.5015    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.30219                 alpha             3.33086    
+       n                1.69085                 n                 1.68499    
+       ksat            6.897339E-04             ksat             6.980837E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  1.012     ["ksat"]
+    Maximum relative change: 1.1961E-02 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 6
+    Model calls so far             : 29
+    Current regularisation weight factor                     :  2.53976E-02
+    Current value of measurement objective function          :   1.2713    
+    Current value of regularisation objective function       :   3.5059    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   1.2736    
+    Contribution to phi from observation group "tensio"      :   1.2713    
+    Contribution to phi from observation group "regul_soil"  :  2.26142E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.12666    
+
+    Re-calculated regularisation weight factor               :  1.95366E-02
+    New starting objective function for this itn. (ie. phi)  :   1.2727    
+    Contribution to phi from observation group "tensio"      :   1.2713    
+    Contribution to phi from observation group "regul_soil"  :  1.33812E-03
+
+        Lambda =  0.31250     ----->
+           Phi =   1.2949      (  1.017 times starting phi)
+     Meas. fn. =   1.2935    
+    Regul. fn. =   3.5106    
+
+        Lambda =  0.15625     ----->
+           Phi =   1.2951      (  1.018 times starting phi)
+     Meas. fn. =   1.2937    
+    Regul. fn. =   3.5096    
+
+        Lambda =  0.62500     ----->
+           Phi =   1.3249      (  1.041 times starting phi)
+     Meas. fn. =   1.3236    
+    Regul. fn. =   3.5117    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.28526                 alpha             3.30219    
+       n                1.69455                 n                 1.69085    
+       ksat            6.867090E-04             ksat             6.897339E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  1.005     ["alpha"]
+    Maximum relative change: 5.1274E-03 ["alpha"]
+
+
+ OPTIMISATION ITERATION NO.        : 7
+    Model calls so far             : 35
+    Current regularisation weight factor                     :  1.95366E-02
+    Current value of measurement objective function          :   1.2935    
+    Current value of regularisation objective function       :   3.5106    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   1.2949    
+    Contribution to phi from observation group "tensio"      :   1.2935    
+    Contribution to phi from observation group "regul_soil"  :  1.33994E-03
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.12666    
+
+    Re-calculated regularisation weight factor               :  1.50282E-02
+    New starting objective function for this itn. (ie. phi)  :   1.2943    
+    Contribution to phi from observation group "tensio"      :   1.2935    
+    Contribution to phi from observation group "regul_soil"  :  7.92865E-04
+
+        Lambda =  0.31250     ----->
+           Phi =   1.3112      (  1.013 times starting phi)
+     Meas. fn. =   1.3104    
+    Regul. fn. =   3.5171    
+
+        Lambda =  0.15625     ----->
+           Phi =   1.3986      (  1.081 times starting phi)
+     Meas. fn. =   1.3978    
+    Regul. fn. =   3.5179    
+
+        Lambda =  0.62500     ----->
+           Phi =   1.3117      (  1.013 times starting phi)
+     Meas. fn. =   1.3109    
+    Regul. fn. =   3.5164    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.28144                 alpha             3.28526    
+       n                1.69579                 n                 1.69455    
+       ksat            6.882198E-04             ksat             6.867090E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  1.002     ["ksat"]
+    Maximum relative change: 2.2000E-03 ["ksat"]
+
+
+ OPTIMISATION ITERATION NO.        : 8
+    Model calls so far             : 41
+    Current regularisation weight factor                     :  1.50282E-02
+    Current value of measurement objective function          :   1.3104    
+    Current value of regularisation objective function       :   3.5171    
+    Note: regularisation objective function is not comparable between
+    iterations because of IREGADJ regularisation weights adjustment.
+
+    Starting phi for this iteration                          :   1.3112    
+    Contribution to phi from observation group "tensio"      :   1.3104    
+    Contribution to phi from observation group "regul_soil"  :  7.94313E-04
+
+    Regularisation weights adjustment....
+    Group Name    Weights adjustment ratio from previous iteration
+     regul_soil      1.00000    
+    FRACPHIM-adjusted target measurement objective function  :  0.12666    
+
+    Re-calculated regularisation weight factor               :  1.15601E-02
+    New starting objective function for this itn. (ie. phi)  :   1.3109    
+    Contribution to phi from observation group "tensio"      :   1.3104    
+    Contribution to phi from observation group "regul_soil"  :  4.70008E-04
+
+        Lambda =  0.31250     ----->
+           Phi =   1.3943      (  1.064 times starting phi)
+     Meas. fn. =   1.3938    
+    Regul. fn. =   3.5189    
+
+        Lambda =  0.15625     ----->
+           Phi =   1.3970      (  1.066 times starting phi)
+     Meas. fn. =   1.3966    
+    Regul. fn. =   3.5172    
+
+        Lambda =  0.62500     ----->
+           Phi =   1.4121      (  1.077 times starting phi)
+     Meas. fn. =   1.4116    
+    Regul. fn. =   3.5309    
+
+    No more lambdas: phi rising
+
+       Current parameter values                 Previous parameter values
+       bins             40.0000                 bins              40.0000    
+       thetar          1.000000E-06             thetar           1.000000E-06
+       thetas          0.430000                 thetas           0.430000    
+       alpha            3.27657                 alpha             3.28144    
+       n                1.69710                 n                 1.69579    
+       ksat            6.874640E-04             ksat             6.882198E-04
+       l               0.500000                 l                0.500000    
+       ihead            145.910                 ihead             145.910    
+    Maximum   factor change:  1.001     ["alpha"]
+    Maximum relative change: 1.4841E-03 ["alpha"]
+
+    Optimisation complete:   4 optimisation iterations have elapsed since best
+                           result was achieved.
+    Total model calls:     47
+
+    The model has been run one final time using best parameters. 
+    Thus all model input files contain best parameter values, and model 
+    output files contain model results based on these parameters.
+
+
+                             OPTIMISATION RESULTS
+
+ Covariance matrix and parameter confidence intervals cannot be determined:-
+ Some form or regularisation was implemented so these are not applicable.
+
+
+ Parameters ----->
+
+ Parameter      Estimated value
+  bins            40.0000    
+  thetar         1.000000E-06
+  thetas         0.430000    
+  alpha           3.33086    
+  n               1.68499    
+  ksat           6.980837E-04
+  l              0.500000    
+  ihead           145.910    
+
+ See file to_reg2.sen for parameter sensitivities.
+ Note that these sensitivities include effects of regularisation observations.
+
+
+ Regularisation Weight Factor ----->
+
+ Optimised regularisation weight factor = 3.30169E-02
+
+ Pertinent observation and prior information weights shown below are 
+ calculated using  this weight factor.
+
+ Note that the target measurement objective function was not achieved.
+
+
+ Observations ----->
+
+ Observation            Measured       Calculated     Residual       Weight     Group
+                        value          value
+ ten1                  -1.46441       -1.49025       2.584227E-02    1.000      tensio      
+ ten2                  -1.46096       -1.49025       2.928659E-02    1.000      tensio      
+ ten3                  -1.45867       -1.49025       3.158280E-02    1.000      tensio      
+ ten4                  -1.45982       -1.49025       3.043470E-02    1.000      tensio      
+ ten5                  -1.45695       -1.49025       3.330496E-02    1.000      tensio      
+ ten6                  -1.46154       -1.49025       2.871254E-02    1.000      tensio      
+ ten7                  -1.46039       -1.49025       2.986064E-02    1.000      tensio      
+ ten8                  -1.45867       -1.49025       3.158280E-02    1.000      tensio      
+ ten9                  -1.46211       -1.49025       2.813849E-02    1.000      tensio      
+ ten10                 -1.45350       -1.49025       3.674928E-02    1.000      tensio      
+ ten11                 -1.45408       -1.49025       3.617523E-02    1.000      tensio      
+ ten12                 -1.45178       -1.49025       3.847144E-02    1.000      tensio      
+ ten13                 -1.45235       -1.49025       3.789738E-02    1.000      tensio      
+ ten14                 -1.45867       -1.49025       3.158280E-02    1.000      tensio      
+ ten15                 -1.45235       -1.49025       3.789738E-02    1.000      tensio      
+ ten16                 -1.44891       -1.49025       4.134170E-02    1.000      tensio      
+ ten17                 -1.44948       -1.49025       4.076765E-02    1.000      tensio      
+ ten18                 -1.43054       -1.32674      -0.103801        1.000      tensio      
+ ten19                 -1.40413       -1.32674      -7.739418E-02    1.000      tensio      
+ ten20                 -1.32032       -1.18882      -0.131504        1.000      tensio      
+ ten21                 -1.06028      -0.880551      -0.179725        1.000      tensio      
+ ten22                -0.782434      -0.880551       9.811702E-02    1.000      tensio      
+ ten23                -0.716992      -0.802460       8.546804E-02    1.000      tensio      
+ ten24                -0.711251      -0.802460       9.120856E-02    1.000      tensio      
+ ten25                -0.712400      -0.733168       2.076846E-02    1.000      tensio      
+ ten26                -0.715270      -0.733168       1.789820E-02    1.000      tensio      
+ ten27                -0.716992      -0.671218      -4.577396E-02    1.000      tensio      
+ ten28                -0.730769      -0.671218      -5.955123E-02    1.000      tensio      
+ ten29                -0.766935      -0.671218      -9.571656E-02    1.000      tensio      
+ ten30                -0.788749      -0.671218      -0.117531        1.000      tensio      
+ ten31                -0.808840      -0.615440      -0.193400        1.000      tensio      
+ ten32                -0.828358      -0.615440      -0.212918        1.000      tensio      
+ ten33                -0.846728      -0.615440      -0.231288        1.000      tensio      
+ ten34                -0.863949      -0.615440      -0.248509        1.000      tensio      
+ ten35                -0.882893      -0.615440      -0.267453        1.000      tensio      
+ ten36                -0.896096      -0.671218      -0.224878        1.000      tensio      
+ ten37                -0.906429      -0.671218      -0.235211        1.000      tensio      
+ ten38                -0.917336      -0.671218      -0.246118        1.000      tensio      
+ ten39                -0.928243      -0.671218      -0.257025        1.000      tensio      
+ ten40                -0.938002      -0.733168      -0.204834        1.000      tensio      
+ ten41                -0.947761      -0.733168      -0.214593        1.000      tensio      
+ ten42                -0.955224      -0.802460      -0.152764        1.000      tensio      
+ ten43                -0.963261      -0.802460      -0.160801        1.000      tensio      
+ ten44                -0.971297      -0.802460      -0.168837        1.000      tensio      
+ ten45                -0.979908      -0.802460      -0.177448        1.000      tensio      
+ ten46                -0.986223      -0.880551      -0.105672        1.000      tensio      
+ ten47                -0.993685      -0.880551      -0.113134        1.000      tensio      
+ ten48                 -1.00057      -0.880551      -0.120023        1.000      tensio      
+ ten49                 -1.00689      -0.880551      -0.126338        1.000      tensio      
+ ten50                 -1.01320      -0.880551      -0.132652        1.000      tensio      
+ ten51                 -1.02009      -0.969284      -5.080785E-02    1.000      tensio      
+ ten52                 -1.02583      -0.969284      -5.654838E-02    1.000      tensio      
+ ten53                 -1.03100      -0.969284      -6.171485E-02    1.000      tensio      
+ ten54                 -1.03559      -0.969284      -6.630727E-02    1.000      tensio      
+ ten55                 -1.03961      -0.969284      -7.032564E-02    1.000      tensio      
+ ten56                 -1.04420      -0.969284      -7.491807E-02    1.000      tensio      
+ ten57                 -1.04994      -0.969284      -8.065859E-02    1.000      tensio      
+ ten58                 -1.05281      -0.969284      -8.352886E-02    1.000      tensio      
+ ten59                 -1.05626       -1.07102       1.475982E-02    1.000      tensio      
+ ten60                 -1.06085       -1.07102       1.016740E-02    1.000      tensio      
+ ten61                 -1.06372       -1.07102       7.297138E-03    1.000      tensio      
+ ten62                 -1.06831       -1.07102       2.704715E-03    1.000      tensio      
+ ten63                 -1.07233       -1.07102      -1.313654E-03    1.000      tensio      
+ ten64                 -1.07577       -1.07102      -4.757971E-03    1.000      tensio      
+ ten65                 -1.07807       -1.07102      -7.054183E-03    1.000      tensio      
+ ten66                 -1.08209       -1.07102      -1.107255E-02    1.000      tensio      
+ ten67                 -1.08553       -1.07102      -1.451687E-02    1.000      tensio      
+ ten68                 -1.08840       -1.07102      -1.738713E-02    1.000      tensio      
+ ten69                 -1.09127       -1.07102      -2.025740E-02    1.000      tensio      
+ ten70                 -1.09242       -1.07102      -2.140550E-02    1.000      tensio      
+ ten71                 -1.09701       -1.18882       9.180207E-02    1.000      tensio      
+ ten72                 -1.10046       -1.18882       8.835776E-02    1.000      tensio      
+ ten73                 -1.10218       -1.18882       8.663560E-02    1.000      tensio      
+ ten74                 -1.10505       -1.18882       8.376534E-02    1.000      tensio      
+ ten75                 -1.10735       -1.18882       8.146912E-02    1.000      tensio      
+ ten76                 -1.10964       -1.18882       7.917291E-02    1.000      tensio      
+ ten77                 -1.11309       -1.18882       7.572860E-02    1.000      tensio      
+ ten78                 -1.11424       -1.18882       7.458049E-02    1.000      tensio      
+ ten79                 -1.11711       -1.18882       7.171023E-02    1.000      tensio      
+ ten80                 -1.12055       -1.18882       6.826591E-02    1.000      tensio      
+ ten81                 -1.12285       -1.18882       6.596970E-02    1.000      tensio      
+ ten82                 -1.12514       -1.18882       6.367349E-02    1.000      tensio      
+ ten83                 -1.12801       -1.18882       6.080322E-02    1.000      tensio      
+ ten84                 -1.13031       -1.18882       5.850701E-02    1.000      tensio      
+ ten85                 -1.13146       -1.18882       5.735891E-02    1.000      tensio      
+ ten86                 -1.13548       -1.18882       5.334054E-02    1.000      tensio      
+ ten87                 -1.13720       -1.18882       5.161838E-02    1.000      tensio      
+ ten88                 -1.13777       -1.18882       5.104432E-02    1.000      tensio      
+ ten89                 -1.13949       -1.18882       4.932217E-02    1.000      tensio      
+ ten90                 -1.14294       -1.32674       0.183800        1.000      tensio      
+ ten91                 -1.14466       -1.32674       0.182078        1.000      tensio      
+ ten92                 -1.14696       -1.32674       0.179781        1.000      tensio      
+ ten93                 -1.14811       -1.32674       0.178633        1.000      tensio      
+ ten94                 -1.15040       -1.32674       0.176337        1.000      tensio      
+ ten95                 -1.15729       -1.32674       0.169449        1.000      tensio      
+ ten96                 -1.15385       -1.32674       0.172893        1.000      tensio      
+
+
+ Prior information ----->
+
+ Prior                  Provided       Calculated     Residual       Weight     Group
+ information            value          value
+ alpha                  3.60000        3.33086       0.269139       3.3017E-02  regul_soil  
+ n                      1.50000        1.68499      -0.184993       3.3017E-02  regul_soil  
+ ksat                  -5.00000       -3.15609       -1.84391       3.3017E-02  regul_soil  
+
+ See file to_reg2.res for more details of residuals in graph-ready format.
+
+ See file to_reg2.seo for composite observation sensitivities.
+
+
+ Objective function ----->
+
+   Sum of squared weighted residuals (ie phi)                =   1.2704    
+   Contribution to phi from observation group "tensio"       =   1.2666    
+   Contribution to phi from observation group "regul_soil"   =  3.82266E-03
+
+   Optimised measurement objective function                  =   1.2666    
+   Optimised regularisation weight factor                    =  3.30169E-02
+   Optimised regularisation objective function               =   3.5067    
+
+
+ Correlation Coefficient ----->
+
+   Correlation coefficient                                   =  0.92704    
+   (Includes measurement observations only.)
+
+
+ Analysis of residuals ----->
+
+   All residuals:-
+      Number of residuals with non-zero weight                       =    99
+      Mean value of non-zero weighted residuals                      = -1.8500E-02
+      Maximum weighted residual [observation "ten90"]                =  0.1838    
+      Minimum weighted residual [observation "ten35"]                = -0.2675    
+      Standard variance of weighted residuals                        =  1.3233E-02
+      Standard error of weighted residuals                           =  0.1150    
+
+      Note: the above variance was obtained by dividing the objective 
+      function by the number of system degrees of freedom (ie. number of 
+      observations with non-zero weight plus number of prior information 
+      articles with non-zero weight minus the number of adjustable parameters.)
+      If the degrees of freedom is negative the divisor becomes 
+      the number of observations with non-zero weight plus the number of 
+      prior information items with non-zero weight.
+
+   Residuals for observation group "tensio":-
+      Number of residuals with non-zero weight                       =    96
+      Mean value of non-zero weighted residuals                      = -1.8472E-02
+      Maximum weighted residual [observation "ten90"]                =  0.1838    
+      Minimum weighted residual [observation "ten35"]                = -0.2675    
+      "Variance" of weighted residuals                               =  1.3193E-02
+      "Standard error" of weighted residuals                         =  0.1149    
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+   Residuals for observation group "regul_soil":-
+      Number of residuals with non-zero weight                       =     3
+      Mean value of non-zero weighted residuals                      = -1.9367E-02
+      Maximum weighted residual [observation "alpha"]                =  8.8861E-03
+      Minimum weighted residual [observation "ksat"]                 = -6.0880E-02
+      "Variance" of weighted residuals                               =  1.2742E-03
+      "Standard error" of weighted residuals                         =  3.5696E-02
+
+      Note: the above "variance" was obtained by dividing the sum of squared 
+      residuals by the number of items with non-zero weight.
+
+
+ Covariance and other statistical matrices cannot be determined:-
+ Some form or regularisation was implemented so these are not applicable.
+

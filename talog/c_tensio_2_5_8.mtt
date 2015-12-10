@@ -1,0 +1,50 @@
+ PARAMETER STATISTICAL MATRICES: CASE c_tensio_2_5_8
+
+ OPTIMISATION ITERATION NUMBER  9
+
+
+ Parameter standard deviations ----->
+
+ Adjustable        Group           Current          Standard
+ parameter                         value            deviation
+ thetas            soil            0.401544         2.054061E-02
+ alpha             soil             1.00000         2.339599E-02
+ n                 soil             4.49354         0.105296    
+ ksat              soil            1.000000E-03     7.359557E-02
+
+ Note that if a parameter is log-transformed, the standard deviation in the 
+ above table refers to the log of the parameter. Note also that the objective
+ function used in the calculation of the covariance matrix (and eigenvalues
+ of the covariance matrix) was calculated at the end of the previous iteration.
+
+
+ Parameter covariance matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas         4.2192E-04   5.0735E-05  -3.1218E-04   5.5440E-04
+ alpha          5.0735E-05   5.4737E-04  -2.4067E-03   5.2194E-04
+ n             -3.1218E-04  -2.4067E-03   1.1087E-02  -1.8096E-03
+ ksat           5.5440E-04   5.2194E-04  -1.8096E-03   5.4163E-03
+
+
+ Parameter correlation coefficient matrix ----->
+
+                 thetas       alpha          n           ksat    
+ thetas          1.000       0.1056      -0.1443       0.3667    
+ alpha          0.1056        1.000      -0.9769       0.3031    
+ n             -0.1443      -0.9769        1.000      -0.2335    
+ ksat           0.3667       0.3031      -0.2335        1.000    
+
+
+ Normalized eigenvectors of covariance matrix ----->
+
+               Vector_1     Vector_2     Vector_3     Vector_4   
+ thetas        -8.4117E-02   0.9909       9.8158E-02  -3.8712E-02
+ alpha         -0.9738      -8.7319E-02  -3.4731E-02  -0.2071    
+ n             -0.2087      -8.0593E-03   0.2728       0.9391    
+ ksat           3.2820E-02  -0.1026       0.9564      -0.2715    
+
+
+ Eigenvalues ----->
+
+                1.8284E-05   3.6260E-04   4.9380E-03   1.2154E-02
