@@ -10,6 +10,7 @@ import sys
 
 #Reads residual file (.res) output from PEST run and converts to comma-separated value (.csv)
 def makeCSVfromRES(fprefix):
+	print(fprefix)
 	lines = readFile(fprefix+'.res')
 
 	colnames=['Name','Group','Measured','Modelled','Res','Wt','WtMeas','WtMod','WtRes','SD','NatWt']
@@ -203,12 +204,12 @@ elif mode == "pest":
 	for b in badin:
 		goodin.append(b.replace("D","e"))
 	writeFile(goodin, "TO.IN")
-elif mode == "post":
+#elif mode == "post":
 	# Prepare PEST output for viewing
 	makeCSVfromRES(case)
 elif mode == "out":
 	# Prepare PEST output for viewing
-	#makeCSVfromRES(case)
+	makeCSVfromRES(case)
 	case=case
 else:
 	print("This is helpful?")
