@@ -1,1 +1,60 @@
                       PARAMETER SENSITIVITIES: CASE predcal3
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000         0.108286    
+   alpha           soil             2.16000         3.101643E-02
+   n               soil             3.80000         1.041186E-02
+   ksat            soil            3.000000E-04     4.212499E-02
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "tensio" ----->
+
+ Number of observations with non-zero weight =    96
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000         0.109414    
+   alpha           soil             2.16000         3.133952E-02
+   n               soil             3.80000         1.052031E-02
+   ksat            soil            3.000000E-04     4.256379E-02
+
+
+
+ Composite sensitivities for observation group "surf" ----->
+
+ Number of observations with non-zero weight =     1
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             2.16000          0.00000    
+   n               soil             3.80000          0.00000    
+   ksat            soil            3.000000E-04      0.00000    
+
+
+
+ Composite sensitivities for observation group "predict" ----->
+
+ Number of observations with non-zero weight =     1
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000          0.00000    
+   alpha           soil             2.16000          0.00000    
+   n               soil             3.80000          0.00000    
+   ksat            soil            3.000000E-04      0.00000    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    97
+ Parameter name    Group          Current value    Sensitivity
+   thetas          soil            0.430000         0.108286    
+   alpha           soil             2.16000         3.101643E-02
+   n               soil             3.80000         1.041186E-02
+   ksat            soil            3.000000E-04     4.212499E-02
+
+
+ It is important to note that the observation assigned to the group "predict"
+ is ignored in computing all composite sensitivities except for those 
+ pertaining to the group "predict".

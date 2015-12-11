@@ -13,7 +13,7 @@ model relative 1 1 always_2 1 parabolic
 soil relative 0.1 0.001 always_2 1 parabolic
 water relative 0.01 0.001 always_2 1 parabolic
 * parameter data
-bins fixed relative    1000     10 120  model 1 0 1
+bins fixed relative    100     10 120  model 1 0 1
 thetar fixed relative   1.0000000E-06  0.01 0.02 soil 1 0 1
 thetas none relative   0.4381310      0.4 0.5 soil 1 0 1
 alpha none factor    1.929512      1 10 soil 1 0 1
@@ -122,6 +122,7 @@ ten94 -1.15040183697 1 tensio
 ten95 -1.15729047072 1 tensio
 ten96 -1.15384615385 1 tensio
 msbc25 0.1 10000 surf
+rmse 1 1 predict
 * model command line
 ./run_model.sh
 * model input/output

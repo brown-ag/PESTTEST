@@ -63,6 +63,7 @@ def writeFile(what, filename):
 case=sys.argv[1]
 mode=sys.argv[2]
 tensiomfile=sys.argv[3]
+predict=sys.argv[4]
 
 tensio_name='../tensio_data/'+tensiomfile+".csv" #//TEMPORARY FIX AB
 print(sys.argv[0]+" for case: "+case+" in mode:"+mode+" using "+tensio_name)
@@ -105,10 +106,10 @@ elif mode == "in":
 			#raw values currently not used from file:
 
 		n+=1
-	ctrl_obs.append("msbc"+str(maxdepth)+" 0.1 10000 predict") #add surface bc condition to the bottom to not 
-															#interfere with model output of matric potential
+	ctrl_obs.append("msbc"+str(maxdepth)+" 0.1 10000 surf") #add surface bc condition to the bottom to not 
+	ctrl_obs.append("rmse 1 1 predict")
 	#write model run batch used by pest. this, in turn, calls the "pest" phase of tprecal.py
-	mrun="python tprecal.py "+case+" pest "+tensiomfile+"\n./test_alf\n#Rscript viewcsv.R "+case+" 2"
+	mrun="python tprecal.py "+case+" pest "+tensiomfile+" "+predict+"\n./test_alf\npython tprecal.py "+case+" post "+tensiomfile+" "+predict+"\nRscript viewcsv.R "+case+" -1"
 	mrunn=[]
 	mrunn.append(mrun)
 	writeFile(mrunn,"run_model.sh")
@@ -202,10 +203,13 @@ elif mode == "pest":
 	for b in badin:
 		goodin.append(b.replace("D","e"))
 	writeFile(goodin, "TO.IN")
-	
-elif mode == "out":
+elif mode == "post":
 	# Prepare PEST output for viewing
 	makeCSVfromRES(case)
+elif mode == "out":
+	# Prepare PEST output for viewing
+	#makeCSVfromRES(case)
+	case=case
 else:
 	print("This is helpful?")
 	

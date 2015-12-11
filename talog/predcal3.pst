@@ -1,8 +1,8 @@
 pcf
 * control data
 restart prediction
-8 97 3 0 2
-2 1 double point 1 0 0
+8 98 3 0 3
+2 2 double point 1 0 0
 5 2 0.3 0.01 8
 5 5 0.001
 0.1
@@ -18,11 +18,12 @@ thetar fixed relative   0.000001  0.01 0.02 soil 1 0 1
 thetas none relative   0.4300000      0.4 0.5 soil 1 0 1
 alpha none factor    2.16      1 10 soil 1 0 1
 n none relative    3.8      1.2 4 soil 1 0 1
-ksat log relative   3.0000E-06  1e-6 3e-5 soil 1 0 1
+ksat log factor   3.0000E-04  1e-6 3e-4 soil 1 0 1
 l fixed relative   0.5000000      0.45 0.55 soil 1 0 1
 ihead fixed relative   145.909873708      50 250 water 1 0 1
 * observation groups
 tensio 
+surf
 predict
 * observation data
 ten1 -1.4644087256 1 tensio
@@ -121,16 +122,18 @@ ten93 -1.14810562572 1 tensio
 ten94 -1.15040183697 1 tensio
 ten95 -1.15729047072 1 tensio
 ten96 -1.15384615385 1 tensio
-msbc25 0.1 10000 predict
+msbc25 0.1 10000 surf
+rmse 1 1 predict
 * model command line
 ./run_model.sh
 * model input/output
 TO.IN.ptf TO.IN
 pre_TO.IN.ptf pre_TO.IN
 obsnode.pif alf_obsnode_60.txt
+rmse.pif foob.out
 * predictive analysis
-1
-1 1.5 2
+-1
+18000 25000 27000
 0.0 0.005 1 2 7
 0.0 0.05
 4 0.0 0.005 4

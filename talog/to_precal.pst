@@ -122,6 +122,8 @@ ten93 -1.1607347876 1 tensio
 ten94 -1.17164179104 1 tensio
 ten95 -1.16130884041 1 tensio
 ten96 -1.16130884041 1 tensio
+msbc21 0.1 10000 surf
+rmse 1 1 predict
 * model command line
 ./run_model.sh
 * model input/output

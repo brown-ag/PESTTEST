@@ -1,16 +1,16 @@
  PARAMETER STATISTICAL MATRICES: CASE to_precal3
 
- OPTIMISATION ITERATION NUMBER 15
+ OPTIMISATION ITERATION NUMBER 11
 
 
  Parameter standard deviations ----->
 
  Adjustable        Group           Current          Standard
  parameter                         value            deviation
- thetas            soil            0.468906         2.594627E-03
- alpha             soil             2.40002         0.330399    
- n                 soil             1.72552         0.246280    
- ksat              soil            1.369505E-06     0.227559    
+ thetas            soil            0.497059         1.676528E-02
+ alpha             soil             4.16646         0.225552    
+ n                 soil             1.28070         1.946497E-02
+ ksat              soil            2.593193E-06     2.714387E-02
 
  Note that if a parameter is log-transformed, the standard deviation in the 
  above table refers to the log of the parameter. Note also that the objective
@@ -21,30 +21,30 @@
  Parameter covariance matrix ----->
 
                  thetas       alpha          n           ksat    
- thetas         6.7321E-06   2.2132E-04  -1.6835E-04   1.5110E-04
- alpha          2.2132E-04   0.1092      -8.1046E-02   7.4812E-02
- n             -1.6835E-04  -8.1046E-02   6.0654E-02  -5.6038E-02
- ksat           1.5110E-04   7.4812E-02  -5.6038E-02   5.1783E-02
+ thetas         2.8107E-04  -1.2426E-03  -5.7411E-06  -1.5558E-04
+ alpha         -1.2426E-03   5.0874E-02  -1.5853E-03   2.4971E-03
+ n             -5.7411E-06  -1.5853E-03   3.7889E-04  -4.9127E-04
+ ksat          -1.5558E-04   2.4971E-03  -4.9127E-04   7.3679E-04
 
 
  Parameter correlation coefficient matrix ----->
 
                  thetas       alpha          n           ksat    
- thetas          1.000       0.2582      -0.2635       0.2559    
- alpha          0.2582        1.000      -0.9960       0.9950    
- n             -0.2635      -0.9960        1.000      -0.9999    
- ksat           0.2559       0.9950      -0.9999        1.000    
+ thetas          1.000      -0.3286      -1.7593E-02  -0.3419    
+ alpha         -0.3286        1.000      -0.3611       0.4079    
+ n             -1.7593E-02  -0.3611        1.000      -0.9298    
+ ksat          -0.3419       0.4079      -0.9298        1.000    
 
 
  Normalized eigenvectors of covariance matrix ----->
 
                Vector_1     Vector_2     Vector_3     Vector_4   
- thetas         0.4832      -0.8755       1.7463E-03  -1.4313E-03
- alpha          4.8215E-02   2.6339E-02  -0.7102      -0.7018    
- n              0.6278       0.3447      -0.4617       0.5233    
- ksat           0.6083       0.3376       0.5314      -0.4833    
+ thetas         0.3462      -0.9347       7.6305E-02  -2.4561E-02
+ alpha          4.3836E-03  -1.9639E-02   6.0753E-02   0.9979    
+ n              0.7523       0.3261       0.5716      -3.1685E-02
+ ksat           0.5606       0.1398      -0.8147       4.9886E-02
 
 
  Eigenvalues ----->
 
-                3.1218E-07   8.0944E-06   4.9218E-04   0.2211    
+                9.3818E-07   2.8024E-04   9.0983E-04   5.1079E-02

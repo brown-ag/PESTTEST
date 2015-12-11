@@ -1,3 +1,4 @@
-#python tprecal.py to_predcal3 pest tensio_4_5_14
+python tprecal.py to_precal4 pest tensio_4_5_14 1
 ./test_alf
-#Rscript viewcsv.R to_predcal3 2
+python tprecal.py to_precal4 post tensio_4_5_14 1
+Rscript viewcsv.R to_precal4 -1
